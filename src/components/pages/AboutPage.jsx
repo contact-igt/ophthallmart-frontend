@@ -17,24 +17,17 @@ const AboutPage = () => (
                 </div>
                 <div className="flex-1 space-y-6 text-slate-600 leading-relaxed">
                     <h3 className="text-2xl font-bold text-[#0B2C4D]">
-                        Empowering Vision Care Since 2010
+                        About Ophthallmart
                     </h3>
                     <p>
-                        Ophthall Mart is India's premier B2B marketplace exclusively dedicated to ophthalmic equipment and supplies. We bridge the gap between world-class medical technology manufacturers and eye care professionals.
+                        Ophthallmart.com is an Initiative of Ophthall Practice Development, India’s Largest Practice Development Organization for Independent Ophthalmology Practices. We offer only the best brands so you can remain assured of the quality of every item we sell.
                     </p>
                     <p>
-                        Our mission is to provide affordable, high-quality diagnostic and surgical solutions to clinics and hospitals across the globe. With a team of biomedical engineers and industry experts, we ensure that every piece of equipment we sell meets rigorous quality standards.
+                        We aim to provide you an incredible shopping experience, a wide range of brands and excellent customer service at the click of a single button. Through Ophthall Buying Group, we would provide Opportunity for the buyers to get the best price for their purchases by leveraging the power of volumes. We will soon become India’s Largest Online Supermarket for Ophthalmology Products.
                     </p>
-                    <div className="grid grid-cols-2 gap-4 pt-4">
-                        <div className="bg-slate-50 p-4 rounded border-l-4 border-[#EA580C]">
-                            <span className="block text-2xl font-bold text-[#0B2C4D]">2000+</span>
-                            <span className="text-xs uppercase tracking-wide">Happy Clients</span>
-                        </div>
-                        <div className="bg-slate-50 p-4 rounded border-l-4 border-[#EA580C]">
-                            <span className="block text-2xl font-bold text-[#0B2C4D]">15+</span>
-                            <span className="text-xs uppercase tracking-wide">Countries Served</span>
-                        </div>
-                    </div>
+                    <p className="font-bold text-[#0B2C4D]">
+                        Team Ophthallmart.com
+                    </p>
                 </div>
             </div>
         </div>

@@ -41,16 +41,18 @@ const ProductCard = ({ product, onView, onAdd }) => (
                 ))}
             </div>
             <div className="mt-auto grid grid-cols-2 gap-2 pt-4 border-t border-slate-100">
-                <Button variant="ghost" className="text-xs px-2 py-2" onClick={() => onView(product)}>
-                    Read More
-                </Button>
-                <Button
-                    variant="outline"
-                    className="text-xs px-2 py-2 hover:bg-[#0B2C4D] hover:border-[#0B2C4D]"
+                <button
+                    className="w-full bg-[#67C3E4] hover:bg-[#5bbad5] text-white font-bold text-xs py-2.5 rounded transition-colors"
+                    onClick={() => onView(product)}
+                >
+                    Read more
+                </button>
+                <button
+                    className="w-full bg-[#EA580C] hover:bg-[#d94e25] text-white font-bold text-xs py-2.5 rounded transition-colors"
                     onClick={() => onAdd(product)}
                 >
-                    Enquiry
-                </Button>
+                    Add to Enquiry
+                </button>
             </div>
         </div>
     </div>

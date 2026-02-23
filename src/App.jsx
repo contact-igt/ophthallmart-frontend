@@ -4,6 +4,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './components/pages/HomePage';
 import ShopPage from './components/pages/ShopPage';
+import ProductPage from './components/pages/ProductPage';
 import ProductDetailPage from './components/pages/ProductDetailPage';
 import EnquiryCartPage from './components/pages/EnquiryCartPage';
 import ValuationPage from './components/pages/ValuationPage';
@@ -16,8 +17,10 @@ import { CONTACT_INFO } from './data/constants';
 export default function App() {
     const [currentPage, setCurrentPage] = useState('home');
     const [selectedProduct, setSelectedProduct] = useState(null);
+    const [selectedCategory, setSelectedCategory] = useState(null);
     const [enquiryCart, setEnquiryCart] = useState([]);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
 
     // Load Poppins Font
     useEffect(() => {
@@ -45,10 +48,22 @@ export default function App() {
         window.scrollTo(0, 0);
     };
 
-    const handleNav = (page) => {
+    const handleNav = (page, category = null) => {
         setCurrentPage(page);
+        if (category) {
+            setSelectedCategory(category);
+        }
+        if (page !== 'products') {
+            setSearchQuery(''); // Clear search when navigating away
+        }
         setSelectedProduct(null);
         setIsMobileMenuOpen(false);
+        window.scrollTo(0, 0);
+    };
+
+    const handleSearch = (query) => {
+        setSearchQuery(query);
+        setCurrentPage('products');
         window.scrollTo(0, 0);
     };
 
@@ -74,6 +89,7 @@ export default function App() {
             <Header
                 enquiryCart={enquiryCart}
                 handleNav={handleNav}
+                handleSearch={handleSearch}
                 isMobileMenuOpen={isMobileMenuOpen}
                 setIsMobileMenuOpen={setIsMobileMenuOpen}
             />
@@ -90,15 +106,23 @@ export default function App() {
                 {currentPage === 'shop' && (
                     <ShopPage
                         handleNav={handleNav}
+                        initialCategory={selectedCategory}
+                    />
+                )}
+
+                {currentPage === 'products' && (
+                    <ProductPage
+                        handleNav={handleNav}
                         handleProductView={handleProductView}
                         addToEnquiry={addToEnquiry}
+                        searchQuery={searchQuery}
                     />
                 )}
 
                 {currentPage === 'product-detail' && selectedProduct && (
                     <ProductDetailPage
                         product={selectedProduct}
-                        onBack={() => handleNav('shop')}
+                        onBack={() => handleNav('products')}
                         onAdd={addToEnquiry}
                     />
                 )}

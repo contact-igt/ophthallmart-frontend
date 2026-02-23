@@ -6,10 +6,8 @@ const Footer = ({ handleNav }) => (
     <footer className="bg-[#0B2C4D] text-slate-400 border-t border-slate-800 pt-16 pb-8 text-sm">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="space-y-6">
-                <div className="leading-none">
-                    <h1 className="text-2xl font-bold text-white tracking-tight">
-                        OPHTHALL<span className="text-[#EA580C]">MART</span>
-                    </h1>
+                <div className="flex items-center cursor-pointer mb-6" onClick={() => handleNav('home')}>
+                    <img src="/assets/brandlogo.png" alt="Ophthall Mart" className="h-10 md:h-12 w-auto brightness-0 invert" />
                 </div>
                 <p className="leading-relaxed text-slate-400">
                     India's largest marketplace for ophthalmic equipment. Connecting doctors with premium diagnostic and surgical technology since 2010.
@@ -24,7 +22,7 @@ const Footer = ({ handleNav }) => (
                         </button>
                     </li>
                     <li>
-                        <button onClick={() => handleNav('shop')} className="hover:text-white transition-colors">
+                        <button onClick={() => handleNav('products')} className="hover:text-white transition-colors">
                             Products
                         </button>
                     </li>
@@ -44,17 +42,17 @@ const Footer = ({ handleNav }) => (
                 <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Categories</h4>
                 <ul className="space-y-3">
                     <li>
-                        <button onClick={() => handleNav('shop')} className="hover:text-white">
+                        <button onClick={() => handleNav('products')} className="hover:text-white">
                             Diagnostic
                         </button>
                     </li>
                     <li>
-                        <button onClick={() => handleNav('shop')} className="hover:text-white">
+                        <button onClick={() => handleNav('products')} className="hover:text-white">
                             Surgical
                         </button>
                     </li>
                     <li>
-                        <button onClick={() => handleNav('shop')} className="hover:text-white">
+                        <button onClick={() => handleNav('products')} className="hover:text-white">
                             Consumables
                         </button>
                     </li>
