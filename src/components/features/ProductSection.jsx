@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { PRODUCTS } from '../../data/mockData';
 import ProductCard from '../shared/ProductCard';
 
-const ProductSection = ({ title, filter, data, bg = "bg-white", handleNav, handleProductView, addToEnquiry }) => {
+const ProductSection = ({ title, filter, data, bg = "bg-white", handleNav, handleProductView, addToEnquiry, enquiryCart = [] }) => {
     const productsToRender = data || PRODUCTS.filter(p => p.section === filter);
 
     return (
@@ -28,6 +28,7 @@ const ProductSection = ({ title, filter, data, bg = "bg-white", handleNav, handl
                             product={product}
                             onView={handleProductView}
                             onAdd={addToEnquiry}
+                            isAdded={enquiryCart.some(item => item.id === product.id)}
                         />
                     ))}
                 </div>

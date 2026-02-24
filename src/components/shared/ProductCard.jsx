@@ -1,8 +1,7 @@
 import React from 'react';
-import { Star, Heart } from 'lucide-react';
-import Button from './Button';
+import { Star, CheckCircle } from 'lucide-react';
 
-const ProductCard = ({ product, onView, onAdd }) => (
+const ProductCard = ({ product, onView, onAdd, isAdded = false }) => (
     <div className="bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all group flex flex-col h-full">
         <div className="relative h-64 bg-slate-50 p-6 flex items-center justify-center cursor-pointer" onClick={() => onView(product)}>
             {product.tag && (
@@ -14,12 +13,8 @@ const ProductCard = ({ product, onView, onAdd }) => (
                 src={product.image}
                 alt={product.name}
                 className="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
+                onError={e => { e.target.onerror = null; e.target.src = 'https://placehold.co/200x200/f1f5f9/334155?text=IMG'; }}
             />
-            <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0">
-                <button className="p-2 bg-white rounded shadow hover:text-[#EA580C] text-[#0B2C4D]">
-                    <Heart size={18} />
-                </button>
-            </div>
         </div>
         <div className="p-6 flex-1 flex flex-col">
             <div className="text-[10px] text-[#EA580C] font-bold mb-2 uppercase tracking-wider">
@@ -48,10 +43,23 @@ const ProductCard = ({ product, onView, onAdd }) => (
                     Read more
                 </button>
                 <button
-                    className="w-full bg-[#EA580C] hover:bg-[#d94e25] text-white font-bold text-xs py-2.5 rounded transition-colors"
+                    className={`w-full font-bold text-xs py-2.5 rounded transition-all duration-200 flex items-center justify-center gap-1.5
+                        ${isAdded
+                            ? 'bg-green-600 hover:bg-red-500 text-white group/addbtn'
+                            : 'bg-[#EA580C] hover:bg-[#d94e25] text-white'
+                        }`}
                     onClick={() => onAdd(product)}
+                    title={isAdded ? 'Click to remove from enquiry' : 'Add to enquiry'}
                 >
-                    Add to Enquiry
+                    {isAdded ? (
+                        <>
+                            <CheckCircle size={13} />
+                            <span className="group-hover/addbtn:hidden">Added</span>
+                            <span className="hidden group-hover/addbtn:inline">Remove</span>
+                        </>
+                    ) : (
+                        'Add to Enquiry'
+                    )}
                 </button>
             </div>
         </div>

@@ -17,10 +17,10 @@ const TrendingSection = ({ data, handleNav }) => (
                 </button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 text-center">
                 {data.map((product) => (
                     <div key={product.id} className="group cursor-pointer">
-                        <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-100 shadow-xl group-hover:border-[#EA580C] transition-all duration-300">
+                        <div className="relative mx-auto w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-slate-100 shadow-xl group-hover:border-[#EA580C] transition-all duration-300">
                             <img
                                 src={product.image}
                                 alt={product.name}

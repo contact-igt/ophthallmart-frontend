@@ -3,9 +3,9 @@ import { ChevronRight, ChevronLeft } from 'lucide-react';
 import { CATEGORIES, PRODUCTS } from '../../data/mockData';
 import ProductCard from '../shared/ProductCard';
 
-const ShopPage = ({ handleNav, handleProductView, addToEnquiry, initialCategory }) => {
+const ShopPage = ({ handleNav, handleProductView, addToEnquiry, initialCategory, enquiryCart = [] }) => {
     // State for active category and pagination
-    const [activeCategory, setActiveCategory] = useState(initialCategory || CATEGORIES[0].name);
+    const [activeCategory, setActiveCategory] = useState(initialCategory || 'All');
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 12;
 
@@ -18,7 +18,9 @@ const ShopPage = ({ handleNav, handleProductView, addToEnquiry, initialCategory 
     }, [initialCategory]);
 
     // Filter products based on active category
-    const filteredProducts = PRODUCTS.filter(product => product.category === activeCategory);
+    const filteredProducts = activeCategory === 'All'
+        ? PRODUCTS
+        : PRODUCTS.filter(product => product.category === activeCategory);
 
     // Pagination Logic
     const indexOfLastItem = currentPage * itemsPerPage;
@@ -60,6 +62,14 @@ const ShopPage = ({ handleNav, handleProductView, addToEnquiry, initialCategory 
                             Categories
                         </h4>
                         <ul className="space-y-3 text-sm text-slate-600 font-medium">
+                            <li
+                                onClick={() => handleCategoryChange('All')}
+                                className={`flex items-center justify-between cursor-pointer transition-colors group ${activeCategory === 'All' ? 'text-[#EA580C] font-bold' : 'hover:text-[#EA580C]'
+                                    }`}
+                            >
+                                <span>All Categories</span>
+                                <ChevronRight size={14} className={`group-hover:text-[#EA580C] ${activeCategory === 'All' ? 'text-[#EA580C]' : 'text-slate-300'}`} />
+                            </li>
                             {CATEGORIES.map(c => (
                                 <li
                                     key={c.id}
@@ -90,6 +100,7 @@ const ShopPage = ({ handleNav, handleProductView, addToEnquiry, initialCategory 
                                         product={product}
                                         onView={handleProductView}
                                         onAdd={addToEnquiry}
+                                        isAdded={enquiryCart.some(item => item.id === product.id)}
                                     />
                                 ))}
                             </div>

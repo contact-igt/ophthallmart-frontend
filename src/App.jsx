@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Mail } from 'lucide-react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './components/pages/HomePage';
@@ -11,8 +10,8 @@ import ValuationPage from './components/pages/ValuationPage';
 import ContactPage from './components/pages/ContactPage';
 import AboutPage from './components/pages/AboutPage';
 import AccountPage from './components/pages/AccountPage';
+import ThankYouPage from './components/pages/ThankYouPage';
 import FloatingWidgets from './components/features/FloatingWidgets';
-import { CONTACT_INFO } from './data/constants';
 
 export default function App() {
     const [currentPage, setCurrentPage] = useState('home');
@@ -21,6 +20,7 @@ export default function App() {
     const [enquiryCart, setEnquiryCart] = useState([]);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
+    const [submissionType, setSubmissionType] = useState('enquiry'); // 'enquiry' | 'contact' | 'valuation'
 
     // Load Poppins Font
     useEffect(() => {
@@ -28,12 +28,35 @@ export default function App() {
         link.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap';
         link.rel = 'stylesheet';
         document.head.appendChild(link);
-        return () => document.head.removeChild(link);
+
+        // POPSTATE: Handle browser back/forward buttons
+        const handlePopState = () => {
+            const path = window.location.pathname.substring(1) || 'home';
+            // Simple mapping of path to state
+            if (path === 'thank-you') {
+                setCurrentPage('thank-you');
+            } else if (path === 'home' || path === '') {
+                setCurrentPage('home');
+            } else {
+                setCurrentPage(path);
+            }
+        };
+
+        // Handle initial path on load
+        handlePopState();
+
+        window.addEventListener('popstate', handlePopState);
+        return () => {
+            document.head.removeChild(link);
+            window.removeEventListener('popstate', handlePopState);
+        };
     }, []);
 
     // Actions
     const addToEnquiry = (product) => {
-        if (!enquiryCart.find(item => item.id === product.id)) {
+        if (enquiryCart.some(item => item.id === product.id)) {
+            setEnquiryCart(enquiryCart.filter(item => item.id !== product.id));
+        } else {
             setEnquiryCart([...enquiryCart, product]);
         }
     };
@@ -59,6 +82,22 @@ export default function App() {
         setSelectedProduct(null);
         setIsMobileMenuOpen(false);
         window.scrollTo(0, 0);
+
+        // Update URL path (manual routing)
+        const path = page === 'home' ? '/' : `/${page}`;
+        if (window.location.pathname !== path) {
+            window.history.pushState(null, '', path);
+        }
+    };
+
+    const handleSuccess = (type) => {
+        setSubmissionType(type);
+        setCurrentPage('thank-you');
+        if (type === 'enquiry') setEnquiryCart([]); // Clear cart after successful enquiry
+        window.scrollTo(0, 0);
+        window.location.href = "/thank-you"
+        // Update URL to /thank-you
+        // window.history.pushState(null, '', '/thank-you');
     };
 
     const handleSearch = (query) => {
@@ -69,37 +108,26 @@ export default function App() {
 
     return (
         <div
-            className="min-h-screen bg-white selection:bg-orange-100 selection:text-[#EA580C]"
+            className="min-h-screen bg-white flex flex-col selection:bg-orange-100 selection:text-[#EA580C] overflow-x-hidden"
             style={{ fontFamily: "'Poppins', sans-serif" }}
         >
-            {/* Top Bar */}
-            <div className="bg-white text-slate-600 text-[13px] py-2 px-4 border-b border-slate-100 font-medium">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-                    <div className="flex items-center gap-6">
-                        <span className="flex items-center gap-2">
-                            <Phone size={14} className="text-[#0B2C4D]" /> {CONTACT_INFO.phone}
-                        </span>
-                        <span className="flex items-center gap-2">
-                            <Mail size={14} className="text-[#0B2C4D]" /> {CONTACT_INFO.supportEmail}
-                        </span>
-                    </div>
-                </div>
-            </div>
-
             <Header
                 enquiryCart={enquiryCart}
                 handleNav={handleNav}
                 handleSearch={handleSearch}
                 isMobileMenuOpen={isMobileMenuOpen}
                 setIsMobileMenuOpen={setIsMobileMenuOpen}
+                selectedCategory={selectedCategory}
+                setSelectedCategory={setSelectedCategory}
             />
 
-            <main>
+            <main className="flex-grow">
                 {currentPage === 'home' && (
                     <HomePage
                         handleNav={handleNav}
                         handleProductView={handleProductView}
                         addToEnquiry={addToEnquiry}
+                        enquiryCart={enquiryCart}
                     />
                 )}
 
@@ -107,6 +135,9 @@ export default function App() {
                     <ShopPage
                         handleNav={handleNav}
                         initialCategory={selectedCategory}
+                        handleProductView={handleProductView}
+                        addToEnquiry={addToEnquiry}
+                        enquiryCart={enquiryCart}
                     />
                 )}
 
@@ -116,6 +147,7 @@ export default function App() {
                         handleProductView={handleProductView}
                         addToEnquiry={addToEnquiry}
                         searchQuery={searchQuery}
+                        enquiryCart={enquiryCart}
                     />
                 )}
 
@@ -124,24 +156,42 @@ export default function App() {
                         product={selectedProduct}
                         onBack={() => handleNav('products')}
                         onAdd={addToEnquiry}
+                        enquiryCart={enquiryCart}
                     />
                 )}
-
-                {currentPage === 'valuation' && <ValuationPage />}
 
                 {currentPage === 'enquiry' && (
                     <EnquiryCartPage
                         cart={enquiryCart}
+                        setEnquiryCart={setEnquiryCart}
                         onRemove={removeFromEnquiry}
                         onNav={handleNav}
+                        onSuccess={() => handleSuccess('enquiry')}
+                    />
+                )}
+
+                {currentPage === 'valuation' && (
+                    <ValuationPage
+                        onSuccess={() => handleSuccess('valuation')}
                     />
                 )}
 
                 {currentPage === 'about' && <AboutPage />}
 
-                {currentPage === 'contact' && <ContactPage />}
+                {currentPage === 'contact' && (
+                    <ContactPage
+                        onSuccess={() => handleSuccess('contact')}
+                    />
+                )}
 
                 {currentPage === 'account' && <AccountPage />}
+
+                {currentPage === 'thank-you' && (
+                    <ThankYouPage
+                        type={submissionType}
+                        handleNav={handleNav}
+                    />
+                )}
             </main>
 
             <Footer handleNav={handleNav} />

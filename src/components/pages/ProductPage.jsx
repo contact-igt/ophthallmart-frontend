@@ -3,7 +3,7 @@ import { ChevronRight, ChevronLeft } from 'lucide-react';
 import { CATEGORIES, PRODUCTS } from '../../data/mockData';
 import ProductCard from '../shared/ProductCard';
 
-const ProductPage = ({ handleNav, handleProductView, addToEnquiry, searchQuery }) => {
+const ProductPage = ({ handleNav, handleProductView, addToEnquiry, searchQuery, enquiryCart = [] }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 12;
 
@@ -50,6 +50,7 @@ const ProductPage = ({ handleNav, handleProductView, addToEnquiry, searchQuery }
                             product={product}
                             onView={handleProductView}
                             onAdd={addToEnquiry}
+                            isAdded={enquiryCart.some(item => item.id === product.id)}
                         />
                     ))}
                 </div>
