@@ -21,13 +21,13 @@ const CategorySection = ({ handleNav, data }) => {
                         <div
                             key={cat.id}
                             onClick={() => handleNav('shop')}
-                            className="bg-[#F0F8FF] rounded-2xl p-6 flex justify-between items-center relative overflow-hidden group hover:shadow-xl transition-all duration-300 border border-slate-100 cursor-pointer h-48"
+                            className="bg-[#F0F8FF] rounded-2xl p-6 flex justify-between items-center relative overflow-hidden group hover:shadow-xl transition-all duration-300 border border-slate-100 cursor-pointer min-h-[12rem] h-auto"
                         >
                             <div className="z-10 relative flex flex-col h-full justify-center w-7/12">
-                                <h3 className="font-bold text-[#0B2C4D] text-lg leading-tight group-hover:text-[#EA580C] transition-colors duration-300 mb-4">
+                                <h3 className="font-bold text-[#0B2C4D] text-xl leading-tight group-hover:text-[#EA580C] transition-colors duration-300 mb-1">
                                     {cat.name}
                                 </h3>
-                                <button className="text-[#EF4444] text-sm font-bold flex items-center gap-1 group-hover:underline mt-auto">
+                                <button className="text-[#EF4444] text-sm font-bold flex items-center gap-1 group-hover:underline mt-1">
                                     Shop Now <span className="text-lg">+</span>
                                 </button>
                             </div>

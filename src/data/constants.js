@@ -12,8 +12,10 @@ export const THEME = {
 
 export const CONTACT_INFO = {
     phone: '+91 87545 17944',
+    tollFree: '1800-572-1051',
     email: 'sales@ophthallmart.com',
-    supportEmail: 'support@ophthallmart.com',
+    generalEmail: 'info@ophthall.in',
+    // supportEmail: 'support@ophthallmart.com',
     address: 'No. 12, Medical Park, Chennai, Tamil Nadu, 600001',
-    whatsappNumber: '+91 87545 17944',
+    whatsappNumber: '+91 91760 54051',
 };

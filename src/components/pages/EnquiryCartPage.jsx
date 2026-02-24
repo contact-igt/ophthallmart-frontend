@@ -171,7 +171,7 @@ const EnquiryCartPage = ({ cart, onRemove, onNav, onSuccess, setEnquiryCart }) =
                         )}
 
                         <form className="space-y-5" onSubmit={handleSubmit(onSubmit)} noValidate>
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <Select
                                     label="Customer Type *"
                                     options={[
@@ -193,7 +193,7 @@ const EnquiryCartPage = ({ cart, onRemove, onNav, onSuccess, setEnquiryCart }) =
                                 />
                             </div>
 
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <TextInput
                                     label="Contact Number *"
                                     type="tel"

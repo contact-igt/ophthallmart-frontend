@@ -238,7 +238,7 @@ const ValuationPage = ({ onSuccess }) => {
                         {/* 1. Contact Information */}
                         <section className="animate-in fade-in duration-500 delay-100">
                             <SectionTitle number="1" title="Contact Information" />
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 <TextInput
                                     label="Name *"
                                     placeholder="Your Full Name"
@@ -335,7 +335,7 @@ const ValuationPage = ({ onSuccess }) => {
                                     </div>
                                 )}
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                     <TextInput
                                         label="Model *"
                                         placeholder="e.g. AA-2000"
@@ -370,7 +370,7 @@ const ValuationPage = ({ onSuccess }) => {
                                     />
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                     <RadioGroup
                                         label="Working Condition *"
                                         name="workingCondition"

@@ -9,12 +9,12 @@ export const CATEGORIES = [
 ];
 
 export const HOME_CATEGORIES = [
-  { id: 1, name: "Diagnostic / Surgical Equipments / Instruments", image: "/assets/Home/cat1.png" },
-  { id: 2, name: "Consumables/ Disposables", image: "/assets/Home/cat2.png" },
-  { id: 3, name: "Pre-Owned Equipments", image: "/assets/Home/cat6.png" }, // Placeholder image
-  { id: 4, name: "Optical Products", image: "/assets/Home/cat4.png" },
-  { id: 5, name: "Eye Hospital/ Clinic Establishment", image: "/assets/Home/cat5.png" },
-  { id: 6, name: "General Products", image: "/assets/Home/cat6.png" }
+  { id: 1, name: "Diagnostic / Surgical Equipments / Instruments", image: "/assets/Home/Collection/collection1.png" },
+  { id: 2, name: "Consumables/ Disposables", image: "/assets/Home/Collection/collection2.png" },
+  { id: 3, name: "Pre-Owned Equipments", image: "/assets/Home/Collection/collection3.png" },
+  { id: 4, name: "Optical Products", image: "/assets/Home/Collection/collection4.png" },
+  { id: 5, name: "Eye Hospital/ Clinic Establishment", image: "/assets/Home/Collection/collection5.png" },
+  { id: 6, name: "General Products", image: "/assets/Home/Collection/collection6.png" }
 ];
 
 export const PRODUCTS = [

@@ -37,13 +37,13 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
 
                     {/* Logo */}
                     <div
-                        className="flex-shrink-0 cursor-pointer border-2 border-transparent hover:border-white rounded transition-all duration-200 px-1"
+                        className="flex-shrink-0 cursor-pointer bg-white rounded-md p-1.5 transition-all duration-200 shadow-sm"
                         onClick={() => handleNav('home')}
                     >
                         <img
                             src="/assets/brandlogo.png"
                             alt="Ophthall Mart"
-                            className="h-10 w-auto brightness-0 invert"
+                            className="h-10 w-auto"
                         />
                     </div>
 
@@ -97,8 +97,8 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
                     <div className="flex items-center gap-4 flex-shrink-0">
                         {/* Contact (desktop only) */}
                         <div className="hidden xl:flex flex-col items-end leading-tight">
-                            <span className="text-slate-400 text-[11px]">Call us</span>
-                            <span className="text-white text-sm font-semibold">{CONTACT_INFO.phone}</span>
+                            <span className="text-slate-400 text-[11px]">24/7 Customer Care</span>
+                            <span className="text-white text-sm font-semibold">{CONTACT_INFO.tollFree}</span>
                         </div>
 
                         {/* Enquiry Cart */}

@@ -11,6 +11,10 @@ import ContactPage from './components/pages/ContactPage';
 import AboutPage from './components/pages/AboutPage';
 import AccountPage from './components/pages/AccountPage';
 import ThankYouPage from './components/pages/ThankYouPage';
+import PrivacyPolicyPage from './components/pages/PrivacyPolicyPage';
+import TermsPage from './components/pages/TermsPage';
+import ReturnPolicyPage from './components/pages/ReturnPolicyPage';
+import ShippingPage from './components/pages/ShippingPage';
 import FloatingWidgets from './components/features/FloatingWidgets';
 
 export default function App() {
@@ -185,6 +189,14 @@ export default function App() {
                 )}
 
                 {currentPage === 'account' && <AccountPage />}
+
+                {currentPage === 'privacy' && <PrivacyPolicyPage />}
+
+                {currentPage === 'terms' && <TermsPage />}
+
+                {currentPage === 'returns' && <ReturnPolicyPage />}
+
+                {currentPage === 'shipping' && <ShippingPage />}
 
                 {currentPage === 'thank-you' && (
                     <ThankYouPage
