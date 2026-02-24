@@ -6,10 +6,8 @@ const Footer = ({ handleNav }) => (
     <footer className="bg-[#0B2C4D] text-slate-400 border-t border-slate-800 pt-16 pb-8 text-sm">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="space-y-6">
-                <div className="leading-none">
-                    <h1 className="text-2xl font-bold text-white tracking-tight">
-                        OPHTHALL<span className="text-[#EA580C]">MART</span>
-                    </h1>
+                <div className="flex items-center cursor-pointer mb-6 bg-white p-2 rounded-lg inline-block shadow-sm" onClick={() => handleNav('home')}>
+                    <img src="/assets/brandlogo.png" alt="Ophthall Mart" className="h-10 md:h-12 w-auto" />
                 </div>
                 <p className="leading-relaxed text-slate-400">
                     India's largest marketplace for ophthalmic equipment. Connecting doctors with premium diagnostic and surgical technology since 2010.
@@ -24,7 +22,7 @@ const Footer = ({ handleNav }) => (
                         </button>
                     </li>
                     <li>
-                        <button onClick={() => handleNav('shop')} className="hover:text-white transition-colors">
+                        <button onClick={() => handleNav('products')} className="hover:text-white transition-colors">
                             Products
                         </button>
                     </li>
@@ -44,17 +42,17 @@ const Footer = ({ handleNav }) => (
                 <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Categories</h4>
                 <ul className="space-y-3">
                     <li>
-                        <button onClick={() => handleNav('shop')} className="hover:text-white">
+                        <button onClick={() => handleNav('products')} className="hover:text-white">
                             Diagnostic
                         </button>
                     </li>
                     <li>
-                        <button onClick={() => handleNav('shop')} className="hover:text-white">
+                        <button onClick={() => handleNav('products')} className="hover:text-white">
                             Surgical
                         </button>
                     </li>
                     <li>
-                        <button onClick={() => handleNav('shop')} className="hover:text-white">
+                        <button onClick={() => handleNav('products')} className="hover:text-white">
                             Consumables
                         </button>
                     </li>
@@ -69,20 +67,48 @@ const Footer = ({ handleNav }) => (
                     </li>
                     <li className="flex items-center gap-3">
                         <Phone className="text-[#EA580C] flex-shrink-0" size={18} />
-                        <span>{CONTACT_INFO.phone} (Toll Free)</span>
+                        <div className="flex flex-col">
+                            <span className="text-xs text-slate-500 uppercase font-bold tracking-tight">24/7 Customer Care</span>
+                            <span className="text-white font-semibold"><a href={`tel:${CONTACT_INFO.tollFree}`}>{CONTACT_INFO.tollFree} (Toll Free)</a></span>
+                        </div>
                     </li>
                     <li className="flex items-center gap-3">
                         <Mail className="text-[#EA580C] flex-shrink-0" size={18} />
-                        <span>{CONTACT_INFO.email}</span>
+                        <div className="flex flex-col">
+                            {/* <span>{CONTACT_INFO.email}</span> */}
+                            <span>{CONTACT_INFO.generalEmail}</span>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div className="max-w-7xl mx-auto px-4 border-t border-slate-800 pt-8 pb-40 md:pb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-slate-500">
             <p>&copy; 2024 Ophthall Mart. All rights reserved.</p>
-            <div className="flex gap-6">
-                <a href="#" className="hover:text-white">Privacy Policy</a>
-                <a href="#" className="hover:text-white">Terms of Service</a>
+            <div className="flex flex-wrap gap-4 md:gap-6">
+                <button
+                    onClick={() => handleNav('privacy')}
+                    className="hover:text-white transition-colors py-1 text-left"
+                >
+                    Privacy Policy
+                </button>
+                <button
+                    onClick={() => handleNav('terms')}
+                    className="hover:text-white transition-colors py-1 text-left"
+                >
+                    Terms and Conditions
+                </button>
+                <button
+                    onClick={() => handleNav('returns')}
+                    className="hover:text-white transition-colors py-1 text-left"
+                >
+                    Return Policy
+                </button>
+                <button
+                    onClick={() => handleNav('shipping')}
+                    className="hover:text-white transition-colors py-1 text-left"
+                >
+                    Shipping & Delivery
+                </button>
             </div>
         </div>
     </footer>
