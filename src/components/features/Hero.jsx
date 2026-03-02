@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { HERO_SLIDES } from '../../data/mockData';
+import { HERO_SLIDES, PRODUCTS } from '../../data/mockData';
 import Button from '../shared/Button';
 
-const Hero = ({ handleNav }) => {
+const Hero = ({ handleNav, handleProductView, handleSearch }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     // useEffect(() => {
@@ -12,6 +12,26 @@ const Hero = ({ handleNav }) => {
     //     }, 8000);
     //     return () => clearInterval(timer);
     // }, []);
+
+    const handleSlideClick = () => {
+        const slide = HERO_SLIDES[currentSlide];
+        if (slide.linkType === 'external' && slide.link) {
+            window.open(slide.link, '_blank', 'noopener,noreferrer');
+        } else if (slide.linkType === 'product' && slide.link && handleProductView) {
+            const product = PRODUCTS.find(p => p.id === slide.link);
+            if (product) {
+                handleProductView(product);
+            } else {
+                handleNav('shop');
+            }
+        } else if (slide.linkType === 'search' && slide.link && handleSearch) {
+            handleSearch(slide.link);
+        } else if (slide.linkType === 'page' && slide.link) {
+            handleNav(slide.link);
+        } else {
+            handleNav('shop');
+        }
+    };
 
     return (
         <section className="relative bg-white overflow-hidden min-h-[750px] md:h-[600px] flex items-center py-12 md:py-0">
@@ -35,7 +55,7 @@ const Hero = ({ handleNav }) => {
                         </div>
                         <div className="text-slate-500 text-lg max-w-lg leading-relaxed pt-4 font-light uppercase" dangerouslySetInnerHTML={{ __html: HERO_SLIDES[currentSlide].desc }} />
                         <div className="pt-6">
-                            <Button variant="primary" className="px-10 py-4 text-sm" onClick={() => handleNav('shop')}>
+                            <Button variant="primary" className="px-10 py-4 text-sm" onClick={handleSlideClick}>
                                 {HERO_SLIDES[currentSlide].buttonText || 'Explore Products'} <ArrowRight size={16} className="ml-1" />
                             </Button>
                         </div>
@@ -44,7 +64,8 @@ const Hero = ({ handleNav }) => {
                         <img
                             src={HERO_SLIDES[currentSlide].image}
                             alt="Slide"
-                            className="h-full w-full object-contain drop-shadow-2xl"
+                            className="h-full w-full object-contain drop-shadow-2xl cursor-pointer"
+                            onClick={handleSlideClick}
                         />
                     </div>
                 </div>

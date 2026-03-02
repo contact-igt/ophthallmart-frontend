@@ -133,6 +133,7 @@ export default function App() {
                         handleProductView={handleProductView}
                         addToEnquiry={addToEnquiry}
                         enquiryCart={enquiryCart}
+                        handleSearch={handleSearch}
                     />
                 )}
 

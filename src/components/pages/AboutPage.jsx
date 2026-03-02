@@ -10,9 +10,9 @@ const AboutPage = () => (
             <div className="flex flex-col md:flex-row gap-12 items-center">
                 <div className="flex-1">
                     <img
-                        src="https://placehold.co/600x400/f1f5f9/0B2C4D?text=Our+Office"
+                        src="/assets/About/aboutbg.png"
                         alt="Office"
-                        className="rounded-xl shadow-lg w-full"
+                        className="rounded-xl shadow-lg w-full h-full object-cover min-h-[400px]"
                     />
                 </div>
                 <div className="flex-1 space-y-6 text-slate-600 leading-relaxed">

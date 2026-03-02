@@ -27,7 +27,7 @@ const CLIENTS = [
 
 const ClientsSection = () => {
     return (
-        <section className="bg-white py-16 sm:py-24 border-t border-slate-100 overflow-hidden">
+        <section className="bg-white py-14 sm:py-24 border-t border-slate-100 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 text-center mb-10">
                 <h2 className="text-3xl font-bold text-[#0B2C4D]">Our Clients</h2>
                 <p className="text-slate-500 mt-2">Trusted by leading hospitals and eye care professionals</p>
@@ -54,7 +54,7 @@ const ClientsSection = () => {
                             <img
                                 src={client.img}
                                 alt={client.name}
-                                className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 drop-shadow-sm"
+                                className="max-h-full max-w-full object-contain transition-all duration-300 drop-shadow-sm"
                             />
                         </div>
                     ))}

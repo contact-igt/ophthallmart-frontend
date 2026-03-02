@@ -13,9 +13,9 @@ export const THEME = {
 export const CONTACT_INFO = {
     phone: '+91 87545 17944',
     tollFree: '1800-572-1051',
-    email: 'sales@ophthallmart.com',
-    generalEmail: 'info@ophthall.in',
+    email: 'pranavhealth@gmail.com',
+    generalEmail: 'pranavhealth@gmail.com',
     // supportEmail: 'support@ophthallmart.com',
-    address: 'No. 12, Medical Park, Chennai, Tamil Nadu, 600001',
+    address: '1252, Golden Colony, Anna Nagar West Extn., Padi, Chennai, Thiruvallur, Tamilnadu-600 050',
     whatsappNumber: '+91 91760 54051',
 };

@@ -10,8 +10,7 @@ const TrustIndicators = () => (
 
                 <div>
                     <h4 className="font-bold text-lg">Trusted By</h4>
-                    <p className="text-sm text-slate-300">100% secure transaction processing.</p>
-
+                    <p className="text-sm text-slate-300">6000+ Ophthalmologist</p>
                 </div>
             </div>
             <div className="flex items-center gap-6 justify-center md:justify-start">

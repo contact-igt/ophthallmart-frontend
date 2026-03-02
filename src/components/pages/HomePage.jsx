@@ -9,9 +9,9 @@ import TestimonialsSection from '../features/TestimonialsSection';
 import { BEST_SELLING_PRODUCTS, TRENDING_PRODUCTS, FEATURED_PRODUCTS, HOME_CATEGORIES } from '../../data/mockData';
 import TrendingSection from '../features/TrendingSection';
 
-const HomePage = ({ handleNav, handleProductView, addToEnquiry, enquiryCart }) => (
+const HomePage = ({ handleNav, handleProductView, addToEnquiry, enquiryCart, handleSearch }) => (
     <>
-        <Hero handleNav={handleNav} />
+        <Hero handleNav={handleNav} handleProductView={handleProductView} handleSearch={handleSearch} />
         <CategorySection handleNav={handleNav} data={HOME_CATEGORIES} />
         <ProductSection
             title="Best Selling Products"

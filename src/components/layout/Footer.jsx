@@ -9,27 +9,10 @@ const Footer = ({ handleNav }) => (
                 <div className="flex items-center cursor-pointer mb-6 bg-white p-2 rounded-lg inline-block shadow-sm" onClick={() => handleNav('home')}>
                     <img src="/assets/brandlogo.png" alt="Ophthall Mart" className="h-10 md:h-12 w-auto" />
                 </div>
+
                 <p className="leading-relaxed text-slate-400 flex-grow">
                     India's largest marketplace for ophthalmic equipment. Connecting doctors with premium diagnostic and surgical technology since 2010.
                 </p>
-                <div className="pt-2 flex flex-wrap gap-4">
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#EA580C] transition-colors">
-                        <Facebook size={18} />
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#EA580C] transition-colors">
-                        <Twitter size={18} />
-                        <span>Twitter</span>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#EA580C] transition-colors">
-                        <Instagram size={18} />
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#EA580C] transition-colors">
-                        <Linkedin size={18} />
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
             </div>
             <div>
                 <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Quick Links</h4>
@@ -56,6 +39,37 @@ const Footer = ({ handleNav }) => (
                     </li>
                 </ul>
             </div>
+            <div>
+                <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Quick Links</h4>
+                <ul className="space-y-3">
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#EA580C] transition-colors">
+                            <Facebook size={18} />
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#EA580C] transition-colors">
+                            <Twitter size={18} />
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#EA580C] transition-colors">
+                            <Instagram size={18} />
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#EA580C] transition-colors">
+                            <Linkedin size={18} />
+                            <span>LinkedIn</span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
             <div>
                 <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Categories</h4>
                 <ul className="space-y-3">

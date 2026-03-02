@@ -14,7 +14,7 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [] }) => {
                 <div className="flex items-center gap-2 text-sm text-slate-500 mb-8">
                     <span className="cursor-pointer hover:text-[#0B2C4D]" onClick={onBack}>Home</span>
                     <ChevronRight size={14} />
-                    <span className="cursor-pointer hover:text-[#0B2C4D]" onClick={onBack}>Shop</span>
+                    <span className="cursor-pointer hover:text-[#0B2C4D]" onClick={onBack}>Products</span>
                     <ChevronRight size={14} />
                     <span className="text-[#EA580C] font-semibold">{product.name}</span>
                 </div>

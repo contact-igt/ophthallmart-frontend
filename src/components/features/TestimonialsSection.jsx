@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, User, Quote } from 'lucide-react';
 import { TESTIMONIALS } from '../../data/mockData';
 
@@ -17,8 +17,17 @@ const TestimonialsSection = () => {
         );
     };
 
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === TESTIMONIALS.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 3000);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
-        <section className="bg-white py-16 sm:py-24">
+        <section className="bg-white py-12 sm:py-24">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-[#0B2C4D]">
