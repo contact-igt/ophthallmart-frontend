@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './components/pages/HomePage';
-import ShopPage from './components/pages/ShopPage';
+import ShopPage from './components/pages/ShopPage'; // Deprecated in favor of ProductPage
 import ProductPage from './components/pages/ProductPage';
 import ProductDetailPage from './components/pages/ProductDetailPage';
 import EnquiryCartPage from './components/pages/EnquiryCartPage';
 import ValuationPage from './components/pages/ValuationPage';
 import ContactPage from './components/pages/ContactPage';
 import AboutPage from './components/pages/AboutPage';
+import BuyingGroupPage from './components/pages/BuyingGroupPage';
 import AccountPage from './components/pages/AccountPage';
 import ThankYouPage from './components/pages/ThankYouPage';
 import PrivacyPolicyPage from './components/pages/PrivacyPolicyPage';
@@ -136,7 +137,7 @@ export default function App() {
                 )}
 
                 {currentPage === 'shop' && (
-                    <ShopPage
+                    <ProductPage
                         handleNav={handleNav}
                         initialCategory={selectedCategory}
                         handleProductView={handleProductView}
@@ -181,6 +182,8 @@ export default function App() {
                 )}
 
                 {currentPage === 'about' && <AboutPage />}
+
+                {currentPage === 'buying-group' && <BuyingGroupPage />}
 
                 {currentPage === 'contact' && (
                     <ContactPage

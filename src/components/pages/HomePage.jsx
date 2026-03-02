@@ -3,6 +3,8 @@ import Hero from '../features/Hero';
 import CategorySection from '../features/CategorySection';
 import ProductSection from '../features/ProductSection';
 import TrustIndicators from '../features/TrustIndicators';
+import ClientsSection from '../features/ClientsSection';
+import TestimonialsSection from '../features/TestimonialsSection';
 
 import { BEST_SELLING_PRODUCTS, TRENDING_PRODUCTS, FEATURED_PRODUCTS, HOME_CATEGORIES } from '../../data/mockData';
 import TrendingSection from '../features/TrendingSection';
@@ -20,7 +22,7 @@ const HomePage = ({ handleNav, handleProductView, addToEnquiry, enquiryCart }) =
             enquiryCart={enquiryCart}
         />
         <ProductSection
-            title="Featured Equipment"
+            title="Pre-owned Market Place"
             data={FEATURED_PRODUCTS}
             bg="bg-slate-50"
             handleNav={handleNav}
@@ -33,6 +35,8 @@ const HomePage = ({ handleNav, handleProductView, addToEnquiry, enquiryCart }) =
             handleNav={handleNav}
             enquiryCart={enquiryCart}
         />
+        <TestimonialsSection />
+        <ClientsSection />
         <TrustIndicators />
     </>
 );

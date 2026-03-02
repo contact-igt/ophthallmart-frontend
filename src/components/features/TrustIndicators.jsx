@@ -1,9 +1,19 @@
-import React from 'react';
-import { Globe, ShieldCheck, Clock } from 'lucide-react';
+import { Globe, ShieldCheck, Clock, HeartHandshake } from 'lucide-react';
 
 const TrustIndicators = () => (
     <section className="bg-[#0B2C4D] py-16 text-white border-t border-blue-900">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+            <div className="flex items-center gap-6 justify-center md:justify-start">
+                {/* <div className="w-12 h-12 rounded-full bg-[#EA580C] flex items-center justify-center text-white flex-shrink-0">
+                </div> */}
+                <HeartHandshake size={48} className="text-[#EA580C]" />
+
+                <div>
+                    <h4 className="font-bold text-lg">Trusted By</h4>
+                    <p className="text-sm text-slate-300">100% secure transaction processing.</p>
+
+                </div>
+            </div>
             <div className="flex items-center gap-6 justify-center md:justify-start">
                 <Globe size={48} className="text-[#EA580C]" />
                 <div>

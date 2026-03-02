@@ -213,7 +213,7 @@ const ValuationPage = ({ onSuccess }) => {
                         Expert Valuation
                     </div>
                     <h1 className="text-4xl md:text-5xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">
-                        Equipment Valuation Tool
+                        Pre-Owned Equipment Valuation Tool
                     </h1>
                     <p className="text-lg text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
                         Get the best market price for your used ophthalmic equipment. Our experts analyze condition, brand, and market demand to give you a fair price.

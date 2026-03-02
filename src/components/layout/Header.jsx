@@ -8,6 +8,7 @@ const NAV_LINKS = [
     { label: 'About Us', page: 'about' },
     { label: 'Products', page: 'products' },
     { label: 'Valuation Tool', page: 'valuation' },
+    { label: 'Buying Group', page: 'buying-group' },
     { label: 'Enquiry Cart', page: 'enquiry' },
     { label: 'Contact Us', page: 'contact' },
 ];
@@ -35,16 +36,32 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
             <div className="bg-[#0B2C4D]">
                 <div className="max-w-[1400px] mx-auto px-4 py-3 flex items-center justify-between gap-4">
 
-                    {/* Logo */}
-                    <div
-                        className="flex-shrink-0 cursor-pointer bg-white rounded-md p-1.5 transition-all duration-200 shadow-sm"
-                        onClick={() => handleNav('home')}
-                    >
-                        <img
-                            src="/assets/brandlogo.png"
-                            alt="Ophthall Mart"
-                            className="h-10 w-auto"
-                        />
+                    {/* Logo & Slogan Area */}
+                    <div className="flex items-center gap-4 lg:gap-8 flex-shrink-0">
+                        {/* Logo Button */}
+                        <div
+                            className="cursor-pointer bg-white rounded-md p-1.5 transition-all duration-200 shadow-sm"
+                            onClick={() => handleNav('home')}
+                        >
+                            <img
+                                src="/assets/brandlogo.png"
+                                alt="Ophthall Mart"
+                                className="h-10 md:h-12 lg:h-14 w-auto"
+                            />
+                        </div>
+
+                        {/* Welcome Slogan */}
+                        <div className="hidden lg:flex flex-col justify-center">
+                            <span className="text-white font-extrabold italic text-[15px] leading-tight flex items-center gap-2">
+                                Welcome to Ophthall mart.
+                            </span>
+                            <span className="text-[#65B7D7] font-bold text-[14px] leading-tight">
+                                Online Ophthalmic Super Market
+                            </span>
+                            <span className="text-slate-300 font-medium text-[12px] leading-tight mt-0.5">
+                                Initiative Of Ophthall Practice Development
+                            </span>
+                        </div>
                     </div>
 
                     {/* Search Bar */}
@@ -134,35 +151,13 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
             {/* ── BOTTOM NAV ROW ── */}
             <div className="bg-[#122d4b] border-t border-[#1e4068]">
                 <div className="max-w-[1400px] mx-auto px-4">
-                    <nav className="hidden lg:flex items-center gap-1">
-                        {/* All Categories with dropdown */}
-                        <div className="relative group">
-                            <button
-                                onClick={() => handleNav('shop', 'All')}
-                                className="flex items-center gap-1 text-white text-sm font-semibold px-3 py-3 hover:bg-white/10 transition-colors border-b-2 border-transparent hover:border-[#EA580C] whitespace-nowrap"
-                            >
-                                <Menu size={16} className="mr-1" /> All Categories
-                                <ChevronDown size={13} className="ml-1 opacity-70" />
-                            </button>
-                            <div className="absolute top-full left-0 w-72 bg-[#0B2C4D] shadow-2xl border border-[#1e4068] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 z-50">
-                                {CATEGORIES.map(c => (
-                                    <button
-                                        key={c.id}
-                                        onClick={() => handleNav('shop', c.name)}
-                                        className="w-full text-left px-4 py-3 text-white text-xs font-medium hover:bg-[#EA580C] hover:text-white border-b border-[#1e4068] last:border-0 transition-colors"
-                                    >
-                                        {c.name}
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-
+                    <nav className="hidden lg:flex items-center justify-center gap-1 w-full">
                         {/* Nav Links */}
                         {NAV_LINKS.map(link => (
                             <button
                                 key={link.page}
                                 onClick={() => handleNav(link.page)}
-                                className="text-white text-sm font-medium px-3 py-3 hover:bg-white/10 transition-colors whitespace-nowrap border-b-2 border-transparent hover:border-[#EA580C]"
+                                className="text-white text-sm font-medium px-6 py-3 hover:bg-white/10 transition-colors whitespace-nowrap border-b-2 border-transparent hover:border-[#EA580C]"
                             >
                                 {link.label}
                             </button>

@@ -113,72 +113,63 @@ export const HERO_SLIDES = [
   {
     id: 1,
     title: "",
-    subtitle: "DIGITAL IMAGING SOLUTIONS",
-    desc: "Convert your existing slitlamp or microscope into a High-Resolution digital documentation system.",
+    subtitle: "OPHTHALL IMAGING SOLUTIONS",
+    desc: "Transform Your Slit Lamp or Microscope into a High-Resolution Ophthalmic Imaging & Recording Powerhouse",
     image: "/assets/Home/banner1.png",
     subHead: "Advanced Ophthalmic Diagnostics",
     buttonText: "Click Here!"
   },
   {
-    id: 2,
+    id: 2, // New Slider 2
+    title: "",
+    subtitle: "PREOWNED EQUIPMENT'S MARKETPLACE",
+    desc: "A dedicated initiative to facilitate doctor-to-doctor trading of high-quality pre-owned equipment",
+    image: "/assets/Home/Collection/collection3.png", // Using the best related asset discovered
+    subHead: "Exclusive Marketplace",
+    buttonText: "Explore Collection"
+  },
+  {
+    id: 3,
     title: "",
     subtitle: "OPHTHALL CLEAR VIEW SLITLAMP IMAGING SYSTEM",
-    desc: "COMPATIBLE FOR 3STEP AND 5STEP SLITLAMP",
+    desc: "Convert Any Slit lamp To An Advanced Imaging System At Most Economical Prices",
     image: "/assets/Home/banner2.jpeg",
     subHead: "Precision Imaging",
     buttonText: "View Now"
   },
   {
-    id: 3,
+    id: 4,
     title: "",
     subtitle: "OPHTHALL LENSIT",
-    desc: "LENSMETER, AUTOREF, AUTOREF KERATOMETER",
+    desc: `<span class="normal-case">Engineered for Optical Excellence.<br/>High-Performance Diagnostics You Can Trust.</span>`,
     image: "/assets/Home/banner3.png",
     subHead: "Optical Precision",
     buttonText: "View Now"
   },
   {
-    id: 4,
-    title: "",
-    subtitle: "OPHTHALL ETO",
-    desc: "OPHTHALL MEDISTER FULLY AUTOMATIC ETO",
-    image: "/assets/Home/banner4.png",
-    subHead: "Sterilization Solutions",
-    buttonText: "View Now"
-  },
-  {
-    id: 5,
+    id: 6,
     title: "",
     subtitle: "OPHTHALL VID",
-    desc: "Convert your Surgical Microscope to a Video Recording System with Customized C Mount, Beam Splitter and Full HD SONY CMOS camera Very Economical and High Quality Product.",
+    desc: "CONVERT YOUR SURGICAL MICROSCOPE TO A VIDEO RECORDING SYSTEM WITH CUSTOMIZED C MOUNT, BEAM SPLITTER AND FULL HD SONY CMOS CAMERA VERY ECONOMICAL AND HIGH QUALITY PRODUCT. For Anterior Segment Surgeries",
     image: "/assets/Home/banner5.png",
     subHead: "Video Documentation",
     buttonText: "View Now"
   },
   {
-    id: 6,
+    id: 7, // New Slider 5
     title: "",
-    subtitle: "GEUDER MEGATRON S4 HPS",
-    desc: "Premium Hing-End Phaco System at Price of Entry Level",
-    image: "/assets/Home/banner6.png",
-    subHead: "Surgical Precision",
-    buttonText: "View Now"
-  },
-  {
-    id: 7,
-    title: "",
-    subtitle: "OPHTHALL LED VISION CHART",
-    desc: "India's Only Customizable Vision Chart with your Hospital Name/ Image added in First Screen of the Vision Chart.",
-    image: "/assets/Home/banner7.png",
-    subHead: "Diagnostic Tools",
+    subtitle: "OPHTHALL VID PRO",
+    desc: `<div class="text-left font-normal normal-case">Elevate Your Surgical Visualization by Converting your existing surgical microscope into a <b>high-definition video recording system</b> with precision-engineered <b>custom C-Mount and beam splitter integration.</b> Powered by a <b>large Sony sensor</b>, the system delivers:<ul class="list-disc pl-5 mt-2"><li>Wide field surgical view</li><li>Exceptional image sharpness</li><li>High dynamic range with HDR10+</li><li>Brilliant color accuracy and depth</li></ul></div>`,
+    image: "/assets/Home/banner5.png", // Temporarily using the same asset for now since no new one is listed for Pro
+    subHead: "Video Documentation",
     buttonText: "View Now"
   },
   {
     id: 8,
     title: "",
     subtitle: "OERTLI PHACO MACHINE",
-    desc: "Swiss Phaco Technology Make the Difference in your Ophthalmic Practice",
-    image: "/assets/Home/banner8.png",
+    desc: `SWISS PHACO TECHNOLOGY MAKE THE DIFFERENCE IN YOUR OPHTHALMIC PRACTICE <span class="normal-case">Buy through Ophthall Buying Group to get Guaranteed Lowest price on the market</span>`,
+    image: "/assets/Home/banner8.png", // Re-mapped to actual Oertli image
     subHead: "Surgical Technology",
     buttonText: "View Now"
   },
@@ -186,27 +177,54 @@ export const HERO_SLIDES = [
     id: 9,
     title: "",
     subtitle: "OPHTHALL SURGICAL MICROSCOPES",
-    desc: "India's Best and Value for Money Surgical Microscope for Ophthalmologists. \"Now everyone Can Own One\"",
-    image: "/assets/Home/banner9.png",
-    subHead: "Indian Excellence",
+    desc: `India's Best and Value for Money Surgical Microscope for Ophthalmologists.<br/>"Now everyone Can Own One"`,
+    image: "/assets/Home/banner9.png", // Remapped to microscope banner
+    subHead: "",
     buttonText: "View Now"
   },
   {
     id: 10,
     title: "",
-    subtitle: "FOR TRADE PARTNERSHIPS & ADVERTISEMENT",
-    desc: "To List Your Products/(New & Preowned) Services in Ophthallmart Whatsapp +919176702051 / Call Tollfree - 1800 572 1051",
-    image: "/assets/Home/banner10.png",
-    subHead: "Partnerships",
-    buttonText: "Click Here"
+    subtitle: "OPHTHALL ETO",
+    desc: `OPHTHALL MEDISTER FULLY AUTOMATIC ETO<br/><span class="normal-case">Precision Sterilization for Sensitive Ophthalmic Instruments</span>`,
+    image: "/assets/Home/banner4.png", // Remapped ETO
+    subHead: "Sterilization Solutions",
+    buttonText: "View Now"
   },
   {
     id: 11,
+    title: "REDGLOW ENHANCEMENT DEVICE FOR SURGICAL MICROSCOPES",
+    subtitle: "OPHTHALL GLOMASTER",
+    desc: `<span class="normal-case">Experience superior clinical performance with the Ophthall GloMaster. Designed for ophthalmologists who demand precision and reliability.</span>`,
+    image: "/assets/Home/banner6.png",
+    subHead: "",
+    buttonText: "View Now"
+  },
+  {
+    id: 12,
     title: "",
-    subtitle: "Ophthallmart Equipment Valuation",
-    desc: "Fill the simple Form know your equipment value",
-    image: "/assets/Home/banner11.png",
+    subtitle: "OPHTHALL LED VISION CHART",
+    desc: "INDIA'S ONLY CUSTOMIZABLE VISION CHART WITH YOUR HOSPITAL NAME/ IMAGE ADDED IN FIRST SCREEN OF THE VISION CHART.",
+    image: "/assets/Home/banner7.png", // Re-mapped to vision chart banner
+    subHead: "Diagnostic Tools",
+    buttonText: "View Now"
+  },
+  {
+    id: 13,
+    title: "",
+    subtitle: "OPHTHALLMART EQUIPMENT VALUATION",
+    desc: "FILL THE SIMPLE FORM KNOW YOUR EQUIPMENT VALUE",
+    image: "/assets/Home/banner11.png", // Equipment Valuation banner
     subHead: "Exclusive Services",
+    buttonText: "Click Here"
+  },
+  {
+    id: 14,
+    title: "",
+    subtitle: "FOR TRADE PARTNERSHIPS & ADVERTISEMENT",
+    desc: "TO LIST YOUR PRODUCTS/(NEW & PREOWNED) SERVICES IN OPHTHALLMART WHATSAPP +919176702051 / CALL TOLLFREE - 1800 572 1051",
+    image: "/assets/Home/banner10.png", // Trade partnerships banner
+    subHead: "Partnerships",
     buttonText: "Click Here"
   }
 ];
@@ -255,4 +273,21 @@ export const FEATURED_PRODUCTS = [
   { id: 425, name: "Ophthall VID HD Camera Recording System", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4.8, image: "/assets/Home/Featured/fp1.png", tag: "Rated 4.78", section: "featured" },
   { id: 999, name: "Takagi Microscopes", category: "SURGICAL INSTRUMENTS", price: "Enquire", rating: 5, image: "/assets/Home/Featured/fp2.png", tag: "New", section: "featured" },
   { id: 516, name: "Portable Multi-purpose Microscope", category: "SURGICAL INSTRUMENTS", price: "Enquire", rating: 4, image: "/assets/Home/Featured/fp3.png", tag: null, section: "featured" }
+];
+
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    quote: "Extremely happy with the recording, Still thé image quality is good .<br/>Thank you Dr. Senthil Sir<br/>And good shout out to supporting staff..<br/>Thank you Ophthal group",
+    name: "Dr. ASWINI KUMAR BEHERA",
+    title: "MD & EX- SR RPC, AIIMS, New Delhi<br/>Founder and Director Naitrika super specialty eye care",
+    image: "/assets/Home/Testimonal/testimonal1.png"
+  },
+  {
+    id: 2,
+    quote: "I have been using the OPHTHALL VIDEO Recording System For Our Operating Microscope for approximately a month, and I am very impressed with its performance. The camera quality is excellent, capturing surgical details with great precision. Mr. Suren Sathya, the service engineer, was highly knowledgeable and provided a thorough demonstration of the camera's usability. I am very satisfied with this product and highly recommend it.",
+    name: "Dr Tejaswi Prasad",
+    title: "Aravind Eye Hospital Madurai",
+    image: "/assets/Home/Testimonal/testimonal2.png"
+  }
 ];
