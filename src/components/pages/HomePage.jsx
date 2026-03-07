@@ -23,12 +23,13 @@ const HomePage = ({ handleNav, handleProductView, addToEnquiry, enquiryCart, han
         />
         <ProductSection
             title="Pre-owned Market Place"
-            data={FEATURED_PRODUCTS}
+            data={FEATURED_PRODUCTS.slice(0, 4)}
             bg="bg-slate-50"
             handleNav={handleNav}
             handleProductView={handleProductView}
             addToEnquiry={addToEnquiry}
             enquiryCart={enquiryCart}
+            onViewAll={() => handleNav('valuation')}
         />
         <TrendingSection
             data={TRENDING_PRODUCTS}

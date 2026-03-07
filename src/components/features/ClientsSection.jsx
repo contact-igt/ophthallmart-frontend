@@ -28,9 +28,9 @@ const CLIENTS = [
 const ClientsSection = () => {
     return (
         <section className="bg-white py-14 sm:py-24 border-t border-slate-100 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 text-center mb-10">
-                <h2 className="text-3xl font-bold text-[#0B2C4D]">Our Clients</h2>
-                <p className="text-slate-500 mt-2">Trusted by leading hospitals and eye care professionals</p>
+            <div className="max-w-7xl mx-auto px-4 text-center mb-8 md:mb-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#0B2C4D]">Our Clients</h2>
+                <p className="text-sm md:text-base text-slate-500 mt-2">Trusted by leading hospitals and eye care professionals</p>
             </div>
 
             <div className="relative group w-full overflow-hidden flex">

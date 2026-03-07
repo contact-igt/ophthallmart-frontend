@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ArrowUp } from 'lucide-react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './components/pages/HomePage';
@@ -10,6 +11,7 @@ import ValuationPage from './components/pages/ValuationPage';
 import ContactPage from './components/pages/ContactPage';
 import AboutPage from './components/pages/AboutPage';
 import BuyingGroupPage from './components/pages/BuyingGroupPage';
+import ImagingSystemsPage from './components/pages/ImagingSystemsPage';
 import AccountPage from './components/pages/AccountPage';
 import ThankYouPage from './components/pages/ThankYouPage';
 import PrivacyPolicyPage from './components/pages/PrivacyPolicyPage';
@@ -117,6 +119,7 @@ export default function App() {
             style={{ fontFamily: "'Poppins', sans-serif" }}
         >
             <Header
+                currentPage={currentPage}
                 enquiryCart={enquiryCart}
                 handleNav={handleNav}
                 handleSearch={handleSearch}
@@ -163,6 +166,7 @@ export default function App() {
                         onBack={() => handleNav('products')}
                         onAdd={addToEnquiry}
                         enquiryCart={enquiryCart}
+                        onViewDetail={handleProductView}
                     />
                 )}
 
@@ -179,8 +183,13 @@ export default function App() {
                 {currentPage === 'valuation' && (
                     <ValuationPage
                         onSuccess={() => handleSuccess('valuation')}
+                        handleProductView={handleProductView}
+                        addToEnquiry={addToEnquiry}
+                        enquiryCart={enquiryCart}
                     />
                 )}
+
+                {currentPage === 'imaging-systems' && <ImagingSystemsPage />}
 
                 {currentPage === 'about' && <AboutPage />}
 

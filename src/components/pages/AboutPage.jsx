@@ -1,18 +1,18 @@
 import React from 'react';
 
 const AboutPage = () => (
-    <div className="animate-in fade-in py-16">
+    <div className="animate-in fade-in py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center mb-16">
-                <h1 className="text-4xl font-bold text-[#0B2C4D] mb-4">About Ophthall Mart</h1>
-                <div className="w-20 h-1 bg-[#EA580C] mx-auto"></div>
+            <div className="text-center mb-10 md:mb-16">
+                <h1 className="text-3xl md:text-4xl font-bold text-[#0B2C4D] mb-4">About Ophthall Mart</h1>
+                <div className="w-16 md:w-20 h-1 bg-[#EA580C] mx-auto"></div>
             </div>
-            <div className="flex flex-col md:flex-row gap-12 items-center">
-                <div className="flex-1">
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                <div className="flex-1 w-full">
                     <img
                         src="/assets/About/aboutbg.png"
                         alt="Office"
-                        className="rounded-xl shadow-lg w-full h-full object-cover min-h-[400px]"
+                        className="rounded-xl shadow-lg w-full h-full object-cover min-h-[300px] md:min-h-[400px]"
                     />
                 </div>
                 <div className="flex-1 space-y-6 text-slate-600 leading-relaxed">

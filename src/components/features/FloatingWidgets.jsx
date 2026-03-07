@@ -1,10 +1,30 @@
 import React, { useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { MessageCircle, X, ArrowUp } from 'lucide-react';
 
 import { CONTACT_INFO } from '../../data/constants';
 
 const FloatingWidgets = () => {
     const [showChatbot, setShowChatbot] = useState(false);
+    const [showScrollTop, setShowScrollTop] = useState(false);
+
+    React.useEffect(() => {
+        const toggleVisibility = () => {
+            if (window.pageYOffset > 300) {
+                setShowScrollTop(true);
+            } else {
+                setShowScrollTop(false);
+            }
+        };
+        window.addEventListener('scroll', toggleVisibility);
+        return () => window.removeEventListener('scroll', toggleVisibility);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
 
     const whatsappLink = `https://wa.me/${CONTACT_INFO.whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('I want to find out about your support and servicesI want to find out about your support and services')}`;
 
@@ -31,6 +51,16 @@ const FloatingWidgets = () => {
                     </p>
                 </div>
             )}
+            {showScrollTop && (
+                <button
+                    onClick={scrollToTop}
+                    className="w-12 h-12 bg-[#EA580C] text-white rounded-full shadow-2xl hover:bg-[#c2410c] transition-all transform hover:scale-110 active:scale-95 flex items-center justify-center pointer-events-auto mb-2 animate-in fade-in slide-in-from-bottom-5"
+                    title="Scroll to Top"
+                >
+                    <ArrowUp size={24} strokeWidth={3} />
+                </button>
+            )}
+
             <a
                 href={whatsappLink}
                 target="_blank"

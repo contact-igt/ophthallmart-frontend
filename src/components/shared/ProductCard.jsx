@@ -5,16 +5,35 @@ const ProductCard = ({ product, onView, onAdd, isAdded = false }) => (
     <div className="bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all group flex flex-col h-full">
         <div className="relative h-64 bg-slate-50 p-6 flex items-center justify-center cursor-pointer" onClick={() => onView(product)}>
             {product.tag && (
-                <span className="absolute top-4 left-4 bg-[#0B2C4D] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-wider">
+                <span className="absolute top-4 left-4 bg-[#0B2C4D] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-wider z-10">
                     {product.tag}
                 </span>
             )}
-            <img
-                src={product.image}
-                alt={product.name}
-                className="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
-                onError={e => { e.target.onerror = null; e.target.src = 'https://placehold.co/200x200/f1f5f9/334155?text=IMG'; }}
-            />
+            {(() => {
+                const mediaUrl = product.videoUrl || product.image;
+                const isVideo = mediaUrl?.toLowerCase().endsWith('.mp4');
+                
+                if (isVideo) {
+                    return (
+                        <video
+                            src={mediaUrl}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                        />
+                    );
+                }
+                return (
+                    <img
+                        src={product.image}
+                        alt={product.name}
+                        className="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
+                        onError={e => { e.target.onerror = null; e.target.src = 'https://placehold.co/200x200/f1f5f9/334155?text=IMG'; }}
+                    />
+                );
+            })()}
         </div>
         <div className="p-6 flex-1 flex flex-col">
             <div className="text-[10px] text-[#EA580C] font-bold mb-2 uppercase tracking-wider">
