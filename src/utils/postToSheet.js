@@ -1,7 +1,7 @@
 // ─── Google Apps Script Web App URL ────────────────────────────────────────
 // Replace the placeholder below with your deployed Apps Script URL.
 // Deploy → Web App → Execute as: Me, Who has access: Anyone
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbz0FqCxgwwXUBPNqal0uVmZEOOY9x4IesW_56T_EfI8C0mL7f9oom7FiwI7-IJI6zlVdA/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycby4ZYBVSPNrOXeP_uSgJMgSdUdz1nCEz_szh9btGmlU0kLYdTDLQ_hOeHY-kkx6OTsarw/exec';
 
 /**
  * Post a JSON payload to the Google Sheet via Apps Script Web App.

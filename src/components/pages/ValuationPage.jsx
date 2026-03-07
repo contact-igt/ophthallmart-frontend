@@ -18,6 +18,8 @@ import Button from '../shared/Button';
 import { TextInput, TextArea } from '../shared/Input';
 import { CONTACT_INFO } from '../../data/constants';
 import { postToSheet } from '../../utils/postToSheet';
+import { PRODUCTS } from '../../data/mockData';
+import ProductCard from '../shared/ProductCard';
 
 // ── Shared UI Components ───────────────────────────────────────────────────
 
@@ -68,7 +70,11 @@ RadioGroup.displayName = 'RadioGroup';
 
 // ── Main Page Component ────────────────────────────────────────────────────
 
-const ValuationPage = ({ onSuccess }) => {
+const ValuationPage = ({ onSuccess, handleProductView, addToEnquiry, enquiryCart }) => {
+    const [viewMode, setViewMode] = useState('buy'); // 'buy' or 'sell'
+    
+    const preOwnedProducts = PRODUCTS.filter(p => p.category === 'PRE-OWNED PRODUCTS');
+
     const {
         register,
         handleSubmit,
@@ -204,26 +210,80 @@ const ValuationPage = ({ onSuccess }) => {
     return (
         <div className="animate-in fade-in relative">
             {/* Hero Section */}
-            <div className="bg-[#0B2C4D] pt-24 pb-32 text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-[#EA580C] opacity-10 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
-                <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-400 opacity-5 rounded-full blur-2xl transform -translate-x-1/4 translate-y-1/4"></div>
+            <div className="bg-[#0B2C4D] pt-16 md:pt-24 pb-20 md:pb-32 text-white relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-[#EA580C] opacity-10 rounded-full blur-2xl md:blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
+                <div className="absolute bottom-0 left-0 w-48 md:w-64 h-48 md:h-64 bg-blue-400 opacity-5 rounded-full blur-xl md:blur-2xl transform -translate-x-1/4 translate-y-1/4"></div>
 
                 <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
-                    <div className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
-                        Expert Valuation
+                    <div className="inline-block px-3 md:px-4 py-1 md:py-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4 md:mb-6">
+                        {viewMode === 'buy' ? 'Pre-owned Marketplace' : 'Expert Valuation'}
                     </div>
-                    <h1 className="text-4xl md:text-5xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">
-                        Pre-Owned Equipment Valuation Tool
+                    <h1 className="text-3xl md:text-5xl font-extrabold mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">
+                        {viewMode === 'buy' ? 'Pre-Owned Equipment Tool' : 'Value Your Equipment'}
                     </h1>
-                    <p className="text-lg text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
-                        Get the best market price for your used ophthalmic equipment. Our experts analyze condition, brand, and market demand to give you a fair price.
+                    <p className="text-base md:text-lg text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
+                        {viewMode === 'buy' 
+                            ? 'Browse our certified pre-owned ophthalmic equipment or sell your own machines for the best price.'
+                            : 'Get the best market price for your used ophthalmic equipment. Our experts analyze condition, brand, and market demand to give you a fair price.'
+                        }
                     </p>
+                    
+                    {viewMode === 'buy' && (
+                        <button 
+                            onClick={() => setViewMode('sell')}
+                            className="mt-6 md:mt-8 bg-[#EA580C] hover:bg-[#c2410c] text-white px-6 md:px-8 py-3 rounded-full font-bold shadow-lg transition-all transform hover:scale-105 text-sm md:text-base"
+                        >
+                            Sell Your Equipment
+                        </button>
+                    )}
                 </div>
             </div>
 
-            {/* Form Section */}
-            <div className="max-w-4xl mx-auto px-4 mt-16 relative z-20 mb-24">
-                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100 pb-4">
+            {viewMode === 'buy' ? (
+                /* Buying Section (Product List) */
+                <div className="max-w-7xl mx-auto px-4 py-8 md:py-16">
+                    <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6 md:p-8 mb-8 md:mb-12 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 text-center md:text-left">
+                        <div className="flex-1">
+                            <h2 className="text-xl md:text-2xl font-bold text-[#0B2C4D] mb-2">Want to sell your equipment?</h2>
+                            <p className="text-sm md:text-base text-slate-600">Get a professional valuation and list your products on Ophthall Mart to reach thousands of buyers.</p>
+                        </div>
+                        <Button 
+                            onClick={() => setViewMode('sell')}
+                            className="whitespace-nowrap bg-[#EA580D] hover:bg-[#c2410c] text-white font-bold py-3 px-6 md:px-8 rounded-xl shadow-md text-sm md:text-base w-full md:w-auto"
+                        >
+                            Get Valuation Now
+                        </Button>
+                    </div>
+
+                    <div className="flex items-center justify-between mb-8">
+                        <h2 className="text-2xl font-bold text-[#0B2C4D]">Available Pre-Owned Machines</h2>
+                        <span className="text-sm font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full">{preOwnedProducts.length} Products</span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {preOwnedProducts.map(product => (
+                            <ProductCard 
+                                key={product.id}
+                                product={product}
+                                onView={handleProductView}
+                                onAdd={addToEnquiry}
+                                isAdded={enquiryCart?.some(item => item.id === product.id)}
+                            />
+                        ))}
+                    </div>
+                </div>
+            ) : (
+                /* Selling Section (Valuation Form) */
+                <div className="max-w-4xl mx-auto px-4 mt-8 relative z-20 mb-24">
+                    <div className="mb-8 flex items-center justify-between">
+                        <button 
+                            onClick={() => setViewMode('buy')}
+                            className="text-[#0B2C4D] font-bold text-sm flex items-center gap-2 hover:text-[#EA580C] transition-colors"
+                        >
+                            <X size={18} /> Back to Marketplace
+                        </button>
+                    </div>
+                    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100 pb-4">
                     <div className="h-2 bg-gradient-to-r from-[#0B2C4D] via-[#EA580C] to-[#0B2C4D]"></div>
 
                     <form onSubmit={handleSubmit(onSubmit)} className="p-6 md:p-12 space-y-12" noValidate>
@@ -537,6 +597,7 @@ const ValuationPage = ({ onSuccess }) => {
                     </form>
                 </div>
             </div>
+            )}
         </div>
     );
 };

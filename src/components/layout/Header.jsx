@@ -7,13 +7,14 @@ const NAV_LINKS = [
     { label: 'Home', page: 'home' },
     { label: 'About Us', page: 'about' },
     { label: 'Products', page: 'products' },
-    { label: 'Valuation Tool', page: 'valuation' },
+    { label: 'Imaging Systems', page: 'imaging-systems' },
+    { label: 'Pre-owned Tool', page: 'valuation' },
     { label: 'Buying Group', page: 'buying-group' },
     { label: 'Enquiry Cart', page: 'enquiry' },
     { label: 'Contact Us', page: 'contact' },
 ];
 
-const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsMobileMenuOpen, selectedCategory, setSelectedCategory }) => {
+const Header = ({ currentPage, enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsMobileMenuOpen, selectedCategory, setSelectedCategory }) => {
     const [searchTerm, setSearchTerm] = React.useState('');
 
     const onSearch = () => {
@@ -29,8 +30,22 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
         if (e.key === 'Enter') onSearch();
     };
 
+    const isActive = (page) => currentPage === page;
+
+    const [scrolled, setScrolled] = React.useState(false);
+    React.useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <header className="sticky top-0 z-50" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <header 
+            className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'shadow-xl' : ''}`} 
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+        >
 
             {/* ── TOP ROW ── */}
             <div className="bg-[#0B2C4D]">
@@ -40,13 +55,13 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
                     <div className="flex items-center gap-4 lg:gap-8 flex-shrink-0">
                         {/* Logo Button */}
                         <div
-                            className="cursor-pointer bg-white rounded-md p-1.5 transition-all duration-200 shadow-sm"
+                            className="cursor-pointer bg-white rounded-md p-1 md:p-1.5 transition-all duration-200 shadow-sm"
                             onClick={() => handleNav('home')}
                         >
                             <img
                                 src="/assets/brandlogo.png"
                                 alt="Ophthall Mart"
-                                className="h-10 md:h-12 lg:h-14 w-auto"
+                                className="h-8 md:h-12 lg:h-14 w-auto"
                             />
                         </div>
 
@@ -120,11 +135,11 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
 
                         {/* Enquiry Cart */}
                         <button
-                            className="relative flex items-center gap-2 border-2 border-transparent hover:border-white rounded px-2 py-1 transition-all duration-200 group"
+                            className={`relative flex items-center gap-2 border-2 rounded px-2 py-1 transition-all duration-200 group ${isActive('enquiry') ? 'border-[#EA580C] bg-white/5' : 'border-transparent hover:border-white'}`}
                             onClick={() => handleNav('enquiry')}
                         >
                             <div className="relative">
-                                <ShoppingCart size={28} className="text-white" />
+                                <ShoppingCart size={28} className={isActive('enquiry') ? 'text-[#EA580C]' : 'text-white'} />
                                 {enquiryCart.length > 0 && (
                                     <span className="absolute -top-2 -right-2 w-5 h-5 bg-[#EA580C] text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-[#0B2C4D]">
                                         {enquiryCart.length}
@@ -133,16 +148,17 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
                             </div>
                             <div className="hidden md:flex flex-col leading-tight">
                                 <span className="text-slate-400 text-[11px]">Enquiry</span>
-                                <span className="text-white text-sm font-semibold">Cart</span>
+                                <span className={`text-sm font-semibold ${isActive('enquiry') ? 'text-[#EA580C]' : 'text-white'}`}>Cart</span>
                             </div>
                         </button>
 
                         {/* Mobile Menu Toggle */}
                         <button
-                            className="lg:hidden p-2 text-white hover:text-[#EA580C] transition-colors"
+                            className="lg:hidden p-2 -mr-2 text-white hover:text-[#EA580C] transition-colors"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                            aria-label="Toggle Menu"
                         >
-                            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>
                     </div>
                 </div>
@@ -157,7 +173,11 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
                             <button
                                 key={link.page}
                                 onClick={() => handleNav(link.page)}
-                                className="text-white text-sm font-medium px-6 py-3 hover:bg-white/10 transition-colors whitespace-nowrap border-b-2 border-transparent hover:border-[#EA580C]"
+                                className={`text-sm font-medium px-6 py-3 transition-all whitespace-nowrap border-b-2 hover:bg-white/5 ${
+                                    isActive(link.page) 
+                                    ? 'text-[#EA580C] border-[#EA580C] bg-white/10' 
+                                    : 'text-white border-transparent hover:border-white/30'
+                                }`}
                             >
                                 {link.label}
                             </button>
@@ -192,7 +212,11 @@ const Header = ({ enquiryCart, handleNav, handleSearch, isMobileMenuOpen, setIsM
                             <button
                                 key={link.page}
                                 onClick={() => handleNav(link.page)}
-                                className="text-left px-5 py-3 text-white text-sm font-medium hover:bg-[#EA580C] border-b border-[#1e4068] transition-colors"
+                                className={`text-left px-5 py-3 text-sm font-medium border-b border-[#1e4068] transition-colors ${
+                                    isActive(link.page)
+                                    ? 'bg-[#EA580C] text-white'
+                                    : 'text-white hover:bg-white/5'
+                                }`}
                             >
                                 {link.label}
                             </button>

@@ -6,29 +6,29 @@ const CategorySection = ({ handleNav, data }) => {
     const categoriesToDisplay = data || CATEGORIES;
 
     return (
-        <section className="py-20 bg-slate-50">
+        <section className="py-12 md:py-20 bg-slate-50">
             <div className="max-w-7xl mx-auto px-4">
-                <div className="text-center mb-12">
-                    <span className="text-[#EA580C] font-bold uppercase text-xs tracking-wider">
+                <div className="text-center mb-8 md:mb-12">
+                    <span className="text-[#EA580C] font-bold uppercase text-[10px] md:text-xs tracking-wider">
                         Our Collection
                     </span>
-                    <h3 className="text-3xl font-bold text-[#0B2C4D] mt-2">Browse Categories</h3>
-                    <div className="w-16 h-1 bg-[#EA580C] mx-auto mt-4 rounded-full"></div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-[#0B2C4D] mt-1 md:mt-2">Browse Categories</h3>
+                    <div className="w-12 md:w-16 h-1 bg-[#EA580C] mx-auto mt-3 md:mt-4 rounded-full"></div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {categoriesToDisplay.map((cat) => (
                         <div
                             key={cat.id}
                             onClick={() => handleNav('shop')}
-                            className="bg-[#F0F8FF] rounded-2xl p-6 flex justify-between items-center relative overflow-hidden group hover:shadow-xl transition-all duration-300 border border-slate-100 cursor-pointer min-h-[12rem] h-auto"
+                            className="bg-[#F0F8FF] rounded-2xl p-5 md:p-6 flex justify-between items-center relative overflow-hidden group hover:shadow-xl transition-all duration-300 border border-slate-100 cursor-pointer min-h-[10rem] md:min-h-[12rem] h-auto"
                         >
                             <div className="z-10 relative flex flex-col h-full justify-center w-7/12">
-                                <h3 className="font-bold text-[#0B2C4D] text-xl leading-tight group-hover:text-[#EA580C] transition-colors duration-300 mb-1">
+                                <h3 className="font-bold text-[#0B2C4D] text-lg md:text-xl leading-tight group-hover:text-[#EA580C] transition-colors duration-300 mb-1">
                                     {cat.name}
                                 </h3>
-                                <button className="text-[#EF4444] text-sm font-bold flex items-center gap-1 group-hover:underline mt-1">
-                                    Shop Now <span className="text-lg">+</span>
+                                <button className="text-[#EF4444] text-xs md:text-sm font-bold flex items-center gap-1 group-hover:underline mt-1">
+                                    Shop Now <span className="text-base md:text-lg">+</span>
                                 </button>
                             </div>
 

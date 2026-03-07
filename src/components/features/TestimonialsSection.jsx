@@ -27,30 +27,30 @@ const TestimonialsSection = () => {
     }, []);
 
     return (
-        <section className="bg-white py-12 sm:py-24">
+        <section className="bg-white py-12 md:py-24">
             <div className="max-w-7xl mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#0B2C4D]">
+                <div className="text-center mb-10 md:mb-16">
+                    <h2 className="text-2xl md:text-5xl font-bold text-[#0B2C4D]">
                         What our clients say ?
                     </h2>
                 </div>
 
-                <div className="relative max-w-6xl mx-auto px-12 md:px-16">
+                <div className="relative max-w-6xl mx-auto px-6 md:px-16">
                     {/* Navigation Buttons */}
                     <button
                         onClick={prevTestimonial}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-[#00AEEF] hover:bg-[#008ec0] text-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 bg-[#00AEEF] hover:bg-[#008ec0] text-white rounded-full flex items-center justify-center transition-colors shadow-lg"
                         aria-label="Previous testimonial"
                     >
-                        <ChevronLeft size={24} />
+                        <ChevronLeft size={20} className="md:w-6 md:h-6" />
                     </button>
 
                     <button
                         onClick={nextTestimonial}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-[#00AEEF] hover:bg-[#008ec0] text-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 bg-[#00AEEF] hover:bg-[#008ec0] text-white rounded-full flex items-center justify-center transition-colors shadow-lg"
                         aria-label="Next testimonial"
                     >
-                        <ChevronRight size={24} />
+                        <ChevronRight size={20} className="md:w-6 md:h-6" />
                     </button>
 
                     <div className="overflow-hidden">
@@ -70,26 +70,26 @@ const TestimonialsSection = () => {
                                     key={`${testimonial.id}-${index}`}
                                     className="w-full md:w-1/2 flex-shrink-0 px-2 md:px-4"
                                 >
-                                    <div className="h-full bg-slate-50 border-2 border-[#00AEEF] rounded-3xl p-8 md:p-10 relative flex flex-col justify-between">
+                                    <div className="h-full bg-slate-50 border-2 border-[#00AEEF] rounded-3xl p-6 md:p-10 relative flex flex-col justify-between">
                                         <div
-                                            className="text-slate-600 text-base md:text-lg leading-relaxed mb-10 z-10 relative whitespace-pre-line line-clamp-5"
+                                            className="text-slate-600 text-sm md:text-base lg:text-lg leading-relaxed mb-6 md:mb-10 z-10 relative whitespace-pre-line line-clamp-5"
                                             dangerouslySetInnerHTML={{ __html: testimonial.quote }}
                                         />
 
-                                        <div className="flex items-center gap-4 z-10">
-                                            <div className="w-16 h-16 rounded-full flex-shrink-0 bg-slate-200 border-2 border-white shadow-md flex items-center justify-center text-slate-400 overflow-hidden">
+                                        <div className="flex items-center gap-3 md:gap-4 z-10">
+                                            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex-shrink-0 bg-slate-200 border-2 border-white shadow-md flex items-center justify-center text-slate-400 overflow-hidden">
                                                 {testimonial.image ? (
                                                     <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
                                                 ) : (
-                                                    <User size={32} />
+                                                    <User size={24} className="md:w-8 md:h-8" />
                                                 )}
                                             </div>
                                             <div>
-                                                <h4 className="font-bold text-[#0B2C4D] text-lg">
+                                                <h4 className="font-bold text-[#0B2C4D] text-base md:text-lg">
                                                     {testimonial.name}
                                                 </h4>
                                                 <div
-                                                    className="text-sm font-medium text-slate-500 mt-1"
+                                                    className="text-xs md:text-sm font-medium text-slate-500 mt-0.5 md:mt-1"
                                                     dangerouslySetInnerHTML={{ __html: testimonial.title }}
                                                 />
                                             </div>

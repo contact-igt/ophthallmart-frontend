@@ -68,12 +68,12 @@ const ContactPage = ({ onSuccess }) => {
 
 
     return (
-        <div className="animate-in fade-in py-16 bg-slate-50">
+        <div className="animate-in fade-in py-10 md:py-16 bg-slate-50">
             <div className="max-w-4xl mx-auto px-4">
                 <div className="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
-                    <div className="bg-[#0B2C4D] text-white p-10 md:w-2/5 flex flex-col justify-between">
+                    <div className="bg-[#0B2C4D] text-white p-6 md:p-10 md:w-2/5 flex flex-col justify-between">
                         <div>
-                            <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+                            <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Contact Information</h2>
                             <p className="text-blue-200 text-sm mb-8">
                                 Fill up the form and our Team will get back to you within 24 hours.
                             </p>
@@ -96,8 +96,8 @@ const ContactPage = ({ onSuccess }) => {
                             <Linkedin size={20} className="hover:text-[#EA580C] cursor-pointer" />
                         </div>
                     </div>
-                    <div className="p-10 md:w-3/5">
-                        <h2 className="text-2xl font-bold text-[#0B2C4D] mb-6">Send us a Message</h2>
+                    <div className="p-6 md:p-10 md:w-3/5">
+                        <h2 className="text-xl md:text-2xl font-bold text-[#0B2C4D] mb-4 md:mb-6">Send us a Message</h2>
 
                         {submitError && (
                             <div className="flex items-center gap-2 bg-red-50 text-red-700 border border-red-200 rounded-lg px-4 py-3 mb-5 text-sm">

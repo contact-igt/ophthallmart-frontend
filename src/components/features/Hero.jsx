@@ -36,8 +36,8 @@ const Hero = ({ handleNav, handleProductView, handleSearch }) => {
     return (
         <section className="relative bg-white overflow-hidden min-h-[750px] md:h-[600px] flex items-center py-12 md:py-0">
             <div className="absolute inset-0 transition-opacity duration-1000">
-                <div className="max-w-7xl mx-auto px-4 h-full flex flex-col md:flex-row items-center gap-12 relative z-10">
-                    <div className="md:w-1/2 space-y-6 animate-in slide-in-from-left-10 duration-700 text-left pt-12 md:pt-0">
+                <div className="max-w-7xl mx-auto px-4 h-full flex flex-col md:flex-row items-center gap-8 md:gap-12 relative z-10">
+                    <div className="md:w-1/2 space-y-4 md:space-y-6 animate-in slide-in-from-left-10 duration-700 text-left pt-16 md:pt-0 pb-8 md:pb-0">
                         {HERO_SLIDES[currentSlide].subHead && (
                             <h4 className="text-[#EA580C] font-bold tracking-[0.2em] text-xs uppercase mb-2 bg-orange-50 inline-block px-3 py-1 rounded">
                                 {HERO_SLIDES[currentSlide].subHead}
@@ -45,22 +45,22 @@ const Hero = ({ handleNav, handleProductView, handleSearch }) => {
                         )}
                         <div className="space-y-2 leading-tight">
                             {HERO_SLIDES[currentSlide].title && (
-                                <h2 className="text-3xl md:text-5xl font-light text-slate-500 mb-1">
+                                <h2 className="text-2xl md:text-5xl font-light text-slate-500 mb-1">
                                     {HERO_SLIDES[currentSlide].title}
                                 </h2>
                             )}
-                            <h1 className="text-4xl sm:text-5xl md:text-7xl font-[800] text-[#0B2C4D] tracking-tight">
+                            <h1 className="text-3xl sm:text-5xl md:text-7xl font-[800] text-[#0B2C4D] tracking-tight">
                                 {HERO_SLIDES[currentSlide].subtitle}
                             </h1>
                         </div>
-                        <div className="text-slate-500 text-lg max-w-lg leading-relaxed pt-4 font-light uppercase" dangerouslySetInnerHTML={{ __html: HERO_SLIDES[currentSlide].desc }} />
-                        <div className="pt-6">
-                            <Button variant="primary" className="px-10 py-4 text-sm" onClick={handleSlideClick}>
-                                {HERO_SLIDES[currentSlide].buttonText || 'Explore Products'} <ArrowRight size={16} className="ml-1" />
+                        <div className="text-slate-500 text-base md:text-lg max-w-lg leading-relaxed pt-2 md:pt-4 font-light uppercase" dangerouslySetInnerHTML={{ __html: HERO_SLIDES[currentSlide].desc }} />
+                        <div className="pt-4 md:pt-6">
+                            <Button variant="primary" className="px-8 md:px-10 py-3 md:py-4 text-sm w-full md:w-auto flex justify-center" onClick={handleSlideClick}>
+                                {HERO_SLIDES[currentSlide].buttonText || 'Explore Products'} <ArrowRight size={16} className="ml-2" />
                             </Button>
                         </div>
                     </div>
-                    <div className="md:w-1/2 relative animate-in fade-in zoom-in duration-1000 flex justify-center items-center h-[300px] md:h-[450px]">
+                    <div className="md:w-1/2 relative animate-in fade-in zoom-in duration-1000 flex justify-center items-center h-[250px] md:h-[450px] w-full mt-4 md:mt-0">
                         <img
                             src={HERO_SLIDES[currentSlide].image}
                             alt="Slide"
