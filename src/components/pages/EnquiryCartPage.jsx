@@ -33,11 +33,11 @@ const CartItem = ({ item, onRemove }) => (
         <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-2">
                 <span className={`text-[10px] font-extrabold uppercase tracking-widest px-2.5 py-1 rounded-full ${
-                    item.category === 'PRE-OWNED PRODUCTS' 
+                    item.category === 'PRE-OWNED' 
                     ? 'bg-orange-100 text-[#EA580C]' 
                     : 'bg-blue-100 text-blue-600'
                 }`}>
-                    {item.category === 'PRE-OWNED PRODUCTS' ? 'Pre-Owned' : 'New Equipment'}
+                    {item.category === 'PRE-OWNED' ? 'Pre-Owned' : 'New Equipment'}
                 </span>
             </div>
             <h4 className="font-bold text-[#0B2C4D] text-lg leading-tight group-hover:text-[#EA580C] transition-colors mb-1 truncate">{item.name}</h4>
@@ -244,8 +244,8 @@ const EnquiryForm = ({ title, type, items, onSuccess, onClearCart }) => {
 // ── Main Component ──────────────────────────────────────────────────────────
 
 const EnquiryCartPage = ({ cart, onRemove, onNav, onSuccess, setEnquiryCart }) => {
-    const preOwnedItems = cart.filter(p => p.category === 'PRE-OWNED PRODUCTS');
-    const standardItems = cart.filter(p => p.category !== 'PRE-OWNED PRODUCTS');
+    const preOwnedItems = cart.filter(p => p.category === 'PRE-OWNED');
+    const standardItems = cart.filter(p => p.category !== 'PRE-OWNED');
 
     const handleClearCartItems = (ids) => {
         setEnquiryCart(prev => prev.filter(item => !ids.includes(item.id)));
@@ -350,7 +350,7 @@ const EnquiryCartPage = ({ cart, onRemove, onNav, onSuccess, setEnquiryCart }) =
                     </div>
                 )}
 
-                {/* ── Pre-Owned Products Section ────────────────────────────── */}
+                {/* ── Pre-Owned Section ────────────────────────────────────────── */}
                 {preOwnedItems.length > 0 && (
                     <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 md:gap-16 items-start">
                         <div className="lg:col-span-3">

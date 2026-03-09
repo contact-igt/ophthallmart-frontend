@@ -8,7 +8,7 @@ const NAV_LINKS = [
     { label: 'About Us', page: 'about' },
     { label: 'Products', page: 'products' },
     { label: 'Imaging Systems', page: 'imaging-systems' },
-    { label: 'Pre-owned Tool', page: 'valuation' },
+    { label: 'Pre-owned', page: 'valuation' },
     { label: 'Buying Group', page: 'buying-group' },
     { label: 'Enquiry Cart', page: 'enquiry' },
     { label: 'Contact Us', page: 'contact' },

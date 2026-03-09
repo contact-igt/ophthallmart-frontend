@@ -3,7 +3,7 @@ import { ChevronRight, ChevronLeft } from 'lucide-react';
 import { CATEGORIES, PRODUCTS } from '../../data/mockData';
 import ProductCard from '../shared/ProductCard';
 
-const ProductPage = ({ handleNav, handleProductView, addToEnquiry, searchQuery = '', initialCategory = 'All', enquiryCart = [] }) => {
+const ProductPage = ({ handleNav, handleProductView, addToEnquiry, searchQuery = '', initialCategory = 'All', enquiryCart = [], onCategoryChange }) => {
     const [activeCategory, setActiveCategory] = useState(initialCategory || 'All');
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 12;
@@ -53,6 +53,7 @@ const ProductPage = ({ handleNav, handleProductView, addToEnquiry, searchQuery =
 
     const handleCategoryChange = (categoryName) => {
         setActiveCategory(categoryName);
+        if (onCategoryChange) onCategoryChange(categoryName);
         setCurrentPage(1);
         window.scrollTo(0, 0);
     };

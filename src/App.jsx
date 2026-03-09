@@ -28,6 +28,7 @@ export default function App() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const [submissionType, setSubmissionType] = useState('enquiry'); // 'enquiry' | 'contact' | 'valuation'
+    const [previousPage, setPreviousPage] = useState('products');
 
     // Load Poppins Font
     useEffect(() => {
@@ -73,6 +74,7 @@ export default function App() {
     };
 
     const handleProductView = (product) => {
+        setPreviousPage(currentPage);
         setSelectedProduct(product);
         setCurrentPage('product-detail');
         window.scrollTo(0, 0);
@@ -157,13 +159,16 @@ export default function App() {
                         addToEnquiry={addToEnquiry}
                         searchQuery={searchQuery}
                         enquiryCart={enquiryCart}
+                        initialCategory={selectedCategory}
+                        onCategoryChange={setSelectedCategory}
                     />
                 )}
 
                 {currentPage === 'product-detail' && selectedProduct && (
                     <ProductDetailPage
                         product={selectedProduct}
-                        onBack={() => handleNav('products')}
+                        onBack={() => handleNav(previousPage)}
+                        backLabel={previousPage === 'home' ? 'Back to Home' : 'Back to Products'}
                         onAdd={addToEnquiry}
                         enquiryCart={enquiryCart}
                         onViewDetail={handleProductView}
