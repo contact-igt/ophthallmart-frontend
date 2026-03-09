@@ -26,9 +26,16 @@ export const PRODUCTS = [
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
     rating: 4,
-    image: "/assets/Products/p1.png",
+    image: "/assets/Products/3nethra-aberro-img1.webp",
     tag: null,
     section: "shop",
+    images: [
+      "/assets/Products/3nethra-aberro-img1.webp",
+      "/assets/Products/3nethra-aberro-img2.webp",
+      "/assets/Products/3nethra-aberro-img3.webp",
+      "/assets/Products/3nethra-aberro-img4.webp",
+      "/assets/Products/3nethra-aberro-img5.webp",
+    ],
     fullDescription: "The 3nethra aberro is a handheld autorefractometer equipped with the Shack-Hartmann Wavefront sensor aberrometry technology to detect visual acuity and refractive errors. It is used by an eye care professional to measure a person’s wide range of refractive errors and help prescribe glasses or contact lens. Due to its portable handheld feature, it is an ideal tool for mobile eye care such as community and home eye screening. The compact refractometer can also be mounted on a chin-rest stand to achieve more stability.",
     features: [
       "Portable and lightweight",
@@ -67,9 +74,18 @@ export const PRODUCTS = [
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
     rating: 5,
-    image: "/assets/Products/p2.png",
+    image: "/assets/Products/3nethra-classic-img1.webp",
     tag: "Rated 5.0",
     section: "shop",
+    images: [
+      "/assets/Products/3nethra-classic-img1.webp",
+      "/assets/Products/3nethra-classic-img2.webp",
+      "/assets/Products/3nethra-classic-img3.webp",
+      "/assets/Products/3nethra-classic-img4.webp",
+      "/assets/Products/3nethra-classic-img5.webp",
+      "/assets/Products/3nethra-classic-img6.webp",
+      "/assets/Products/3nethra-classic-img7.webp",
+    ],
     fullDescription: "The 3nethra classic is a digital non-mydriatic fundus camera, equipped with an efficient workflow to capture undistorted and uniformly illuminated photographs of the retina and surface area of the cornea. The compact design of the camera enhances mobility and easy deployment. The camera is used by clinicians in ophthalmology, optometry, or primary care practice to assist them in the effective evaluation, diagnosis, and documentation of visual health. Some of the common eye diseases that lead to visual impairment are glaucoma, diabetic retinopathy, Age-Related Macular Degeneration (ARMD), and cataract.",
     specs: [
       { label: "FOV", value: "45 degrees" },
@@ -99,9 +115,18 @@ export const PRODUCTS = [
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
     rating: 5,
-    image: "/assets/Products/p3.png",
+    image: "/assets/Products/3nethra-classic-hd-img1.webp",
     tag: "Rated 5.0",
     section: "shop",
+    images: [
+      "/assets/Products/3nethra-classic-hd-img1.webp",
+      "/assets/Products/3nethra-classic-hd-img2.webp",
+      "/assets/Products/3nethra-classic-hd-img3.webp",
+      "/assets/Products/3nethra-classic-hd-img4.webp",
+      "/assets/Products/3nethra-classic-hd-img5.webp",
+      "/assets/Products/3nethra-classic-hd-img6.webp",
+      "/assets/Products/3nethra-classic-hd-img7.webp",
+    ],
     fullDescription: "The 3nethra classic HD is a digital fundus camera that combines the best of workflow and design. It captures high-resolution, undistorted, and uniformly illuminated images of the retina and surfaces such as the cornea. With state-of-the-art imaging, software features, and telemedicine capabilities, the fundus camera is fully equipped to help clinicians improve diagnostic accuracy and minimize screening time. The camera offers a variety of imaging modes such as high dynamic range imaging, red-free imaging, and mydriatic modes. The camera assists clinicians in the evaluation, diagnosis, and documentation of ocular diseases.",
     features: [
       "Non-mydriatic and mydriatic retinal imaging",
@@ -158,9 +183,13 @@ export const PRODUCTS = [
     category: "DISPOSABLES",
     price: "Enquire",
     rating: 5,
-    image: "/assets/Products/p4.png",
+    image: "/assets/Products/ansell-encore-img1.webp",
     tag: "Powder Free",
     section: "shop",
+    images: [
+      "/assets/Products/ansell-encore-img1.webp",
+      "/assets/Products/ansell-encore-img2.webp",
+    ],
     fullDescription: "To Order Product Click the Link Below and Use Code OBGANS While Checkout.\n\nhttps://healthcareshoppie.com/?coupon=obgans",
     specs: [
       { label: "Available Sizes", value: "6.0, 6.5, 7.0, 7.5, 8.0, 8.5" }
@@ -177,9 +206,13 @@ export const PRODUCTS = [
     category: "DISPOSABLES",
     price: "Enquire",
     rating: 5,
-    image: "/assets/Products/p5.png",
+    image: "/assets/Products/ansell-gammex-img1.webp",
     tag: "Powder Free",
     section: "shop",
+    images: [
+      "/assets/Products/ansell-gammex-img1.webp",
+      "/assets/Products/ansell-gammex-img2.webp",
+    ],
     fullDescription: "To Order Product Click the Link Below and Use Code OBGANS While Checkout.\n\nhttps://healthcareshoppie.com/?coupon=obgans",
     specs: [
       { label: "Available Sizes", value: "6.0, 6.5, 7.0, 7.5, 8.0, 8.5" }
@@ -192,12 +225,227 @@ export const PRODUCTS = [
       "Tested for use with chemotherapy drugs and a wide range of chemicals used in hospitals"
     ]
   },
-  { id: 405, name: "Applanation Tonometer T170 R Type", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p7.png", tag: null, section: "shop" },
-  { id: 406, name: "Autophoropter YPA-2100 (Digital Refractor)", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p8.png", tag: null, section: "shop" },
-  { id: 998, name: "AVA – Elisar", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p9.png", tag: null, section: "shop" },
-  { id: 407, name: "Bosch- Portable Handheld Fundus Camera", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p11.png", tag: null, section: "shop" },
-  { id: 408, name: "Catarhex 3 Easy Phaco Machine", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 5, image: "/assets/Products/p12.png", tag: "Rated 5.0", section: "shop" },
-  { id: 409, name: "Ellex – UltraQ – Yag Laser", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p15.png", tag: null, section: "shop" },
+  {
+    id: 405,
+    name: "Applanation Tonometer T170 R Type",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/applanation-tonometer-img1.webp",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/applanation-tonometer-img1.webp",
+      "/assets/Products/applanation-tonometer-img2.webp",
+      "/assets/Products/applanation-tonometer-img3.webp",
+      "/assets/Products/applanation-tonometer-img4.webp",
+    ],
+    fullDescription: "Goldmann applanation tonometer is a kind of instrument based on Imbert-Fick law. It is considered to be the gold standard instrument for measuring intraocular pressure. Applanation tonometer T170 is suitable for most slit lamps and pivots in front of the microscope for examination. It can effectively detect whether patients have glaucoma and play an important role in improving the diagnosis and treatment of ophthalmic diseases.",
+    features: [
+      "Designed based on the Goldman principle, which is a world widely gold standard.",
+      "Provides fast and accurate IOP measurement data to clinical diagnosis and treatment.",
+      "Adjustable mechanical design ensures reliable measurement results and durable performance.",
+      "Repeated measuring procedures do not reduce the natural ocular pressure of the patient.",
+      "Combined with most slit lamps: Measurement can be carried out on the patient sitting at the slit lamp in conjunction with other routine microscopic examinations."
+    ],
+    specs: [
+      { label: "Measurement Principle", value: "Goldmann / Imbert-Fick Law" },
+      { label: "Design", value: "T170 R Type (Slit Lamp Integrated)" },
+      { label: "Clinical Application", value: "Intraocular Pressure (IOP) Measurement" },
+      { label: "Mounting Type", value: "Pivots in front of Slit Lamp microscope" },
+      { label: "Compatibility", value: "Compatible with most diagnostic Slit Lamps" },
+      { label: "Diagnosis Capability", value: "Effective for Glaucoma screening and monitoring" },
+      { label: "Operation", value: "Manual adjustable mechanical design" }
+    ]
+  },
+  {
+    id: 406,
+    name: "Autophoropter YPA-2100 (Digital Refractor)",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/autophoropter-img1.webp",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/autophoropter-img1.webp",
+      "/assets/Products/autophoropter-img2.webp",
+      "/assets/Products/autophoropter-img3.webp",
+      "/assets/Products/autophoropter-img4.webp",
+    ],
+    fullDescription: "YPA-2100 DIGITAL REFRACTOR\n\nUSA FDA APPROVED\nTablet Touch Control\nConnected with control terminal through built-in WIFI or BT, supporting multi-touch/gesture control.\n\nReal-time Guiding System\nBuilt-in graphical operation guiding system, zero learning cost, easy operation.\n\nUltrathin Design\nUltrathin body with maximum thickness of 92 mm.\n\nAdvanced design of drive system with all-motor drive and low noise. Strong responsive operation framework with more efficient human-computer interaction system than traditional control panel.\n\nSupports Retina screen with outstanding image quality.\nSupports multi-touch and gesture control.\nSupports wireless network, connection with YEASN LM/AR, quick optometry data exchange.",
+    features: [
+      "USA FDA APPROVED",
+      "Tablet Touch Control (WiFi/BT)",
+      "Real-time Guiding System (Zero learning cost)",
+      "Ultrathin Design (92 mm)",
+      "All-motor drive system with low noise",
+      "Retina screen support",
+      "Quick optometry data exchange with YEASN LM/AR"
+    ],
+    specs: [
+      { label: "Sphere lens", value: "-29.00D to +26.75D, Step 0.12D/0.25D/1D" },
+      { label: "Cylinder lens", value: "0.00D to ±8.75D, Step 0.25D/1D" },
+      { label: "Axis", value: "0° to 180°, Step 1°/5°" },
+      { label: "Pupil distance (Far)", value: "48mm to 82mm" },
+      { label: "Pupil distance (Near)", value: "49mm to 75mm (Working Distance 35cm)" },
+      { label: "Rotary prism", value: "0 to 20Δ, Step 0.1Δ, 0.5Δ" },
+      { label: "Cross cylinder", value: "±0.25D/±0.50D (Auto), ±0.50D (Fixed)" },
+      { label: "Dimensions (Refractor)", value: "400(W) × 92(D) × 275(H)mm" },
+      { label: "Weight (Refractor)", value: "3.9 kg" },
+      { label: "Certification", value: "USA FDA Approved" }
+    ]
+  },
+  {
+    id: 998,
+    name: "AVA – Elisar",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/ava-elisar-img1.webp",
+    youtubeUrl: "https://www.youtube.com/embed/HHXBLS4wMyc",
+    tag: null,
+    section: "shop",
+    fullDescription: "Portable Perimetry\nNow you can perform perimetry without a traditional exam lane or high-cost capital equipment. The AVA Advanced Vision Analyzer is a small, battery-operated autoperimeter that can perform visual field threshold measurements. And not only is it completely portable, but it does not require a separate dark room.\n\nPatient Friendly Device\nThe light-weight head-mounted device allows a high degree of flexibility in -inpatient position. They can even take the test reclined. This is particularly advantageous for aging and disabled patients. The AVA Advanced Vision Analyzer also generates a patient-friendly version of the report that helps you explain the diagnosis better.\n\nAdminister the test in just a few clicks. The automated, intuitive system is simple enough that even non-eye care professionals can learn how to use the AVA Advanced Vision Analyzer quickly.",
+    features: [
+      "Portable Perimetry (Small, battery-operated)",
+      "Does not require a separate dark room",
+      "Patient Friendly Device (Head-mounted, flexible positioning)",
+      "Suitable for aging and disabled patients (tests can be taken reclined)",
+      "Generates patient-friendly reports",
+      "Automated, intuitive system with low learning curve"
+    ],
+    specs: [
+      { label: "Device Type", value: "Advanced Vision Analyzer (Portable Autoperimeter)" },
+      { label: "Design", value: "Head-mounted, Lightweight" },
+      { label: "Power Source", value: "Built-in Battery Operated" },
+      { label: "Testing Environment", value: "Ambient light (No separate dark room needed)" },
+      { label: "Test Capability", value: "Visual Field Threshold Measurements" },
+      { label: "Positioning", value: "Supports Seated, Reclined, or In-patient testing" },
+      { label: "User Learning Curve", value: "Intuitive automated system" }
+    ]
+  },
+  {
+    id: 407,
+    name: "Bosch- Portable Handheld Fundus Camera",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/bosch-portable-img1.webp",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/bosch-portable-img1.webp",
+      "/assets/Products/bosch-portable-img2.webp",
+      "/assets/Products/bosch-portable-img3.webp",
+    ],
+    warranty: "1 Year",
+    fullDescription: "Non-Mydriatic Imaging\nImaging without dilation of the pupil, leading to lesser screening time.\n\nPortability\nHand held and light weight, making applications across various contexts and locations possible.\n\nDescription:\n- Non mydriatic, Handheld, portable fundus camera.\n- 5MP CMOS sensor with posterior module to capture image & video.\n- 40 degree FOV\n- 3 capture settings – Manual (-20D to +20D), Auto, Autofocus assist\n- LED Flash light\n- Lightweight – 400gms\n- 8GB Memory card – Stores upto 2000 patient data\n- Rechargeable battery – 45 mins charging time.\n- Red, Low red, Red free, Infrared images can be captured in single click.\n- Lightweight 400gms.\n- Dual purpose cradle to charge battery and as camera stand.\n- USB cable to transfer images to computer.\n- Suitable for camps, screening in diabetic clinics, home care screening\n- 1 year warranty.",
+    features: [
+      "Non-Mydriatic Imaging (No pupil dilation needed)",
+      "True Portability (Hand held, 400gms)",
+      "5MP CMOS sensor for image & video",
+      "40 degree FOV",
+      "3 capture settings: Manual, Auto, Autofocus assist",
+      "Red, Low red, Red free, Infrared images in single click",
+      "8GB Memory card (2000 patient data)",
+      "Rechargeable battery (45 mins charge time)",
+      "Dual purpose cradle (charger and stand)",
+      "1 year warranty"
+    ],
+    specs: [
+      { label: "Sensor Type", value: "5MP CMOS Sensor" },
+      { label: "Field of View (FOV)", value: "40 Degrees" },
+      { label: "Focus Range", value: "Manual (-20D to +20D), Auto, Autofocus assist" },
+      { label: "Storage", value: "8GB Memory Card (Up to 2000 patient data)" },
+      { label: "Weight", value: "400 gms" },
+      { label: "Illumination", value: "LED Flash Light" },
+      { label: "Battery", value: "Rechargeable (45 min charge time)" },
+      { label: "Charging", value: "Dual purpose cradle (Charger and Stand)" },
+      { label: "Connectivity", value: "USB cable for computer transfer" },
+      { label: "Warranty", value: "1 Year" }
+    ]
+  },
+  {
+    id: 408,
+    name: "Catarhex 3 Easy Phaco Machine",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 5,
+    image: "/assets/Products/p12.png",
+    tag: "Rated 5.0",
+    section: "shop",
+    fullDescription: "Ultraportable Device for Cataract Surgery\nCataRhex 3®easy employs components and design concepts proven under harsh conditions in hundred thousands of surgeries every year in India. CataRhex 3®easy masters 2.2 mm and 1.6 mm incision sizes too, thus making you ready for the implantation of future premium IOLs.\nWith CataRhex 3®easy you can reduce the incision to 2.8 mm – 3.2 mm, a size which is perfectly astigmatism neutral when done scleral.\n\nCatarhex 3 Easy – 2nd Generation Phaco Machine\nIndias Largest Selling Phaco Machine\nUltraportable Device for Cataract Surgery\nCataRhex 3®easy employs components and design concepts proven under harsh conditions in hundred thousands of surgeries every year in India. CataRhex 3®easy masters 2.2 mm and 1.6 mm incision sizes too, thus making you ready for the implantation of future premium IOLs.\nWith CataRhex 3®easy you can reduce the incision to 2.8 mm – 3.2 mm, a size which is perfectly astigmatism neutral when done scleral.",
+    features: [
+      "Larger Control Panel",
+      "Portability - High Mobility and Space Saving",
+      "Direct Access - One Button Per Function for Simple Operation",
+      "Precise flow control Peristaltic Pump",
+      "Continuous Flow Cutter (up to 2,400 cpm)",
+      "Integrated Air Compressor",
+      "Fast Instrument Set-up (All plugs on front)",
+      "easyPhaco® function for 1.6, 2.2 and 2.8 mm"
+    ],
+    specs: [
+      { label: "Pump Type", value: "Peristaltic pump" },
+      { label: "Tubing system", value: "Integrated closed sensor" },
+      { label: "Program Memories", value: "3 memories with DirectAccess®" },
+      { label: "Cutting Performance", value: "SUS guillotine cutter (20G, 23G)" },
+      { label: "Cutting Rate", value: "Linear 30 to 1200 cuts/min" },
+      { label: "Display", value: "Glass covering, luminous display and keys" },
+      { label: "Control", value: "Linear multifunctional pedal" },
+      { label: "Diathermy", value: "Endo- and macro diathermy" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr.K.Jayasri",
+        initials: "KJ",
+        date: "March 3, 2022",
+        rating: 5,
+        content: "Hi, I am a private practitioner practicing at a semi urban setup. I have recently purchased oertli catarhex easy machine through ophthall buying group, it’s doing wonderfully good, tecnicians were always available to help me clear my doubts. Heartfelt thanks to ophthall for their instant help and making arrangements for a fair deal. Needless to say they are a great helping hand for budding ophthalmologists, congratulations and best wishes."
+      },
+      {
+        id: 2,
+        author: "Dr Kshijit Shukul",
+        initials: "KS",
+        date: "March 8, 2022",
+        rating: 5,
+        content: "Recently Installed Oertli Catarhex 3 phaco machine. Thanks Dr Senthil and the entire Ophthall team for helping me in procuring the machine at the right price. It is a real boon for all beginners and small practioners. Lucknow."
+      }
+    ]
+  },
+  {
+    id: 409,
+    name: "Ellex – UltraQ – Yag Laser",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/p15.png",
+    tag: null,
+    section: "shop",
+    fullDescription: "UltraQ\nMicrosurgical YAG Laser\nEllex\n\nThe Ultra Q™ is the industry’s leading microsurgical YAG laser, optimised for both anterior and posterior Nd:YAG laser treatments. Whether you are performing capsulotomy with new generation IOLs, peripheral iridotomy for glaucoma or Nd:YAG laser vitreolysis for the treatment of floaters, the Ultra Q™ delivers higher accuracy and greater control.",
+    features: [
+      "Efficient Energy Delivery: Ultra Gaussian spot profile and fast rise time allow treatments at lower energy levels.",
+      "Faster Treatment: Industry’s fastest firing rate at 3 Hertz for quick and accurate treatment.",
+      "Long-Term Performance: Solid-state Q-switch life-tested to deliver 400,000 shots without deterioration.",
+      "Pinpoint Precision: Fine, two-point focusing system with a tolerance range of ± 8 µm.",
+      "Versatile Applications: Optimized for capsulotomy, peripheral iridotomy, and laser vitreolysis."
+    ],
+    specs: [
+      { label: "Laser Source", value: "Q-switched Nd:YAG" },
+      { label: "Wavelength", value: "1064 nm" },
+      { label: "Energy", value: "0.3 to 10 mJ per pulse (continuously variable)" },
+      { label: "Pulse Duration", value: "4 ns (typical)" },
+      { label: "Spot Size", value: "8 µm" },
+      { label: "Burst Mode", value: "1, 2, or 3 pulses per burst" },
+      { label: "Repetition Rate", value: "Up to 3 Hz (3 shots per second)" },
+      { label: "Aiming Beam", value: "Red 635 nm, adjustable intensity" },
+      { label: "Posterior Offset", value: "Continuously variable from 0 to ±500 µm" },
+      { label: "Cooling", value: "Air Cooled" },
+      { label: "Weight", value: "30 kg (Laser Head)" }
+    ]
+  },
   { id: 410, name: "Eye Light Espansione Dry Eye Treatment System", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 5, image: "/assets/Products/p17.png", tag: "Rated 5.0", section: "shop" },
   { id: 411, name: "eyevis Motorized Table", category: "GENERAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p18.png", tag: null, section: "shop" },
   { id: 412, name: "I Optik CV 7800 – Wireles Auto Phoropter", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p20.png", tag: null, section: "shop" },
@@ -275,21 +523,21 @@ export const PRODUCTS = [
   { id: 923, name: "TAKAGI OPERATING MICROSCOPES", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p73.png", tag: null, section: "shop" },
   { id: 924, name: "XENOTRON XENON LIGHT SOURCE", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p74.png", tag: null, section: "shop" },
   // PRE-OWNED PRODUCTS
-  { 
-    id: 426, 
-    name: "Compact Intutiv Phaco Machine", 
-    category: "PRE-OWNED PRODUCTS", 
-    price: "₹9 Lakhs", 
-    rating: 4.8, 
+  {
+    id: 426,
+    name: "Compact Intutiv Phaco Machine",
+    category: "PRE-OWNED PRODUCTS",
+    price: "₹9 Lakhs",
+    rating: 4.8,
     year: "2019",
     condition: "Excellent / Fully Functional",
     location: "Gangavathi, Karnataka",
     fullDescription: "Well-maintained Compact Intuitive Phaco Machine (2019) available for sale. The system is in perfect working condition and offers reliable performance for efficient cataract surgery. A great opportunity for eye hospitals or surgeons looking for a high-quality phaco machine at an economical price.",
-    image: "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 A.jpg", 
+    image: "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 A.jpg",
     images: ["/assets/Pre-owned/Compact Intutiv Phaco Machine/1 A.jpg", "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 B.jpg"],
-    videoUrl: "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 C.mp4", 
-    tag: "Rated 4.78", 
-    section: "shop" 
+    videoUrl: "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 C.mp4",
+    tag: "Rated 4.78",
+    section: "shop"
   },
   {
     id: 427,
@@ -654,21 +902,21 @@ export const TRENDING_PRODUCTS = [
 ];
 
 export const FEATURED_PRODUCTS = [
-  { 
-    id: 426, 
-    name: "Compact Intutiv Phaco Machine", 
-    category: "PRE-OWNED PRODUCTS", 
-    price: "₹9 Lakhs", 
-    rating: 4.8, 
+  {
+    id: 426,
+    name: "Compact Intutiv Phaco Machine",
+    category: "PRE-OWNED PRODUCTS",
+    price: "₹9 Lakhs",
+    rating: 4.8,
     year: "2019",
     condition: "Excellent / Fully Functional",
     location: "Gangavathi, Karnataka",
     fullDescription: "Well-maintained Compact Intuitive Phaco Machine (2019) available for sale. The system is in perfect working condition and offers reliable performance for efficient cataract surgery. A great opportunity for eye hospitals or surgeons looking for a high-quality phaco machine at an economical price.",
-    image: "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 A.jpg", 
+    image: "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 A.jpg",
     images: ["/assets/Pre-owned/Compact Intutiv Phaco Machine/1 A.jpg", "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 B.jpg"],
-    videoUrl: "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 C.mp4", 
-    tag: "Rated 4.78", 
-    section: "featured" 
+    videoUrl: "/assets/Pre-owned/Compact Intutiv Phaco Machine/1 C.mp4",
+    tag: "Rated 4.78",
+    section: "featured"
   },
   {
     id: 427,

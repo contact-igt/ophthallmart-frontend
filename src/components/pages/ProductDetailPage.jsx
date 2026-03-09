@@ -26,26 +26,35 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
 
     const mediaItems = useMemo(() => {
         const items = [];
-        
-        // Add explicit videoUrl if it exists
-        if (product.videoUrl) {
-            items.push({ type: 'video', url: product.videoUrl });
-        }
 
-        // Add main image or images from array
+        // Add main image or images from array first
         const rawImages = Array.isArray(product.images) ? product.images : [product.image];
-        
+
         rawImages.forEach(url => {
             if (!url) return;
             const type = isVideo(url) ? 'video' : 'image';
-            
-            // Avoid duplicates if it's the same videoUrl already added
-            if (type === 'video' && items.find(i => i.url === url)) return;
-            
             items.push({ type, url });
         });
 
-        return items;
+        // Add YouTube URL if it exists after images
+        if (product.youtubeUrl) {
+            items.push({ type: 'youtube', url: product.youtubeUrl });
+        }
+
+        // Add explicit videoUrl if it exists and not already added
+        if (product.videoUrl) {
+            // Avoid duplicates if it's the same videoUrl already added via rawImages
+            if (!items.find(i => i.url === product.videoUrl)) {
+                items.push({ type: 'video', url: product.videoUrl });
+            }
+        }
+
+        // Post-process to ensure images truly come first if rawImages mixed them
+        return items.sort((a, b) => {
+            if (a.type === 'image' && b.type !== 'image') return -1;
+            if (a.type !== 'image' && b.type === 'image') return 1;
+            return 0;
+        });
     }, [product]);
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -74,7 +83,24 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                     {/* Media Gallery */}
                     <div className="space-y-4">
                         <div className="bg-slate-50 rounded-xl p-4 md:p-8 flex items-center justify-center border border-slate-100 overflow-hidden min-h-[300px] md:min-h-[400px] relative">
-                            {activeItem.type === 'video' ? (
+                            {activeItem.type === 'youtube' ? (
+                                <div className="w-full h-full flex flex-col items-center">
+                                    <iframe
+                                        width="100%"
+                                        height="350"
+                                        src={activeItem.url}
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen
+                                        className="rounded-lg shadow-md"
+                                    ></iframe>
+                                    <div className="mt-4 flex items-center gap-2 text-xs font-bold text-[#EA580C] uppercase tracking-widest">
+                                        <span className="w-2 h-2 bg-[#EA580C] rounded-full animate-pulse"></span>
+                                        Product Video
+                                    </div>
+                                </div>
+                            ) : activeItem.type === 'video' ? (
                                 <div className="w-full h-full flex flex-col items-center">
                                     <video
                                         key={activeItem.url}
@@ -109,7 +135,14 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                     className={`relative w-24 h-24 rounded-lg border-2 cursor-pointer flex-shrink-0 flex items-center justify-center bg-white overflow-hidden p-1
                                         ${activeIndex === idx ? 'border-[#EA580C]' : 'border-transparent hover:border-slate-300'}`}
                                 >
-                                    {item.type === 'video' ? (
+                                    {item.type === 'youtube' ? (
+                                        <div className="w-full h-full bg-slate-900 flex items-center justify-center relative">
+                                            <div className="bg-[#EA580C] rounded-full p-2 text-white shadow-lg">
+                                                <Play size={16} fill="currentColor" />
+                                            </div>
+                                            <span className="absolute bottom-1 right-1 text-[8px] text-white bg-black/50 px-1 rounded">YT</span>
+                                        </div>
+                                    ) : item.type === 'video' ? (
                                         <>
                                             <video src={item.url} className="w-full h-full object-cover opacity-60" muted />
                                             <div className="absolute inset-0 flex items-center justify-center">
@@ -141,7 +174,7 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                     <Star size={14} className="md:w-4 md:h-4" fill="currentColor" />
                                     <Star size={14} className="md:w-4 md:h-4" fill="currentColor" />
                                 </div>
-                                <span>(24 Reviews)</span>
+                                {product.reviews && product.reviews.length > 0 && <span>({product.reviews.length} Reviews)</span>}
                                 <span className="w-1 h-1 bg-slate-300 rounded-full"></span>
                                 <span className="text-green-600 font-medium">In Stock</span>
                             </div>
@@ -149,9 +182,9 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
 
                         <div className="prose text-slate-600 leading-relaxed">
                             <p>
-                                {product.fullDescription || `Experience superior clinical performance with the ${product.name}. Designed for ophthalmologists who demand precision and reliability. Features advanced optics, ergonomic design, and seamless integration with digital documentation systems.`}
+                                {product.fullDescription}
                             </p>
-                            
+
                             {product.features && product.features.length > 0 && (
                                 <ul className="mt-4 space-y-2">
                                     {product.features.map((feature, idx) => (
@@ -169,6 +202,12 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                 <span className="font-bold text-[#0B2C4D]">Price:</span>
                                 <span className="text-[#EA580C] font-bold">{product.price || 'Enquire'}</span>
                             </div>
+                            {product.warranty && (
+                                <div className="flex justify-between text-sm">
+                                    <span className="font-bold text-[#0B2C4D]">Warranty:</span>
+                                    <span className="text-green-600 font-medium">{product.warranty}</span>
+                                </div>
+                            )}
                             {product.year && (
                                 <div className="flex justify-between text-sm">
                                     <span className="font-bold text-[#0B2C4D]">Year / Model:</span>
@@ -186,18 +225,6 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                     <span className="font-bold text-[#0B2C4D]">Location:</span>
                                     <span>{product.location}</span>
                                 </div>
-                            )}
-                            {!product.location && (
-                                <>
-                                    <div className="flex justify-between text-sm">
-                                        <span className="font-bold text-[#0B2C4D]">Warranty:</span>
-                                        <span>1 Year On-site</span>
-                                    </div>
-                                    <div className="flex justify-between text-sm">
-                                        <span className="font-bold text-[#0B2C4D]">Shipping:</span>
-                                        <span>Worldwide via DHL/FedEx</span>
-                                    </div>
-                                </>
                             )}
                         </div>
 
@@ -230,38 +257,35 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                 {/* Tabs */}
                 <div className="mb-10 md:mb-16">
                     <div className="flex border-b border-slate-200 mb-6 md:mb-8 overflow-x-auto hide-scrollbar text-sm md:text-base">
-                        <button 
+                        <button
                             onClick={() => setActiveTab('specifications')}
-                            className={`px-4 md:px-8 py-3 md:py-4 font-bold whitespace-nowrap transition-colors duration-200 ${
-                                activeTab === 'specifications' 
-                                ? 'border-b-2 border-[#EA580C] text-[#0B2C4D]' 
+                            className={`px-4 md:px-8 py-3 md:py-4 font-bold whitespace-nowrap transition-colors duration-200 ${activeTab === 'specifications'
+                                ? 'border-b-2 border-[#EA580C] text-[#0B2C4D]'
                                 : 'text-slate-500 hover:text-[#0B2C4D]'
-                            }`}
+                                }`}
                         >
                             Specifications
                         </button>
-                        <button 
+                        <button
                             onClick={() => setActiveTab('description')}
-                            className={`px-4 md:px-8 py-3 md:py-4 font-bold whitespace-nowrap transition-colors duration-200 ${
-                                activeTab === 'description' 
-                                ? 'border-b-2 border-[#EA580C] text-[#0B2C4D]' 
+                            className={`px-4 md:px-8 py-3 md:py-4 font-bold whitespace-nowrap transition-colors duration-200 ${activeTab === 'description'
+                                ? 'border-b-2 border-[#EA580C] text-[#0B2C4D]'
                                 : 'text-slate-500 hover:text-[#0B2C4D]'
-                            }`}
+                                }`}
                         >
                             Description
                         </button>
-                        <button 
+                        <button
                             onClick={() => setActiveTab('reviews')}
-                            className={`px-4 md:px-8 py-3 md:py-4 font-bold whitespace-nowrap transition-colors duration-200 ${
-                                activeTab === 'reviews' 
-                                ? 'border-b-2 border-[#EA580C] text-[#0B2C4D]' 
+                            className={`px-4 md:px-8 py-3 md:py-4 font-bold whitespace-nowrap transition-colors duration-200 ${activeTab === 'reviews'
+                                ? 'border-b-2 border-[#EA580C] text-[#0B2C4D]'
                                 : 'text-slate-500 hover:text-[#0B2C4D]'
-                            }`}
+                                }`}
                         >
-                            Reviews ({product.reviews ? product.reviews.length : 2})
+                            Reviews ({product.reviews ? product.reviews.length : 0})
                         </button>
                     </div>
-                    
+
                     <div className="bg-slate-50 p-4 md:p-8 rounded-xl border border-slate-100 min-h-[300px]">
                         {activeTab === 'specifications' && (
                             <div className="animate-in fade-in slide-in-from-bottom-2">
@@ -300,7 +324,7 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                         {activeTab === 'reviews' && (
                             <div className="animate-in fade-in slide-in-from-bottom-2 space-y-6">
                                 <h3 className="text-xl font-bold text-[#0B2C4D] mb-6">Customer Reviews</h3>
-                                
+
                                 {product.reviews && product.reviews.length > 0 ? (
                                     <>
                                         {product.reviews.map(review => (
@@ -317,17 +341,17 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                                     </div>
                                                     <div className="flex text-yellow-400">
                                                         {[...Array(5)].map((_, i) => (
-                                                            <Star 
-                                                                key={i} 
-                                                                size={14} 
-                                                                fill="currentColor" 
-                                                                className={i < review.rating ? "text-yellow-400" : "text-slate-200"} 
+                                                            <Star
+                                                                key={i}
+                                                                size={14}
+                                                                fill="currentColor"
+                                                                className={i < review.rating ? "text-yellow-400" : "text-slate-200"}
                                                             />
                                                         ))}
                                                     </div>
                                                 </div>
                                                 <p className="text-sm text-slate-600 leading-relaxed whitespace-pre-wrap">
-                                                    "{review.content}"
+                                                    {review.content}
                                                 </p>
                                             </div>
                                         ))}
@@ -366,14 +390,14 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                 Related Products
                             </h2>
                             <div className="flex gap-2">
-                                <button 
+                                <button
                                     onClick={() => scrollSlider('left')}
                                     className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#0B2C4D] hover:bg-[#EA580C] hover:text-white hover:border-[#EA580C] transition-colors"
                                     aria-label="Scroll Left"
                                 >
                                     <ChevronLeft size={20} />
                                 </button>
-                                <button 
+                                <button
                                     onClick={() => scrollSlider('right')}
                                     className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#0B2C4D] hover:bg-[#EA580C] hover:text-white hover:border-[#EA580C] transition-colors"
                                     aria-label="Scroll Right"
@@ -382,9 +406,9 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                 </button>
                             </div>
                         </div>
-                        
+
                         {/* Horizontal Scrollable Container */}
-                        <div 
+                        <div
                             ref={sliderRef}
                             className="flex gap-6 overflow-x-auto pb-8 snap-x hide-scrollbar relative scroll-smooth"
                             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
