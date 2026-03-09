@@ -73,7 +73,7 @@ RadioGroup.displayName = 'RadioGroup';
 const ValuationPage = ({ onSuccess, handleProductView, addToEnquiry, enquiryCart }) => {
     const [viewMode, setViewMode] = useState('buy'); // 'buy' or 'sell'
     
-    const preOwnedProducts = PRODUCTS.filter(p => p.category === 'PRE-OWNED PRODUCTS');
+    const preOwnedProducts = PRODUCTS.filter(p => p.category === 'PRE-OWNED');
 
     const {
         register,

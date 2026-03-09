@@ -1,10 +1,10 @@
 import React, { useMemo, useState, useEffect, useRef } from 'react';
-import { ChevronRight, ChevronLeft, Star, Heart, CheckCircle, Play } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Star, Heart, CheckCircle, Play, ArrowLeft } from 'lucide-react';
 import Button from '../shared/Button';
 import ProductCard from '../shared/ProductCard';
 import { PRODUCTS } from '../../data/mockData';
 
-const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDetail }) => {
+const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDetail, backLabel = "Back to Products" }) => {
     const isAdded = useMemo(() =>
         enquiryCart.some(item => item.id === product.id),
         [enquiryCart, product.id]);
@@ -70,13 +70,23 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
     return (
         <div className="animate-in fade-in py-8 md:py-12">
             <div className="max-w-7xl mx-auto px-4">
-                {/* Breadcrumb */}
-                <div className="flex items-center gap-1 md:gap-2 text-xs md:text-sm text-slate-500 mb-6 md:mb-8 flex-wrap">
-                    <span className="cursor-pointer hover:text-[#0B2C4D]" onClick={onBack}>Home</span>
-                    <ChevronRight size={14} />
-                    <span className="cursor-pointer hover:text-[#0B2C4D]" onClick={onBack}>Products</span>
-                    <ChevronRight size={14} />
-                    <span className="text-[#EA580C] font-semibold">{product.name}</span>
+                {/* Navigation & Breadcrumb */}
+                <div className="flex flex-col gap-4 mb-6 md:mb-8">
+                    <button
+                        onClick={onBack}
+                        className="flex items-center gap-2 text-sm font-semibold text-[#0B2C4D] hover:text-[#EA580C] transition-colors w-fit group"
+                    >
+                        <ArrowLeft size={18} className="transition-transform group-hover:-translate-x-1" />
+                        {backLabel}
+                    </button>
+                    
+                    <div className="flex items-center gap-1 md:gap-2 text-xs md:text-sm text-slate-500 flex-wrap">
+                        <span className="cursor-pointer hover:text-[#0B2C4D]" onClick={onBack}>Home</span>
+                        <ChevronRight size={14} />
+                        <span className="cursor-pointer hover:text-[#0B2C4D]" onClick={onBack}>Products</span>
+                        <ChevronRight size={14} />
+                        <span className="text-[#EA580C] font-semibold">{product.name}</span>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-10 md:mb-16">
