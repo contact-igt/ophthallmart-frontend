@@ -3,7 +3,7 @@ import { ArrowUp } from 'lucide-react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './components/pages/HomePage';
-import ShopPage from './components/pages/ShopPage'; // Deprecated in favor of ProductPage
+import ShopPage from './components/pages/ShopPage';
 import ProductPage from './components/pages/ProductPage';
 import ProductDetailPage from './components/pages/ProductDetailPage';
 import EnquiryCartPage from './components/pages/EnquiryCartPage';
@@ -19,16 +19,48 @@ import TermsPage from './components/pages/TermsPage';
 import ReturnPolicyPage from './components/pages/ReturnPolicyPage';
 import ShippingPage from './components/pages/ShippingPage';
 import FloatingWidgets from './components/features/FloatingWidgets';
+import { PRODUCTS } from './data/mockData';
 
 export default function App() {
-    const [currentPage, setCurrentPage] = useState('home');
-    const [selectedProduct, setSelectedProduct] = useState(null);
+    // Persistent Cart State
+    const [enquiryCart, setEnquiryCart] = useState(() => {
+        const saved = localStorage.getItem('enquiryCart');
+        return saved ? JSON.parse(saved) : [];
+    });
+
+    // Helper to generate a URL-friendly slug
+    const generateSlug = (name) => {
+        return name
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/(^-|-$)/g, '');
+    };
+
+    // Helper to get initial state from URL
+    const getPathInfo = () => {
+        const path = window.location.pathname;
+        if (path.startsWith('/product/')) {
+            const slug = path.split('/')[2];
+            const product = PRODUCTS.find(p => generateSlug(p.name) === slug);
+            return { page: 'product-detail', product: product || null };
+        }
+        const page = path.substring(1) || 'home';
+        return { page: page === 'thank-you' ? 'thank-you' : page, product: null };
+    };
+
+    const initialInfo = getPathInfo();
+    const [currentPage, setCurrentPage] = useState(initialInfo.page);
+    const [selectedProduct, setSelectedProduct] = useState(initialInfo.product);
     const [selectedCategory, setSelectedCategory] = useState(null);
-    const [enquiryCart, setEnquiryCart] = useState([]);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
-    const [submissionType, setSubmissionType] = useState('enquiry'); // 'enquiry' | 'contact' | 'valuation'
+    const [submissionType, setSubmissionType] = useState('enquiry');
     const [previousPage, setPreviousPage] = useState('products');
+
+    // Sync cart to localStorage
+    useEffect(() => {
+        localStorage.setItem('enquiryCart', JSON.stringify(enquiryCart));
+    }, [enquiryCart]);
 
     // Load Poppins Font
     useEffect(() => {
@@ -39,19 +71,10 @@ export default function App() {
 
         // POPSTATE: Handle browser back/forward buttons
         const handlePopState = () => {
-            const path = window.location.pathname.substring(1) || 'home';
-            // Simple mapping of path to state
-            if (path === 'thank-you') {
-                setCurrentPage('thank-you');
-            } else if (path === 'home' || path === '') {
-                setCurrentPage('home');
-            } else {
-                setCurrentPage(path);
-            }
+            const info = getPathInfo();
+            setCurrentPage(info.page);
+            setSelectedProduct(info.product);
         };
-
-        // Handle initial path on load
-        handlePopState();
 
         window.addEventListener('popstate', handlePopState);
         return () => {
@@ -74,10 +97,17 @@ export default function App() {
     };
 
     const handleProductView = (product) => {
-        setPreviousPage(currentPage);
+        setPreviousPage(currentPage === 'product-detail' ? previousPage : currentPage);
         setSelectedProduct(product);
         setCurrentPage('product-detail');
         window.scrollTo(0, 0);
+
+        // Update URL to /product/SLUG
+        const slug = generateSlug(product.name);
+        const path = `/product/${slug}`;
+        if (window.location.pathname !== path) {
+            window.history.pushState({ type: 'product', slug }, '', path);
+        }
     };
 
     const handleNav = (page, category = null) => {
@@ -86,7 +116,7 @@ export default function App() {
             setSelectedCategory(category);
         }
         if (page !== 'products') {
-            setSearchQuery(''); // Clear search when navigating away
+            setSearchQuery('');
         }
         setSelectedProduct(null);
         setIsMobileMenuOpen(false);
@@ -95,14 +125,14 @@ export default function App() {
         // Update URL path (manual routing)
         const path = page === 'home' ? '/' : `/${page}`;
         if (window.location.pathname !== path) {
-            window.history.pushState(null, '', path);
+            window.history.pushState({ type: 'page', page }, '', path);
         }
     };
 
     const handleSuccess = (type) => {
         setSubmissionType(type);
         setCurrentPage('thank-you');
-        if (type === 'enquiry') setEnquiryCart([]); // Clear cart after successful enquiry
+        if (type === 'enquiry') setEnquiryCart([]);
         window.scrollTo(0, 0);
         window.location.href = "/thank-you"
         // Update URL to /thank-you
@@ -113,6 +143,7 @@ export default function App() {
         setSearchQuery(query);
         setCurrentPage('products');
         window.scrollTo(0, 0);
+        window.history.pushState(null, '', '/products');
     };
 
     return (

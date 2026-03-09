@@ -446,62 +446,212 @@ export const PRODUCTS = [
       { label: "Weight", value: "30 kg (Laser Head)" }
     ]
   },
-  { id: 410, name: "Eye Light Espansione Dry Eye Treatment System", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 5, image: "/assets/Products/p17.png", tag: "Rated 5.0", section: "shop" },
   {
-    id: 411,
-    name: "eyevis Motorized Table",
-    category: "GENERAL PRODUCTS",
+    id: 410,
+    name: "Eye Light Espansione Dry Eye Treatment System",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
-    rating: 4,
-    image: "/assets/Products/p18.png",
-    tag: null,
+    rating: 5,
+    image: "/assets/Products/p17.png",
+    tag: "Rated 5.0",
     section: "shop",
-    fullDescription: "The eyevis Motorized Table is a robust and versatile equipment stand designed for ophthalmic diagnostics and surgical environments. It features a high-capacity actuator-driven lifting system with a smooth 200mm range, supporting loads up to 55Kg. The table top provides a spacious 480x400mm surface, and the adjustable height between 630mm and 830mm ensure an ergonomic working position for various clinical applications.",
-    specs: [
-      { label: "Type", value: "Actuator" },
-      { label: "Up Down Range", value: "200mm" },
-      { label: "Load Lifting Capacity", value: "55Kg" },
-      { label: "Power Input", value: "110-230V, 50-60Hz" },
-      { label: "Fuse", value: "3A" },
-      { label: "Power Consumption", value: "75W" },
-      { label: "Dimensions", value: "480*400mm Table Top" },
-      { label: "Min/Max Height", value: "630mm / 830mm" }
-    ]
-  },
-  {
-    id: 412,
-    name: "I Optik CV 7800 – Wireless Auto Phoropter",
-    category: "OPTICAL PRODUCTS",
-    price: "Enquire",
-    rating: 4,
-    image: "/assets/Products/p20.png",
-    tag: null,
-    section: "shop",
-    fullDescription: "The I Optik CV 7800 is a high-speed, wireless auto phoropter designed for precision and flexibility. With an initialization time of less than 7 seconds and a quiet operation at only 46 decibels, it offers an efficient screening experience. The system supports dual operation via keyboard or tablet (Android/Apple) and features a wide measurement range for spherical and cylindrical vision testing.",
+    youtubeUrl: "https://www.youtube.com/embed/JNWlwa-gmCo?si=ebR7QU7vqoCNdclq",
+    fullDescription: "Eye Light – Meibomian Gland Dysfunction Treatment Device\n\nIntense Pulsed Light (IPL) is an insufficient technology for the treatment of the Meibomian Glands Dysfunction (MGD). Following years of research, Espansione Group has developed an innovative device for the treatment of MGD, and other related pathologies, that is radically different from existing treatments.\n\nEye Light Resolves the IPL Limitations\n\nThe IPL can be only applied to the lower eyelids. This implies that the Meibomian Glands located in the upper eyelid could not be treated.\n\nThanks to our combined therapy and our innovative design, the treatment of both, upper and lower meibomian glands is now possible. In addition, Eye-light allows us to treat other frequent related pathologies, such as chalazion, stye, blepharitis, post-blepharoplasty, demodex and dry eye caused by refractive and cataract surgery.\n\nOPE/IPL and Light Modulation/LLLT Eyelight offers complete treatment to all MGD cases through 2 patented technologies as Light Modulation/ LLLT and OPE/IPL.\n\nOphthall Buying Group – Special Price and EMI Offers Please get in touch",
     features: [
-      "Ultra-fast initialization (< 7 seconds)",
-      "Whisper-quiet operation (46 decibels)",
-      "Wireless tablet control (Android & Apple support)",
-      "Flexible Tablet & Keyboard dual mode",
-      "Wide Vision measurement range",
-      "Jackson & Double cross cylinder support",
-      "Built-in Compensation retinoscopy (+1.5D/+2.00D)"
+      "Fully Automated",
+      "Easy to use.",
+      "Treat both Eyelids directly and indirectly.",
+      "Comfortable and Convenient to patients and operator.",
+      "No Gel or Anesthesia required.",
+      "Very effective with immediate comfort.",
+      "Highly affordable treatment cost."
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Verified Customer",
+        initials: "VC",
+        date: "March 9, 2024",
+        rating: 5,
+        content: "Excellent device for MGD treatment. Highly recommended."
+      }
     ],
     specs: [
-      { label: "Sphere Range", value: "-29.00D ~ +26.75D" },
-      { label: "Cylinder Range", value: "-8.75D ~ +8.75D (0.25D/1.00D increments)" },
-      { label: "Axis", value: "0-180° (1°/5°/15° increments)" },
-      { label: "PD Far/Near", value: "48-80mm / 48-76mm" },
-      { label: "Rotating Prism", value: "0 ~ 20Δ" },
-      { label: "Power Supply", value: "220V/50Hz, 90VA" },
-      { label: "Weight", value: "3.8kg (Head)" }
+      { label: "Technology", value: "OPE/IPL and Light Modulation/LLLT" },
+      { label: "Automation", value: "Fully Automated" },
+      { label: "Application", value: "Direct & Indirect Treatment for both Eyelids" },
+      { label: "Pathologies Treated", value: "MGD, Chalazion, Stye, Blepharitis, Demodex, Dry Eye" },
+      { label: "Anesthesia", value: "None Required" },
+      { label: "Gel Requirement", value: "None Required" }
     ]
   },
-  { id: 413, name: "Me-Check MGD Screening System", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p23.png", tag: null, section: "shop" },
-  { id: 414, name: "MEDIWORKS ANTERIOR SEGMENT ANALYZER SCANSYS TA 517", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p24.png", tag: null, section: "shop" },
-  { id: 415, name: "MEDIWORKS DIGITAL SLITLAMP WITH DRY EYE DIAGNOSTIC SYSTEM", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p25.png", tag: null, section: "shop" },
-  { id: 416, name: "MEDIWORKS S390L (FIREFLY WDR) SLIT LAMP MICROSCOPE", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p26.png", tag: null, section: "shop" },
-  { id: 417, name: "Ophthall Clear View Slitlamp Imaging System", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Home/Sellingproduct/sp2.jpeg", tag: null, section: "bestselling" },
+  { id: 411, name: "eyevis Motorized Table", category: "GENERAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p18.png", tag: null, section: "shop" },
+  { id: 412, name: "I Optik CV 7800 – Wireles Auto Phoropter", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p20.png", tag: null, section: "shop" },
+  {
+    id: 413,
+    name: "Me Check MGD- Screening System",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/p23.png",
+    tag: null,
+    section: "shop",
+    youtubeUrl: "https://www.youtube.com/embed/G1Yb_DFRI6A?si=6P_h73JIgmpsQx80",
+    fullDescription: "Me Check is a Meibomian gland dysfunction screening Device. Me Check classifies MGD patients on scale 0 to 4 in the range-Normal, Mild, Moderate, Severe and Very Severe MGD. It takes High Definition IR image followed by functional analysis through a brief questionnaire.\n\nDescription:\nMe Check is a Meibomian gland dysfunction screening Device. Me Check classifies MGD patients on scale 0 to 4 in the range-Normal, Mild, Moderate, Severe and Very Severe MGD. It takes High Definition IR image followed by functional analysis through a brief questionnaire.",
+    features: [
+      "Quick 3 minute screening test while patient is waiting for you.",
+      "Easy to use.",
+      "Affordable.",
+      "Easily integrated into practice."
+    ],
+    specs: [
+      { label: "Scale", value: "0 to 4 (Normal, Mild, Moderate, Severe and Very Severe)" },
+      { label: "Imaging", value: "High Definition IR image" },
+      { label: "Analysis", value: "Functional analysis through a brief questionnaire" },
+      { label: "Classification", value: "MGD Screening" }
+    ]
+  },
+  {
+    id: 414,
+    name: "MEDIWORKS ANTERIOR SEGMENT ANALYZER SCANSYS TA 517",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/mediaworks-anterior-img1.png",
+    tag: null,
+    section: "shop",
+    pdfUrl: "https://1drv.ms/b/s!AhfqFC9cJSdye6qrijCVwWRUOeQ",
+    images: [
+      "/assets/Products/mediaworks-anterior-img1.png",
+      "/assets/Products/mediaworks-anterior-img2.png",
+    ],
+    fullDescription: "Scansys Anterior Segment Analyzer\n\nScansys provides a professional solution for anterior segment diagnosis. It applies Scheimpflug camera which can collect 107520/230400 data points and generates 28/60 cornea tomography images in high resolution. Scansys can provide a series of topography maps including cornea curvature maps, cornea thickness maps, cornea elevation maps, etc.\n\nClinical Applications:\n\n◉ Keratoconus Diagnosis: Scansys can provide the prevalence of Keratoconus by using the AI algorithm. Further checking the topographic maps to accurately analyze and diagnose the keratoconus.\n\n◉ Refractive surgery: Total cornea aberration guides surgeons to evaluate preoperative and postoperative visual quality to ensure patients of best surgery effect.\n\n◉ IOL Optimization: Specially designed for cataract surgery. It supports clinicians to choose suitable Toric IOL, Aspheric IOL or Multifocal IOL for patients.\n\n◉ ICL Surgery Examination: Scansys supports in different angles to collect a high-resolution picture. It also provides White to White, AC depth for ICL surgery. AI intelligence recommends the diameter of the ICL crystal and gives elevation of the arch.",
+    features: [
+      "AI Keratoconus Diagnosis (Prevalence 0% - 100%)",
+      "IOL Optimization for Cataract Surgery",
+      "Zernike Aberration Analysis",
+      "Lens Fitting Simulation",
+      "Chamber Angle Analysis for Glaucoma",
+      "ICL Surgery Examination with Diameter Recommendation",
+      "Selectable 4 Maps View",
+      "Corneal Form Factor Analysis (Ecc, E, Q, P)",
+      "Lens Density Analysis for Cataract Diagnosis"
+    ],
+    specs: [
+      { label: "Technology", value: "Scheimpflug Camera" },
+      { label: "Data Points", value: "107,520 / 230,400" },
+      { label: "Cornea Tomography", value: "28 / 60 Images in high resolution" },
+      { label: "Parameters", value: "K1, K2, Km, Astig, AC Depth, WTW, Volume" },
+      { label: "Diagnosis Support", value: "AI Keratoconus, IOL Optimization, ICL, Glaucoma" }
+    ]
+  },
+  {
+    id: 415,
+    name: "MEDIWORKS DIGITAL SLITLAMP WITH DRY EYE DIAGNOSTIC SYSTEM",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/mediaworks-digital-img1.png",
+    tag: null,
+    section: "shop",
+    pdfUrl: "https://1drv.ms/b/s!AhfqFC9cJSdyfLua26y7J20jkqk",
+    images: [
+      "/assets/Products/mediaworks-digital-img1.png",
+      "/assets/Products/mediaworks-digital-img2.png",
+      "/assets/Products/mediaworks-digital-img3.png",
+    ],
+    fullDescription: "Dry Eye Diagnostic System\n\nAs an excellent dry eye device, our dry eye diagnostic system enhances accurate diagnoses and earlier intervention, providing guidance for customized treatment. It serves as a platform for comprehensive Ocular Surface Examination including Dry eye diagnosis, Anterior Segment Photography, Lens fitting, Patient management, and Telemedicine.\n\nThe system offers guided examination, providing a comprehensive report covering 7 dry eye diagnoses. It features non-invasive examination with quantitative data output. The full-automatic Firefly digital module ensures easy operation without complex parameter settings. High-quality optics and a built-in yellow filter efficiently increase the accuracy of lens fitting.",
+    features: [
+      "Guided examination with comprehensive 7-point dry eye report",
+      "Non-invasive examination with quantitative data",
+      "Full-automatic Firefly digital module",
+      "High quality optics with built-in yellow filter",
+      "Smart patient management system (DICOM supported)",
+      "Supports Telemedicine and Lens fitting analysis"
+    ],
+    specs: [
+      { label: "Sensor", value: "Professional 1/1.8-inch sensor" },
+      { label: "Pixel Size", value: "2.4μm" },
+      { label: "Module", value: "Full-automatic Firefly digital module" },
+      { label: "Storage", value: "Real-time playing and storage" },
+      { label: "Integration", value: "DICOM supported" },
+      { label: "Examinations", value: "7 Dry Eye Diagnoses, Anterior Segment Photography" }
+    ]
+  },
+  {
+    id: 416,
+    name: "MEDIWORKS S390L (FIREFLY WDR) SLIT LAMP MICROSCOPE",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/p26.png",
+    tag: null,
+    section: "shop",
+    pdfUrl: "https://1drv.ms/b/s!AhfqFC9cJSdyfYbVwIk9ek_wKYo",
+    fullDescription: "MEDIWORKS S390L (FIREFLY WDR) SLIT LAMP MICROSCOPE\n\nSimple Design + Simple Operation: The design of the ophthalmic slit lamp S390L(Firefly WDR) was inspired by the shape of the firefly. The smart design largely saves space for clinicians compared to other bulky camera systems. We have preset many camera parameters so the user does not need to adjust settings before using the device. The user can operate the machine immediately once the installation has been finished.\n\nThe device features a wide range of automatic functions including Auto Exposure, Auto Gain, Auto White Balance, and Auto OS/OD Indicator. It includes a high-definition optical system with resolution up to 200 lp/mm, a built-in yellow filter for enhanced contrast, and a unique infrared light source module for Meibomian gland examination. It also supports DICOM for easy integration into hospital medical systems.",
+    features: [
+      "HD Optical System (up to 200 lp/mm)",
+      "Built-in Yellow Filter for enhanced contrast",
+      "Meibomian Glands Infrared Observation",
+      "Wide Dynamic Range (WDR) Imaging",
+      "Auto Exposure, Gain, and White Balance",
+      "Orthokeratology Lens Fitting Assistance",
+      "DICOM Support for hospital systems",
+      "Tear Film Break-up Time & Tear Meniscus Height Analysis",
+      "Red Eyes Analysis and Keratopathy Exposure"
+    ],
+    specs: [
+      { label: "Optical Resolution", value: "200 lp/mm" },
+      { label: "Filters", value: "Built-in Yellow Filter" },
+      { label: "Light Source", value: "LED + Infrared Module" },
+      { label: "Imaging Mode", value: "Wide Dynamic Range (WDR)" },
+      { label: "Software", value: "Mediview (Patient Management & DICOM)" },
+      { label: "Automatic Functions", value: "Exposure, Gain, White Balance, OS/OD Indicator" }
+    ]
+  },
+  {
+    id: 417,
+    name: "Ophthall Clear View Slitlamp Imaging System",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/clearview-slitlamp-img1.png",
+    tag: null,
+    section: "bestselling",
+    images: [
+      "/assets/Products/clearview-slitlamp-img1.png",
+      "/assets/Products/clearview-slitlamp-img2.png",
+      "/assets/Products/clearview-slitlamp-img3.png",
+      "/assets/Products/clearview-slitlamp-img4.png",
+      "/assets/Products/clearview-slitlamp-img5.png",
+      "/assets/Products/clearview-slitlamp-img6.png",
+      "/assets/Products/clearview-slitlamp-img7.png",
+    ],
+    youtubeUrl: "https://www.youtube.com/embed/ZWznXHhEnyg?si=4PQxdhkcLYhhItrw",
+    fullDescription: "Ophthall Clear View Slit Lamp Imaging system is an innovative product to help improve your diagnostics and patient satisfaction. Imaging system is a good tool to demonstrate to the patients and their attenders the actual pathology and this helps in improved conversions and patient Care.\n\nOphthall Clear View Imaging system is customizable for any brand of 3 or 5 step slit lamp and is a very simple do it yourself self-installation product.\n\nVISIT OPHTHALL IMAGING PAGE FOR DETAILED INFORMATION: https://imagingsystems.ophthallmart.com/",
+    features: [
+      "Customizable for any brand of 3 or 5 step slit lamp",
+      "Simple do it yourself (DIY) self-installation",
+      "Superior Grade 80:20 Ophthall Beam Splitter (less light loss, zero observer strain)",
+      "4K top Quality HDMI Camera (12.3 Megapixels 1/2.3 Inch CMOS Sensor)",
+      "Raspberry pi Inbuilt 1.8 GHZ quadcore 2GB Ram processor (No external PC needed)",
+      "32 GB Memory Card included",
+      "Bluetooth Click Type Joystick for seamless image capture",
+      "Multifunctional customized Imaging software for report generation"
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr Lalit Kumar",
+        initials: "LK",
+        date: "March 9, 2024",
+        rating: 5,
+        content: "One of the best innovative products launched by Ophthall, has made my work easier by demonstrating to pre op patients to convince them for procedures and post op patients to show them the good outcomes of surgery- very valuable tool for every Ophthalmologist- very economical too- Congratulations to team Ophthall",
+        location: "Amrit Eye Hospital Sowcarpet – Chennai"
+      }
+    ]
+  },
+
 
   // DISPOSABLES
 
@@ -576,9 +726,9 @@ export const PRODUCTS = [
     section: "bestselling",
     images: [
       "/assets/Home/Sellingproduct/sp4.png",
-      "/assets/Products/ophthall-surgical-microscope-img1.png",
-      "/assets/Products/ophthall-surgical-microscope-img2.png",
-      "/assets/Products/ophthall-surgical-microscope-img3.png",
+      "/assets/Products/surgical-microscope-img1.png",
+      "/assets/Products/surgical-microscope-img2.png",
+      "/assets/Products/surgical-microscope-img3.png",
 
     ],
     fullDescription: "Ophthalmic Surgical Microscopes was born out of the need for a Top Quality Yet Affordable Microscope for the Indian Ophthalmologist. These microscopes come in various models and are made in India with Imported Optics. Now Every Ophthalmologist in India can Own a Surgical Microscope and start his own OT. These microscopes are exclusively manufactured for Ophthall by experts with more than 30+ Years Experience in Surgical Microscope Manufacturing Technologies.\n\nNow everyone can Own One",
@@ -861,7 +1011,111 @@ export const PRODUCTS = [
       { label: "Contact Person", value: "Mr Suren (+91-9176709051)" }
     ]
   },
-  { id: 425, name: "OPHTHALL VID RECORDING SYSTEM", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4.8, image: "/assets/Home/Sellingproduct/sp3.png", tag: "Rated 4.78", section: "bestselling" },
+   {
+    id: 425,
+    name: "OPHTHALL VID RECORDING SYSTEM",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4.8,
+    image: "/assets/Home/Sellingproduct/sp3.png",
+    tag: "Rated 4.78",
+    section: "bestselling",
+    images:[
+      "/assets/Home/Sellingproduct/sp3.png",
+      "/assets/Products/vid-recording-img2.png",
+      "/assets/Products/vid-recording-img3.png",
+      "/assets/Products/vid-recording-img4.png",
+      "/assets/Products/vid-recording-img5.png",
+      "/assets/Products/vid-recording-img6.png",
+      "/assets/Products/vid-recording-img7.png",
+      "/assets/Products/vid-recording-img8.png",
+      "/assets/Products/vid-recording-img9.png",
+      "/assets/Products/vid-recording-img10.png",
+    ],
+    youtubeUrl: "https://www.youtube.com/embed/s8bbWNPZtrM?si=oirH67tnaRZ3396U",
+    fullDescription: "Ophthall Vid Surgical Recording system is the best in class recording system available for any kind of surgical microscopes in the market. With more than 700+ installations all over India, it is the trusted choice for ophthalmologists for high-quality surgical documentation.\n\nDesigned for documentation, conference presentations, and patient counseling, the system provides exceptional clarity and ease of use. It features a custom-made beam splitter with an 80:20 ratio, ensuring optimal field illumination while capturing high-definition video. Compatible with all major brands including Zeiss, Appasamy, Leica, and more.\n\nVISIT OPHTHALL IMAGING PAGE: https://imagingsystems.ophthallmart.com/",
+    features: [
+      "Custom Made Ophthall Beam Splitter (80:20 Split Ratio)",
+      "Universal Compatibility (Zeiss, Appasamy, Leica, etc.)",
+      "F-60 Focal Length for C-Mount",
+      "ESC 16 MP High Definition Recording Camera",
+      "Inbuilt 32GB Memory Card for direct recording",
+      "Full HD Video Capture Resolution (1920 x 1080)",
+      "Ultra-Lightweight design (550 Grams)",
+      "Simple 'Do It Yourself' self-installation",
+      "Remote Control for cordless video recording"
+    ],
+    cameraOptions: [
+      {
+        name: "16 MP HDMI Camera (Standard)",
+        description: "Sony Chip, Micro SD recording. Best for Anterior Segment Surgery."
+      },
+      {
+        name: "Full HD 1080p HDR Camera & Recorder",
+        description: "60 FPS Zero Delay, USB Drive recording. Best for Posterior Segment/Retinal Surgery."
+      },
+      {
+        name: "4K Ultra-High Resolution Camera",
+        description: "8 MP Premium Resolution, 60 FPS, 4K USB Recording. Premium for Retinal Surgeries."
+      }
+    ],
+    specs: [
+      { label: "Split Ratio", value: "80:20 (Viewing:Recording)" },
+      { label: "Focal Length", value: "F-60 for C Mount" },
+      { label: "Resolution", value: "Up to 4K Ultra HD" },
+      { label: "Weight", value: "550 Grams" },
+      { label: "Storage", value: "32GB SD Card / USB Drive" },
+      { label: "Frame Rate", value: "Up to 60 FPS" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr Harikrishnan Vannadil",
+        initials: "HV",
+        date: "March 7, 2022",
+        rating: 5,
+        content: "A very good recording system with fantastic clarity. I managed to install it myself on my Lumera 300 microscope. The SD card recording is very good.",
+        location: "Lumera 300 Installation"
+      },
+      {
+        id: 2,
+        author: "Dr ASWINI KUMAR BEHERA",
+        initials: "AB",
+        date: "June 7, 2023",
+        rating: 5,
+        content: "Extremely happy with the recording, Still the image quality is good. Thank you Dr. senthil sir and good shout out to supporting staff.",
+        location: "Founder, Naitrika Super Specialty Eye Care"
+      },
+      {
+        id: 3,
+        author: "Dr Tejaswi Prasad",
+        initials: "TP",
+        date: "June 21, 2024",
+        rating: 5,
+        content: "The camera quality is excellent, capturing surgical details with great precision. Service engineer was highly knowledgeable. Highly recommend it.",
+        location: "Aravind Eye Hospital, Madurai"
+      },
+      {
+        id: 4,
+        author: "Dr N R Rangaraj",
+        initials: "NR",
+        date: "September 4, 2022",
+        rating: 5,
+        content: "Good recording system, the micro SD card makes transfer of data seamless into clips for presentations and patient information.",
+        location: "September 4, 2022"
+      },
+      {
+        id: 5,
+        author: "Dr. P. Raja Sekhar",
+        initials: "PR",
+        date: "September 4, 2022",
+        rating: 5,
+        content: "Very Good quality recording system. Used for retina surgeries also… Very happy with this value for money product….",
+        location: "Retina Specialist"
+      }
+    ]
+  },
+
   {
     id: 607,
     name: "OPHTHALL LENSIT TL6500-B/C",
@@ -1514,12 +1768,323 @@ export const PRODUCTS = [
       { label: "For Booking (Whatsapp)", value: "+91-9176702051 / +91-8754517944" }
     ]
   },
-  { id: 906, name: "MEGATRON S4 HPS – GEUDER", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p28.png", tag: null, section: "shop" },
-  { id: 907, name: "Meridian 532 nm Green Laser", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p29.png", tag: null, section: "shop" },
-  { id: 908, name: "Meridian Nd:YAG Laser", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p30.png", tag: null, section: "shop" },
-  { id: 909, name: "Ophthall Delight Zoom Microscope", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p38.png", tag: null, section: "shop" },
-  { id: 910, name: "Ophthall Digital LED Near Vision Chart", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p39.png", tag: null, section: "shop" },
-  { id: 911, name: "Ophthall GloMaster - RedGlow Enhancement Device for Surgical Microscopes", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p40.png", tag: null, section: "shop" },
+ {
+    id: 906,
+    name: "MEGATRON S4 HPS – GEUDER",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/megatron-s4-img1.png",
+    tag: "Premium",
+    section: "shop",
+    fullDescription: "MEGATRON S4 HPS: MAXIMUM PERFORMANCE IN THE ANTERIOR AND POSTERIOR SEGMENTS\n\nModular Phaco/Vitrectomy System – Sophisticated Technology for Maximum Performance. Take the lead in performing best. With sophisticated technology of the megaTRON S4HPS you can achieve maximum safety, efficiency, rentability and flexibility.\n\nThe revolutionary hybrid pump system is only one of the numerous features which make the megaTRON S4HPS one of the most powerful ophthalmic surgery systems for the anterior and posterior segment. Its UNO Colorline MACH2 vitreous cutters enable cut rates of up to 12,000 cpm. The optional endolaser endoTRON® 532 and xenon light source xenoTRON® III make the megaTRON S4HPS a fully equipped vitrectomy system.\n\nA German Premium Brand having an excellent track record of the last 15 years in India in terms of Quality & Service. Offering Geuder Megatron S4HPS Anterior Phaco System at an exceptional value through Ophthall Group.\n\nFor more Details whatsapp +91-9176702051",
+    features: [
+      "Modular Phaco/Vitrectomy System",
+      "Revolutionary Hybrid Pump System",
+      "UNO Colorline MACH2 vitreous cutters (up to 12,000 cpm)",
+      "Optional endolaser endoTRON® 532 integration",
+      "Optional xenon light source xenoTRON® III",
+      "German Engineering & Build Quality",
+      "Maximum Safety and Efficiency in surgical procedures",
+      "Large variety of accessories for all applications"
+    ],
+    images: [
+      "/assets/Products/megatron-s4-img1.png",
+      "/assets/Products/megatron-s4-img2.png",
+      "/assets/Products/megatron-s4-img3.png",
+      "/assets/Products/megatron-s4-img4.png",
+      "/assets/Products/megatron-s4-img5.png",
+      "/assets/Products/megatron-s4-img6.png",
+      "/assets/Products/megatron-s4-img7.png",
+    ],
+    specs: [
+      { label: "Country of Origin", value: "Germany" },
+      { label: "System Type", value: "Modular Phaco/Vitrectomy" },
+      { label: "Pump System", value: "Revolutionary Hybrid Pump" },
+      { label: "Vitreous Cut Rate", value: "Up to 12,000 cpm (MACH2)" },
+      { label: "Light Source", value: "Optional xenoTRON® III (Xenon)" },
+      { label: "Endolaser", value: "Optional endoTRON® 532" },
+      { label: "Segments", value: "Anterior and Posterior" }
+    ]
+  },
+  {
+    id: 907,
+    name: "Meridian 532 nm Green laser",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/meridian-532-img1.png",
+    tag: null,
+    section: "shop",
+    pdfUrl: "https://1drv.ms/b/s!AhfqFC9cJSdyfLua26y7J20jkqk", // Assuming similar OneDrive structure if provided later, but for now using the requested content structure
+    fullDescription: "Meridian 532 nm Green laser – Merilas 532 / MR Q Combo\n\nGreen laser photocoagulator for all retinal photocoagulation procedures. The MR Q Combo is a combination package designed to save space and maximise treatment possibilities. It includes a renowned MR Q Nd:YAG laser with precision optics, a Merilas console with a crystal detachable control panel (Swiss engineered), and a stable twin column table.\n\nA unique parking station protects the sensitive optics when not in use. The Merilas shortpulse® technology delivers microsecond pulses for subthreshold retinal treatments. The thermoelectric cooling (TEC) system makes it a hermetically sealed, dust-free system, ensuring long-term reliability and quiet operation.",
+    features: [
+      "Award-winning Frequency Doubled Solid State Green Laser",
+      "MR Q Combo combines YAG and Green Laser in one station",
+      "High-grade Aluminum Housing for Swiss Quality",
+      "Detachable Crystal Touch Control Panel for easy cleaning",
+      "Thermoelectric Cooling (TEC) - No disturbing noise or air turbulences",
+      "Auto Key connector for automatic probe recognition",
+      "Meridian Parfocal Laser - No corneal heating",
+      "Shortpulse® for subthreshold retinal treatments",
+      "Compact and portable with a robust carry-on case"
+    ],
+    images: [
+      "/assets/Products/meridian-532-img1.png",
+      "/assets/Products/meridian-532-img2.png",
+      "/assets/Products/meridian-532-img3.png",
+      "/assets/Products/meridian-532-img4.png",
+      "/assets/Products/meridian-532-img5.png",
+      "/assets/Products/meridian-532-img6.png",
+      "/assets/Products/meridian-532-img7.png",
+      "/assets/Products/meridian-532-img8.png",
+      "/assets/Products/meridian-532-img9.png",
+      "/assets/Products/meridian-532-img10.png",
+      "/assets/Products/meridian-532-img11.png",
+      "/assets/Products/meridian-532-img12.png",
+      "/assets/Products/meridian-532-img13.png",
+      "/assets/Products/meridian-532-img14.png",
+      "/assets/Products/meridian-532-img15.png",
+    ],
+    specs: [
+      { label: "Wavelength", value: "532 nm (Green)" },
+      { label: "Laser Type", value: "Solid State / Frequency Doubled" },
+      { label: "Cooling", value: "Thermoelectric Cooling (TEC)" },
+      { label: "Optical Resolution", value: "Renowned precision optics (up to 40x)" },
+      { label: "Swiss Made", value: "Swiss Engineered and Robustly Built" },
+      { label: "Applications", value: "Retinal Photocoagulation via Slit Lamp, LIO or Endoprobes" },
+      { label: "Maintenance", value: "Hermetically sealed, dust-free system" }
+    ]
+  },
+  {
+    id: 908,
+    name: "Meridian Nd:YAG Laser",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/meridian-nd-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/meridian-nd-img1.png",
+      "/assets/Products/meridian-nd-img2.png",
+      "/assets/Products/meridian-nd-img3.png",
+      "/assets/Products/meridian-nd-img4.png",
+      "/assets/Products/meridian-nd-img5.png",
+      "/assets/Products/meridian-nd-img6.png",
+      "/assets/Products/meridian-nd-img7.png",
+
+    ],
+    fullDescription: "Meridian Nd:YAG Laser – MR Q\n\nThe latest technology in the Microruptor series, continuing a legacy that began in 1982. The Meridian MR Q is a fully featured and integrated Nd:YAG laser combined with renowned European precision optics. It features a high-grade aluminum mono-block laser housing for superior quality and longevity.\n\nThe MR Q utilizes a super Gaussian mode laser profile to provide exceptional accuracy and excellent laser treatments. With an integrated LED slit lamp offering 5 magnification steps (6x to 40x) and electronically controlled offsets, it provides both versatility and advanced safety for clinical procedures.",
+    features: [
+      "Latest technology Nd:YAG Laser in the Microruptor series",
+      "Super Gaussian Mode Laser Profile for high precision",
+      "Integrated LED Slit Lamp with 5-step magnification (6x to 40x)",
+      "Electronically controlled Anterior and Posterior offset",
+      "Automatic offset reset to posterior 100 μm for enhanced safety",
+      "Internal Power Meters to monitor delivered energy",
+      "High-grade Aluminum Mono-block Housing",
+      "Compact and powerful European design",
+      "Remote service access support for immediate assistance"
+    ],
+    specs: [
+      { label: "Laser Type", value: "Nd:YAG" },
+      { label: "Beam Profile", value: "Super Gaussian Mode" },
+      { label: "Magnification", value: "6x, 10x, 16x, 25x, 40x (5 steps)" },
+      { label: "Clinical Indications", value: "Posterior Capsulotomy and Iridotomy" },
+      { label: "Safety Features", value: "Electronic offset reset, Internal power monitoring" },
+      { label: "Housing", value: "High-grade Aluminum Mono-block" },
+      { label: "Slit Lamp", value: "Integrated LED Slit Lamp" }
+    ]
+  },
+  {
+    id: 909,
+    name: "Ophthall Delight Zoom Microscope",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/delight-zoom-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/delight-zoom-img1.png",
+      "/assets/Products/delight-zoom-img2.png",
+      "/assets/Products/delight-zoom-img3.png",
+      "/assets/Products/delight-zoom-img4.png",
+      "/assets/Products/delight-zoom-img5.png",
+      "/assets/Products/delight-zoom-img6.png",
+      "/assets/Products/delight-zoom-img7.png",
+      "/assets/Products/delight-zoom-img8.png",
+    ],
+    fullDescription: "Ophthall Delight Zoom Microscope\n\nThis Innovative microscope promotes super ergonomics through innovative design, with latest edition Yellow LED illumination System, its highly stable high contrast Red Reflex further enhances details recognition. featuring continuous motorized zoom & X-Y Coupling.\n\nThe Reliable X-Y Coupling features a one-button design with no complicated settings, offering guided movement in one plane with a 25mm x 25mm range. It is an ideal choice for surgeons seeking precision and ease of use in ophthalmic procedures.",
+    features: [
+      "Latest edition Yellow LED Illumination System",
+      "Highly stable High Contrast Red Reflex",
+      "Continuous Motorized Zoom & X-Y Coupling",
+      "Reliable X-Y Coupling with 25mm x 25mm Range",
+      "Super Ergonomics through innovative design",
+      "One Button design for easy movement control",
+      "Optional Accessory: HD Camera Recording system",
+      "Optional Accessory: Ophthall Glo enhancer"
+    ],
+    specs: [
+      { label: "Binocular", value: "Inclined 45 Degree (Optional 180 Degree)" },
+      { label: "Objective Lens", value: "F-200mm" },
+      { label: "Eyepiece", value: "12.5X Wide Field High Eye point" },
+      { label: "Magnification", value: "Continuous Motorized (0.4x to 2.5x)" },
+      { label: "Focus", value: "Motorized Fine Focus" },
+      { label: "IPD Range", value: "50mm to 75mm" },
+      { label: "Diopter Adjustment", value: "+6D to -6D" },
+      { label: "Light Intensity", value: "1,00,000 LUX" }
+    ]
+  },
+  {
+    id: 910,
+    name: "Ophthall Digital Led Near Vision Chart",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/digital-led-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/digital-led-img1.png",
+      "/assets/Products/digital-led-img2.png",
+      "/assets/Products/digital-led-img3.png",
+      "/assets/Products/digital-led-img4.png",
+    ],
+    fullDescription: "Ophthall Digital LED Near Vision Chart is the world’s first Digital Near Vision Chart with an interactive Touchscreen 7-inch color TFT LED display.\n\nIt features all major Indian languages for near vision test reading (English, Hindi, Urdu, Punjabi, Gujarati, Marathi, Malayalam, Tamil, Bengali, Telugu, and Kannada) along with additional clinical tests like Ishihara Color Vision, Amsler Grid, Dual Chrome test, binocular test, Contrast sensitivity, fixation disparity, and worth 4 dots. It’s handheld, very portable, and wireless, with a built-in rechargeable battery providing 8-10 hours of operation. Ideal for office or camp purposes.",
+    features: [
+      "7″ Color Touchscreen TFT LED Display",
+      "All Major Indian Languages (English, Hindi, Tamil, etc.)",
+      "Comprehensive Near Vision Tests (Ishihara, Amsler Grid, etc.)",
+      "Lightweight, handheld, and wireless portability",
+      "Rechargeable battery (8-10 hours operation)",
+      "Battery status indicator included"
+    ],
+    specs: [
+      { label: "Display", value: "7″ Color TFT LED Touchscreen (800 x 480p)" },
+      { label: "Colors", value: "262K colors" },
+      { label: "Brightness", value: "300 nit" },
+      { label: "Languages", value: "11 Major Indian Languages" },
+      { label: "Charts", value: "Color Vision, Pediatric, Amsler, Contrast, etc." },
+      { label: "Power", value: "Built-in Rechargeable battery with Charger" },
+      { label: "Dimension", value: "200 mm x 150 mm x 24 mm" },
+      { label: "Weight", value: "420 grams" }
+    ]
+  },
+  {
+    id: 911,
+    name: "Ophthall GloMaster - RedGlow Enhancement Device for Surgical Microscopes",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/glomaster-redglow-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/glomaster-redglow-img1.png",
+      "/assets/Products/glomaster-redglow-img2.png",
+      "/assets/Products/glomaster-redglow-img3.png",
+      "/assets/Products/glomaster-redglow-img4.png",
+      "/assets/Products/glomaster-redglow-img5.png",
+      "/assets/Products/glomaster-redglow-img6.png",
+      "/assets/Products/glomaster-redglow-img7.png",
+      "/assets/Products/glomaster-redglow-img8.png",
+    ],
+    fullDescription: "Ophthall GloMaster: Ophthalmic Surgical Microscope Red Glow Enhancement Device\n\nMany Ophthalmologists in developing countries use basic surgical microscope models that lack optimal red glow and stereopsis. Ophthall GloMaster was invented to solve this challenge, converting any basic surgical microscope into an advanced system with enhanced Red Glo, Stereopsis, and Illumination.\n\nThis wonder device can be externally attached to any brand of surgical microscope at its bottom without requiring any modifications. It provides its own source of illumination, meaning you can operate with the enhancer light alone or in combination with the microscope light. Crucially, the surgeon's working distance is not reduced, and the high-quality imported optics are scratch-resistant with fungicidal coatings.",
+    features: [
+      "Homogenous red reflex in all positions of the Eye",
+      "Significant Stereopsis enhancement",
+      "Additional Illumination to brighten the operating field",
+      "Compatible with all brands of surgical microscopes",
+      "No modifications required for installation",
+      "Switch on/off using integrated foot pedal control",
+      "Dimmable power supply (Zero to 100% illumination)",
+      "Optional: New Objective Lens provided with the enhancer"
+    ],
+    specs: [
+      { label: "Compatibility", value: "All Brand Surgical Microscopes" },
+      { label: "Optics", value: "Imported, Scratch-resistant with Fungicidal Coating" },
+      { label: "Control", value: "Foot Pedal Switch" },
+      { label: "Illumination", value: "Variable & Dimmable (0-100%)" },
+      { label: "Attachment", value: "External Bottom Base Mount" },
+      { label: "Working Distance", value: "No reduction in standard distance" },
+      { label: "Optional Feature", value: "New Objective Lens Integration" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr Raj Ganesh",
+        initials: "RG",
+        date: "April 5, 2022",
+        rating: 4,
+        content: "I used Ophthall Glow (Red Glow Enhancer) with my Zeiss 1 FR Microscope, and it was a fantastic experience operating with an excellent red glow. Thank you, Ophthall Team!",
+        location: "Geetha Eye Hospital, Udumalaipet, Tamilnadu"
+      },
+      {
+        id: 2,
+        author: "Dr Arul Mozhi Varman",
+        initials: "AV",
+        date: "April 9, 2022",
+        rating: 3,
+        content: "My opinion after Using Ophthall Red Glow Enhancer,Excellent innovation for basic microscope, enjoyed my Rexis and depth perception is also good, kudos to Ophthall Team",
+        location: "Arul Eye Hospital, Salem"
+      },
+      {
+        id: 3,
+        author: "Dr. Arun Kumar",
+        initials: "AK",
+        date: "April 9, 2022",
+        rating: 4,
+        content: "I Used Ophthall glow For my Zeiss 1FR microscope, It’s really nice, the red glow , depth perception is really good. I will say it’s a must for all microscope (without coaxial). Thank you Dr.Senthil sir and Ophthall team.",
+        location: "Kumar Eye Hospital, Attur"
+      },
+      {
+        id: 4,
+        author: "Dr Venkatesh Reddy",
+        initials: "VR",
+        date: "April 27, 2022",
+        rating: 5,
+        content: "I used the Ophthall Red Glow Master Device on my Lumera 300, and it made performing rhexis without trypan blue effortless. It was also extremely helpful for cortical wash and IOL implantation in the bag. Overall, the experience was excellent, and the device proved to be both innovative and economically reliable. Many thanks to Dr. Senthil and his team for developing such a remarkable device!",
+        location: "Ushodaya Laser Eye Hospital, Medchal, Telengana"
+      },
+      {
+        id: 5,
+        author: "Dr. Rajesh Chells",
+        initials: "RC",
+        date: "June 28, 2022",
+        rating: 4,
+        content: "My experience with ophthall red glo enhancer fitted on Zeiss lumera 300. The image & red glo quality enhanced so well that my surgical confidence increased. surgical time decreased, i recommend re glow enhancer and recording system to my colleagues.",
+        location: "Focus Eye Hospital, Ernakulam, Kerala"
+      },
+      {
+        id: 6,
+        author: "Dr. Sushil",
+        initials: "DS",
+        date: "June 28, 2022",
+        rating: 5,
+        content: "RedGlow enhancer is a wonderful device. Red glow is just perfect. Very helpful for me in doing rhexis without Trypan and IA is becoming very smooth. Just one need to st without. It will take only one or two case for adjustment. Overall Perfect",
+        location: "Sunayan Eye Care, Bargarh, Odisha"
+      },
+      {
+        id: 7,
+        author: "Dr Adithya Phadnis",
+        initials: "AP",
+        date: "August 2, 2022",
+        rating: 3,
+        content: "We purchased this red glow enhancer for Zeiss lumera 300. Had a pleasant experience with this product. Gives lot of confidence to surgeons"
+      },
+      {
+        id: 8,
+        author: "Dr Rushabh Shah",
+        initials: "RS",
+        date: "September 21, 2022",
+        rating: 4,
+        content: "Good Evening sir, many thanks for sending the red glow enhancer. I had used it on the Zeiss Visu 160, it is a good device, definitely worth it. Thank you once again sir."
+      }
+    ]
+  },
   { id: 912, name: "OPHTHALL LENSIT RM-9600 AUTO REF", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p46.png", tag: null, section: "shop" },
   { id: 913, name: "Ophthall Manual Phoropter", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p48.png", tag: null, section: "shop" },
   {
@@ -2280,10 +2845,249 @@ export const HERO_SLIDES = [
 ];
 
 export const BEST_SELLING_PRODUCTS = [
-  { id: 511, name: "Oertli CR3 with SPEEP Phaco Machine", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Home/Sellingproduct/sp1.jpg", tag: "Rated 4.0", section: "bestselling" },
-  { id: 417, name: "Ophthall Clear View Slitlamp Imaging System", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Home/Sellingproduct/sp2.jpeg", tag: null, section: "bestselling" },
-  { id: 425, name: "OPHTHALL VID RECORDING SYSTEM", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4.8, image: "/assets/Home/Sellingproduct/sp3.png", tag: "Rated 4.78", section: "bestselling" },
-  { id: 517, name: "OPHTHALL-SURGICAL MICROSCOPE", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 5, image: "/assets/Home/Sellingproduct/sp4.png", tag: "Rated 5.0", section: "bestselling" }
+    {
+    id: 511,
+    name: "Oertli CR3 with SPEEP Phaco Machine",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Home/Sellingproduct/sp1.jpg",
+    tag: "Rated 4.0",
+    section: "bestselling",
+    images: [
+      "/assets/Products/oertli-cr3-img1.png",
+      "/assets/Products/oertli-cr3-img2.png",
+      "/assets/Products/oertli-cr3-img3.png",
+      "/assets/Products/oertli-cr3-img4.png",
+      "/assets/Products/oertli-cr3-img5.png",
+    ],
+    youtubeUrl: "https://www.youtube.com/embed/BHgGw7vr17I?si=cHkOhVcDWphVpQ82",
+    fullDescription: "Oertli CR3 with SPEEP Phaco Machine\n\nThe Oertli surgical platform CataRhex 3 impressively demonstrates that great platforms can sometimes be very small. With hitherto unachieved compactness and a lightweight of five kilogrammes, the CataRhex 3 device is consistently geared to mobility and portability – without making any compromises on performance.\n\nThe CataRhex 3 is newly featured with the unique SPEEP pump, which provides even more flexibility and control. easyPhaco technology ensures safe and efficient emulsification. Oertli makes The Eye Surgery Easier, Safer and more Efficient. Oertli has become one of the highest selling Phaco machine and Vitrectomy machine selling brand in India.\n\nThanks to the HF capsulotomy tip, capsulorhexis has become incredibly easy. In the I/A mode, the SPEEP pump ensures even greater safety. A compressor has been integrated for anterior vitrectomy, and in glaucoma surgery, the HFDS application ensures excellent long-term results.\n\nCataRhex 3 ® with the incorporation of SPEEP is now Smallest Phaco Emulsificaion System with 2 Pumps. With The easyPhaco ® technology that gives highest chamber stability and stress free surgical environment for the surgeon.\n\nPurchase the CR3 with SPEEP through the Ophthall Buying Group to get the best price advantage",
+    features: [
+      "Third generation CataRhex family with 15 years research",
+      "Programming capacity for 20 different surgeons",
+      "Compact and Lightweight (5kg) for perfect portability",
+      "Ultra-fast boot time (ready in 5 seconds)",
+      "Unique SPEEP Mode for simultaneous Flow and Vacuum control",
+      "easyPhaco® technology for highest chamber stability",
+      "HF capsulotomy tip for easy capsulorhexis",
+      "Integrated compressor for anterior vitrectomy",
+      "Universal voltage compatibility (100-240V)"
+    ],
+    specs: [
+      { label: "Manufacturer", value: "Oertli (Swiss Made)" },
+      { label: "Pump Type", value: "Unique SPEEP Pump (2 Pumps)" },
+      { label: "Weight", value: "5 kg" },
+      { label: "Ready Time", value: "5 Seconds" },
+      { label: "Surgeon Memory", value: "20 Profiles" },
+      { label: "Phaco Technology", value: "easyPhaco®" },
+      { label: "Voltage", value: "100-240 V" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr. Kshijit Shukul",
+        initials: "KS",
+        date: "December 21, 2024",
+        rating: 4,
+        content: "Recently Installed Oertli Catarhex 3 phaco machine. Thanks Dr Senthil and the entire Ophthall team for helping me in procuring the machine. It is a real boon for all beginners and small practioners.",
+        location: "Lucknow"
+      },
+      {
+        id: 2,
+        author: "Dr Rashmeet Arora Nakra",
+        initials: "RA",
+        date: "December 26, 2024",
+        rating: 4,
+        content: "It was really easy and the prices were better than the market in Ophthall Buying Group. Thank you for making the group and helping us with the process for Oertli CR 3 Speep. I recommend it to all new doctors who want to buy phaco machines",
+        location: "City Clinic Eye Centre, Aligarh"
+      }
+    ]
+  },
+    {
+    id: 417,
+    name: "Ophthall Clear View Slitlamp Imaging System",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Home/Sellingproduct/sp2.jpeg",
+    tag: null,
+    section: "bestselling",
+    images: [
+      "/assets/Products/clearview-slitlamp-img1.png",
+      "/assets/Products/clearview-slitlamp-img2.png",
+      "/assets/Products/clearview-slitlamp-img3.png",
+      "/assets/Products/clearview-slitlamp-img4.png",
+      "/assets/Products/clearview-slitlamp-img5.png",
+      "/assets/Products/clearview-slitlamp-img6.png",
+      "/assets/Products/clearview-slitlamp-img7.png",
+    ],
+    youtubeUrl: "https://www.youtube.com/embed/ZWznXHhEnyg?si=4PQxdhkcLYhhItrw",
+    fullDescription: "Ophthall Clear View Slit Lamp Imaging system is an innovative product to help improve your diagnostics and patient satisfaction. Imaging system is a good tool to demonstrate to the patients and their attenders the actual pathology and this helps in improved conversions and patient Care.\n\nOphthall Clear View Imaging system is customizable for any brand of 3 or 5 step slit lamp and is a very simple do it yourself self-installation product.\n\nVISIT OPHTHALL IMAGING PAGE FOR DETAILED INFORMATION: https://imagingsystems.ophthallmart.com/",
+    features: [
+      "Customizable for any brand of 3 or 5 step slit lamp",
+      "Simple do it yourself (DIY) self-installation",
+      "Superior Grade 80:20 Ophthall Beam Splitter (less light loss, zero observer strain)",
+      "4K top Quality HDMI Camera (12.3 Megapixels 1/2.3 Inch CMOS Sensor)",
+      "Raspberry pi Inbuilt 1.8 GHZ quadcore 2GB Ram processor (No external PC needed)",
+      "32 GB Memory Card included",
+      "Bluetooth Click Type Joystick for seamless image capture",
+      "Multifunctional customized Imaging software for report generation"
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr Lalit Kumar",
+        initials: "LK",
+        date: "March 9, 2024",
+        rating: 5,
+        content: "One of the best innovative products launched by Ophthall, has made my work easier by demonstrating to pre op patients to convince them for procedures and post op patients to show them the good outcomes of surgery- very valuable tool for every Ophthalmologist- very economical too- Congratulations to team Ophthall",
+        location: "Amrit Eye Hospital Sowcarpet – Chennai"
+      }
+    ]
+  },
+     {
+    id: 425,
+    name: "OPHTHALL VID RECORDING SYSTEM",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4.8,
+    image: "/assets/Home/Sellingproduct/sp3.png",
+    tag: "Rated 4.78",
+    section: "bestselling",
+    images:[
+      "/assets/Home/Sellingproduct/sp3.png",
+      "/assets/Products/vid-recording-img2.png",
+      "/assets/Products/vid-recording-img3.png",
+      "/assets/Products/vid-recording-img4.png",
+      "/assets/Products/vid-recording-img5.png",
+      "/assets/Products/vid-recording-img6.png",
+      "/assets/Products/vid-recording-img7.png",
+      "/assets/Products/vid-recording-img8.png",
+      "/assets/Products/vid-recording-img9.png",
+      "/assets/Products/vid-recording-img10.png",
+    ],
+    youtubeUrl: "https://www.youtube.com/embed/s8bbWNPZtrM?si=oirH67tnaRZ3396U",
+    fullDescription: "Ophthall Vid Surgical Recording system is the best in class recording system available for any kind of surgical microscopes in the market. With more than 700+ installations all over India, it is the trusted choice for ophthalmologists for high-quality surgical documentation.\n\nDesigned for documentation, conference presentations, and patient counseling, the system provides exceptional clarity and ease of use. It features a custom-made beam splitter with an 80:20 ratio, ensuring optimal field illumination while capturing high-definition video. Compatible with all major brands including Zeiss, Appasamy, Leica, and more.\n\nVISIT OPHTHALL IMAGING PAGE: https://imagingsystems.ophthallmart.com/",
+    features: [
+      "Custom Made Ophthall Beam Splitter (80:20 Split Ratio)",
+      "Universal Compatibility (Zeiss, Appasamy, Leica, etc.)",
+      "F-60 Focal Length for C-Mount",
+      "ESC 16 MP High Definition Recording Camera",
+      "Inbuilt 32GB Memory Card for direct recording",
+      "Full HD Video Capture Resolution (1920 x 1080)",
+      "Ultra-Lightweight design (550 Grams)",
+      "Simple 'Do It Yourself' self-installation",
+      "Remote Control for cordless video recording"
+    ],
+    cameraOptions: [
+      {
+        name: "16 MP HDMI Camera (Standard)",
+        description: "Sony Chip, Micro SD recording. Best for Anterior Segment Surgery."
+      },
+      {
+        name: "Full HD 1080p HDR Camera & Recorder",
+        description: "60 FPS Zero Delay, USB Drive recording. Best for Posterior Segment/Retinal Surgery."
+      },
+      {
+        name: "4K Ultra-High Resolution Camera",
+        description: "8 MP Premium Resolution, 60 FPS, 4K USB Recording. Premium for Retinal Surgeries."
+      }
+    ],
+    specs: [
+      { label: "Split Ratio", value: "80:20 (Viewing:Recording)" },
+      { label: "Focal Length", value: "F-60 for C Mount" },
+      { label: "Resolution", value: "Up to 4K Ultra HD" },
+      { label: "Weight", value: "550 Grams" },
+      { label: "Storage", value: "32GB SD Card / USB Drive" },
+      { label: "Frame Rate", value: "Up to 60 FPS" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr Harikrishnan Vannadil",
+        initials: "HV",
+        date: "March 7, 2022",
+        rating: 5,
+        content: "A very good recording system with fantastic clarity. I managed to install it myself on my Lumera 300 microscope. The SD card recording is very good.",
+        location: "Lumera 300 Installation"
+      },
+      {
+        id: 2,
+        author: "Dr ASWINI KUMAR BEHERA",
+        initials: "AB",
+        date: "June 7, 2023",
+        rating: 5,
+        content: "Extremely happy with the recording, Still the image quality is good. Thank you Dr. senthil sir and good shout out to supporting staff.",
+        location: "Founder, Naitrika Super Specialty Eye Care"
+      },
+      {
+        id: 3,
+        author: "Dr Tejaswi Prasad",
+        initials: "TP",
+        date: "June 21, 2024",
+        rating: 5,
+        content: "The camera quality is excellent, capturing surgical details with great precision. Service engineer was highly knowledgeable. Highly recommend it.",
+        location: "Aravind Eye Hospital, Madurai"
+      },
+      {
+        id: 4,
+        author: "Dr N R Rangaraj",
+        initials: "NR",
+        date: "September 4, 2022",
+        rating: 5,
+        content: "Good recording system, the micro SD card makes transfer of data seamless into clips for presentations and patient information.",
+        location: "September 4, 2022"
+      },
+      {
+        id: 5,
+        author: "Dr. P. Raja Sekhar",
+        initials: "PR",
+        date: "September 4, 2022",
+        rating: 5,
+        content: "Very Good quality recording system. Used for retina surgeries also… Very happy with this value for money product….",
+        location: "Retina Specialist"
+      }
+    ]
+  },
+    {
+    id: 517,
+    name: "OPHTHALL-SURGICAL MICROSCOPE",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 5,
+    image: "/assets/Home/Sellingproduct/sp4.png",
+    tag: "Rated 5.0",
+    section: "bestselling",
+    images: [
+      "/assets/Home/Sellingproduct/sp4.png",
+      "/assets/Products/surgical-microscope-img1.png",
+      "/assets/Products/surgical-microscope-img2.png",
+      "/assets/Products/surgical-microscope-img3.png",
+
+    ],
+    fullDescription: "Ophthalmic Surgical Microscopes was born out of the need for a Top Quality Yet Affordable Microscope for the Indian Ophthalmologist. These microscopes come in various models and are made in India with Imported Optics. Now Every Ophthalmologist in India can Own a Surgical Microscope and start his own OT. These microscopes are exclusively manufactured for Ophthall by experts with more than 30+ Years Experience in Surgical Microscope Manufacturing Technologies.\n\nNow everyone can Own One",
+    features: [
+      "Sleek and compact Design Occupying Less Space in your Operation Theater",
+      "Imported Top Quality Optics",
+      "40000+ Working Hours Yellow LED Light Source",
+      "Make in India Product - Designed by Ophthalmologists for Ophthalmologists",
+      "Product of Ophthall Practice Development",
+      "300+ Satisfied Customers all over India",
+      "Most Economical and Best in Quality Microscope in India",
+      "Accessories: Camera Attachment with Monitor, Red Glo Enhancer",
+      "Ophthal Pro- Combo: Available for both Ophthal and ENT surgeries"
+    ],
+    specs: [
+      { label: "Model", value: "Ophthall Pro" },
+      { label: "Experience", value: "30+ Years in Manufacturing" },
+      { label: "Optics", value: "Imported Top Quality" },
+      { label: "Light Source", value: "Yellow LED (40000+ Working Hours)" },
+      { label: "Origin", value: "Made in India" },
+      { label: "Customers", value: "300+ All Over India" },
+      { label: "Design", value: "Sleek & Compact" }
+    ]
+  },
 ];
 
 export const TRENDING_PRODUCTS = [
