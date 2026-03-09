@@ -185,7 +185,6 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                     <Star size={14} className="md:w-4 md:h-4" fill="currentColor" />
                                 </div>
                                 {product.reviews && product.reviews.length > 0 && <span>({product.reviews.length} Reviews)</span>}
-                                <span className="w-1 h-1 bg-slate-300 rounded-full"></span>
                                 <span className="text-green-600 font-medium">In Stock</span>
                             </div>
                         </div>
@@ -238,7 +237,7 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                             )}
                         </div>
 
-                        <div className="flex gap-4 pt-4">
+                        <div className="flex flex-col sm:flex-row gap-4 pt-4">
                             <button
                                 onClick={() => onAdd(product)}
                                 className={`flex-1 py-3 px-4 md:px-6 rounded-lg font-bold text-sm md:text-base transition-all duration-200 flex items-center justify-center gap-2 group
@@ -257,7 +256,20 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                     'Add to Enquiry Cart'
                                 )}
                             </button>
-                            <Button variant="outline" className="px-4">
+
+                            {product.pdfUrl && (
+                                <a
+                                    href={product.pdfUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex-1 py-3 px-4 md:px-6 rounded-lg font-bold text-sm md:text-base transition-all duration-200 flex items-center justify-center gap-2 bg-[#0B2C4D] hover:bg-[#1e4068] text-white"
+                                >
+                                    <Play size={16} className="rotate-0" fill="currentColor" />
+                                    View Brochure
+                                </a>
+                            )}
+
+                            <Button variant="outline" className="px-4 py-3 sm:w-auto h-auto">
                                 <Heart />
                             </Button>
                         </div>

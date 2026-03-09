@@ -506,8 +506,103 @@ export const PRODUCTS = [
   // DISPOSABLES
 
   // SURGICAL INSTRUMENTS
-  { id: 511, name: "Oertli CR3 with SPEEP Phaco Machine", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Home/Sellingproduct/sp1.jpg", tag: "Rated 4.0", section: "bestselling" },
-  { id: 517, name: "OPHTHALL-SURGICAL MICROSCOPE", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 5, image: "/assets/Home/Sellingproduct/sp4.png", tag: "Rated 5.0", section: "bestselling" },
+  {
+    id: 511,
+    name: "Oertli CR3 with SPEEP Phaco Machine",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/oertli-cr3-img1.png",
+    tag: "Rated 4.0",
+    section: "bestselling",
+    images: [
+      "/assets/Products/oertli-cr3-img1.png",
+      "/assets/Products/oertli-cr3-img2.png",
+      "/assets/Products/oertli-cr3-img3.png",
+      "/assets/Products/oertli-cr3-img4.png",
+      "/assets/Products/oertli-cr3-img5.png",
+    ],
+    youtubeUrl: "https://www.youtube.com/embed/BHgGw7vr17I?si=cHkOhVcDWphVpQ82",
+    fullDescription: "Oertli CR3 with SPEEP Phaco Machine\n\nThe Oertli surgical platform CataRhex 3 impressively demonstrates that great platforms can sometimes be very small. With hitherto unachieved compactness and a lightweight of five kilogrammes, the CataRhex 3 device is consistently geared to mobility and portability – without making any compromises on performance.\n\nThe CataRhex 3 is newly featured with the unique SPEEP pump, which provides even more flexibility and control. easyPhaco technology ensures safe and efficient emulsification. Oertli makes The Eye Surgery Easier, Safer and more Efficient. Oertli has become one of the highest selling Phaco machine and Vitrectomy machine selling brand in India.\n\nThanks to the HF capsulotomy tip, capsulorhexis has become incredibly easy. In the I/A mode, the SPEEP pump ensures even greater safety. A compressor has been integrated for anterior vitrectomy, and in glaucoma surgery, the HFDS application ensures excellent long-term results.\n\nCataRhex 3 ® with the incorporation of SPEEP is now Smallest Phaco Emulsificaion System with 2 Pumps. With The easyPhaco ® technology that gives highest chamber stability and stress free surgical environment for the surgeon.\n\nPurchase the CR3 with SPEEP through the Ophthall Buying Group to get the best price advantage",
+    features: [
+      "Third generation CataRhex family with 15 years research",
+      "Programming capacity for 20 different surgeons",
+      "Compact and Lightweight (5kg) for perfect portability",
+      "Ultra-fast boot time (ready in 5 seconds)",
+      "Unique SPEEP Mode for simultaneous Flow and Vacuum control",
+      "easyPhaco® technology for highest chamber stability",
+      "HF capsulotomy tip for easy capsulorhexis",
+      "Integrated compressor for anterior vitrectomy",
+      "Universal voltage compatibility (100-240V)"
+    ],
+    specs: [
+      { label: "Manufacturer", value: "Oertli (Swiss Made)" },
+      { label: "Pump Type", value: "Unique SPEEP Pump (2 Pumps)" },
+      { label: "Weight", value: "5 kg" },
+      { label: "Ready Time", value: "5 Seconds" },
+      { label: "Surgeon Memory", value: "20 Profiles" },
+      { label: "Phaco Technology", value: "easyPhaco®" },
+      { label: "Voltage", value: "100-240 V" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr. Kshijit Shukul",
+        initials: "KS",
+        date: "December 21, 2024",
+        rating: 4,
+        content: "Recently Installed Oertli Catarhex 3 phaco machine. Thanks Dr Senthil and the entire Ophthall team for helping me in procuring the machine. It is a real boon for all beginners and small practioners.",
+        location: "Lucknow"
+      },
+      {
+        id: 2,
+        author: "Dr Rashmeet Arora Nakra",
+        initials: "RA",
+        date: "December 26, 2024",
+        rating: 4,
+        content: "It was really easy and the prices were better than the market in Ophthall Buying Group. Thank you for making the group and helping us with the process for Oertli CR 3 Speep. I recommend it to all new doctors who want to buy phaco machines",
+        location: "City Clinic Eye Centre, Aligarh"
+      }
+    ]
+  },
+  {
+    id: 517,
+    name: "OPHTHALL-SURGICAL MICROSCOPE",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 5,
+    image: "/assets/Home/Sellingproduct/sp4.png",
+    tag: "Rated 5.0",
+    section: "bestselling",
+    images: [
+      "/assets/Home/Sellingproduct/sp4.png",
+      "/assets/Products/ophthall-surgical-microscope-img1.png",
+      "/assets/Products/ophthall-surgical-microscope-img2.png",
+      "/assets/Products/ophthall-surgical-microscope-img3.png",
+
+    ],
+    fullDescription: "Ophthalmic Surgical Microscopes was born out of the need for a Top Quality Yet Affordable Microscope for the Indian Ophthalmologist. These microscopes come in various models and are made in India with Imported Optics. Now Every Ophthalmologist in India can Own a Surgical Microscope and start his own OT. These microscopes are exclusively manufactured for Ophthall by experts with more than 30+ Years Experience in Surgical Microscope Manufacturing Technologies.\n\nNow everyone can Own One",
+    features: [
+      "Sleek and compact Design Occupying Less Space in your Operation Theater",
+      "Imported Top Quality Optics",
+      "40000+ Working Hours Yellow LED Light Source",
+      "Make in India Product - Designed by Ophthalmologists for Ophthalmologists",
+      "Product of Ophthall Practice Development",
+      "300+ Satisfied Customers all over India",
+      "Most Economical and Best in Quality Microscope in India",
+      "Accessories: Camera Attachment with Monitor, Red Glo Enhancer",
+      "Ophthal Pro- Combo: Available for both Ophthal and ENT surgeries"
+    ],
+    specs: [
+      { label: "Model", value: "Ophthall Pro" },
+      { label: "Experience", value: "30+ Years in Manufacturing" },
+      { label: "Optics", value: "Imported Top Quality" },
+      { label: "Light Source", value: "Yellow LED (40000+ Working Hours)" },
+      { label: "Origin", value: "Made in India" },
+      { label: "Customers", value: "300+ All Over India" },
+      { label: "Design", value: "Sleek & Compact" }
+    ]
+  },
   {
     id: 550,
     name: "EXTRA CAPSULAR CATARACT SET",
@@ -1427,17 +1522,424 @@ export const PRODUCTS = [
   { id: 911, name: "Ophthall GloMaster - RedGlow Enhancement Device for Surgical Microscopes", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p40.png", tag: null, section: "shop" },
   { id: 912, name: "OPHTHALL LENSIT RM-9600 AUTO REF", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p46.png", tag: null, section: "shop" },
   { id: 913, name: "Ophthall Manual Phoropter", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p48.png", tag: null, section: "shop" },
-  { id: 914, name: "OPHTHALL MEDISTER CLASS B BENCHTOP AUTOCLAVE 22 Liters", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p51.png", tag: null, section: "shop" },
-  { id: 915, name: "Ophthall Portable Microscope - Table Top", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p56.png", tag: null, section: "shop" },
-  { id: 916, name: "Ophthall Pro Vision Chart", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "₹22,000", rating: 5, image: "/assets/Products/p57.png", tag: "Sale", section: "shop" },
-  { id: 917, name: "Ophthall Wireless LED Indirect Ophthalmoscope", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p58.png", tag: null, section: "shop" },
-  { id: 918, name: "REXXAM ( Shin Nippon) NCT-200", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p64.png", tag: null, section: "shop" },
-  { id: 919, name: "REXXAM SPM-700 Specular Microscope", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p66.png", tag: null, section: "shop" },
-  { id: 920, name: "Sonoptek A/B Scan", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p68.png", tag: null, section: "shop" },
-  { id: 921, name: "SP-1000AP - A-Scan/Pachymeter", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p69.png", tag: null, section: "shop" },
-  { id: 922, name: "Spectral Domain OCT", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p71.png", tag: null, section: "shop" },
-  { id: 923, name: "TAKAGI OPERATING MICROSCOPES", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p73.png", tag: null, section: "shop" },
-  { id: 924, name: "XENOTRON XENON LIGHT SOURCE", category: "DIAGNOSTIC/SURGICAL EQUIPMENTS", price: "Enquire", rating: 4, image: "/assets/Products/p74.png", tag: null, section: "shop" },
+  {
+    id: 914,
+    name: "OPHTHALL MEDISTER CLASS B BENCHTOP AUTOCLAVE 22 Liters",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/medister-classB-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/medister-classB-img1.png",
+      "/assets/Products/medister-classB-img2.png",
+      "/assets/Products/medister-classB-img3.png",
+      "/assets/Products/medister-classB-img4.png",
+      "/assets/Products/medister-classB-img5.png",
+    ],
+    fullDescription: "OPHTHALL MEDISTER CLASS B BENCHTOP AUTOCLAVE\n\nHigh-performance Class B Benchtop Autoclave designed for medical and ophthalmic sterilization needs. Featuring a convenient and fast single-lever locking door, this system ensures maximum safety and efficiency in your sterilization workflow.\n\nIt comes with 8 preset programs and 1 user-defined program, covering a temperature range of 121°C to 134°C. The system includes a bacterial filter, built-in printer, and USB port for seamless data output and documentation.\n\nFor More Details WhatsApp +91-9176702051",
+    features: [
+      "Convenient and fast single-lever locking door",
+      "8 preset and 1 user-defined sterilization programs",
+      "B&D / Helix test / Vacuum test & Cleaning programs",
+      "Bacterial filter, internal printer, and USB port included",
+      "Separate water tanks for freshwater & wastewater",
+      "Audio and visual safety alarms",
+      "Dry time customizable from 1 to 25 minutes",
+      "Vacuum cycles selectable from 1 to 10 times"
+    ],
+    specs: [
+      { label: "Class", value: "Class B Benchtop" },
+      { label: "Available Capacities", value: "17L, 21L, 35L, 50L" },
+      { label: "Sterilization Temp", value: "121°C to 134°C" },
+      { label: "Sterilization Time", value: "0 to 60 Minutes" },
+      { label: "Dry Time", value: "1 to 25 Minutes" },
+      { label: "Power Supply", value: "230 VAC, 50 HZ, Single Phase" },
+      { label: "Data Output", value: "Printer & USB Port" }
+    ],
+    safety: [
+      "Overpressure Protection",
+      "Pressure-balanced Lid Lock",
+      "Electric Interlock for Lid Lock",
+      "Electrical Safety via MCB",
+      "Integrated Audio/Visual Alarms"
+    ],
+    utilities: "Electric Supply: 230 VAC 50 HZ, single phase. Well-ventilated room with space of at least 200mm on all sides."
+  },
+  {
+    id: 915,
+    name: "Ophthall Portable Microscope - Table Top",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/p56.png",
+    tag: null,
+    section: "shop",
+    fullDescription: "Ophthall Portable Microscope – Table Top\n\nA top Quality Portable Multipurpose Ophthalmology Microscope and India's first Portable Microscope specifically designed for Ophthalmologists. This compact device serves multiple roles within an eye care facility.\n\nUses of Ophthall Portable:\n1. For Out Patient Department (OPD) in Eye Hospitals to perform minor procedures.\n2. For Ophthalmic Operating Theatre (OT).\n3. For Wetlab Training for trainees and students in teaching institutes.\n\nAvailable Models:\n- Ophthall – Portable\n- Ophthall – Portable with Video Recording",
+    features: [
+      "Compact and Light Weight design",
+      "360 Degree Movement of Microscope Head",
+      "In-built LED Light Source",
+      "Objective Fine focusing",
+      "Optional Wall Mount accessory",
+      "Optional C Mount Beam Splitter and Video Recording",
+      "Ideal for minor procedures and student training"
+    ],
+    specs: [
+      { label: "Type", value: "Portable Multipurpose Microscope" },
+      { label: "Head Movement", value: "360 Degree Rotation" },
+      { label: "Illumination", value: "In-built LED" },
+      { label: "Focusing", value: "Fine Objective Focusing" },
+      { label: "Portability", value: "Lightweight Table Top Design" },
+      { label: "Optional Accessories", value: "Wall Mount, Beam Splitter, Video Recording" }
+    ]
+  },
+  {
+    id: 916,
+    name: "Ophthall Pro Vision Chart",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "₹22,000",
+    rating: 5,
+    image: "/assets/Products/p57.png",
+    tag: "Sale",
+    section: "shop",
+    youtubeUrl: "https://www.youtube.com/embed/G9KbhYa4uCY?si=udz6UDIG20V7V6nh",
+    fullDescription: "Ophthall Vision Chart Pro-max: India’s Only Customizable Vision Chart with your Hospital Name or Image added to the start screen. This simple yet economical vision chart is manufactured to high industry standards using premium monitors. It offers high resolution suitable for contrast sensitivity tests and is designed to be space-saving. With its smart remote, it facilitates 'Speedy Refraction', saving up to 50% of refraction time by enabling quick-category switching at the click of a button. The advanced display modes allow Duochrome function to be applied to all available optotypes and language charts.",
+    features: [
+      "Hospital Name/Logo customization on start screen",
+      "Smart charts with random display function",
+      "Contrast Sensitivity adjustment for most charts",
+      "Adaptable to smaller rooms (Distance: 2.5m to 6m)",
+      "Exclusive Image gallery for various eye diseases",
+      "Built-in HD Surgery Videos for patient education",
+      "Extensive display modes for various optotypes",
+      "Reverse mode (Black on White / White on Black) for all charts",
+      "Automated randomization to prevent patient memorization",
+      "Red-Green filter compensation",
+      "Ergonomic remote control with direct-test commands",
+      "Solid-state design with no moving parts for durability"
+    ],
+    specs: [
+      { label: "Screen Size", value: "19 Inches (High Resolution)" },
+      { label: "Distance Options", value: "2.5M to 6M (Adjustable in steps)" },
+      { label: "Refraction Speed", value: "Save up to 50% time with Smart Remote" },
+      { label: "Chart Options", value: "Standard Optotypes & Multiple Languages" },
+      { label: "Visual Tests", value: "Duochrome, Contrast Sensitivity, Randomization" },
+      { label: "Educational Content", value: "Built-in HD Surgery Videos & Disease Gallery" },
+      { label: "Monitor Type", value: "Premium High-Brightness LED" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        author: "Dr. S. Karthik",
+        initials: "SK",
+        date: "January 14, 2024",
+        rating: 5,
+        content: "The customization with our hospital logo right on the first screen gives such a premium feel to our clinical setup! Patients are quite impressed.",
+        location: "Chennai"
+      },
+      {
+        id: 2,
+        author: "Verified User",
+        initials: "VU",
+        date: "February 2, 2024",
+        rating: 5,
+        content: "Speedy refraction really works. The remote keys are very intuitive and it significantly speeds up our daily patient workflow.",
+        location: "Mumbai"
+      },
+      {
+        id: 3,
+        author: "Eye Clinic Admin",
+        initials: "EC",
+        date: "March 10, 2024",
+        rating: 5,
+        content: "Excellent contrast sensitivity charts. The monitor is bright and the finish is very professional.",
+        location: "Delhi"
+      },
+      {
+        id: 4,
+        author: "Senior Optometrist",
+        initials: "SO",
+        date: "March 15, 2024",
+        rating: 5,
+        content: "The built-in surgery videos help so much in explaining procedures to patients. It's a great tool for patient conversion and education.",
+        location: "Bangalore"
+      }
+    ]
+  },
+  {
+    id: 917,
+    name: "Ophthall Wireless LED Indirect Ophthalmoscope",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/wireless-led-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/wireless-led-img1.png",
+      "/assets/Products/wireless-led-img2.png",
+      "/assets/Products/wireless-led-img3.png",
+    ],
+    fullDescription: "The Ophthall Wireless LED Indirect Ophthalmoscope is a high-performance, cost-effective diagnostic tool designed for precision retinal examination. Built with advanced LED illumination, this device offers bright, even lighting without the heat or maintenance of traditional halogen systems. Its cordless operation with a rechargeable battery ensures optimal portability and ease of use, whether in clinics, hospitals, or during outreach camps.\n\nThe illumination rheostat, conveniently located on the headband, provides easily accessible and fully controllable light ranging from 5% to 100% of maximum intensity. Fully adjustable optics allow for optimal viewing, and tiltable mirrors enable beam adjustment of ±4 degrees. The headband is ergonomically engineered for comfort during extended use, featuring multiple adjustment points to suit every user.",
+    features: [
+      "Wireless freedom with high-performance battery",
+      "Bright, uniform 3W LED illumination",
+      "Headband-mounted light rheostat (5% to 100%)",
+      "Three integrated spot sizes: Small, Medium, Large",
+      "Integrated filters: Yellow, Red-Free (Green), Cobalt Blue",
+      "Tiltable mirrors for adjustable beam (±4 degrees)",
+      "Lightweight, ergonomic headband design",
+      "Optimal portability for clinical or camp settings"
+    ],
+    specs: [
+      { label: "Light Source", value: "3W LED" },
+      { label: "Control", value: "Linear Variation (Rheostat on Headband)" },
+      { label: "Filters", value: "Yellow, Red-Free, Cobalt Blue, Heat Absorbing" },
+      { label: "Apertures", value: "Small, Medium, Large" },
+      { label: "Focus Distance", value: "200mm to 800mm" },
+      { label: "Illumination Area", value: "75mm, 55mm, 20mm (at 500mm)" },
+      { label: "Battery", value: "Rechargeable / Dry Cell (AA size)" },
+      { label: "Battery Backup", value: "More than 6 hours" },
+      { label: "Weight", value: "520 Grams" },
+      { label: "Case", value: "Rigid Carrying Case Included" }
+    ]
+  },
+  {
+    id: 918,
+    name: "REXXAM ( Shin Nippon) NCT-200",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/p64.png",
+    tag: null,
+    section: "shop",
+    pdfUrl: "https://1drv.ms/b/s!AhfqFC9cJSdydkDlY-Wx6-WIZFs",
+    fullDescription: "The REXXAM NCT-200 Non-Contact Tonometer features a new generation design with sophisticated curves and a metallic pearlescent finish. It incorporates the newly-developed Smart Puffing Control system (S.P.C) which uses a precise algorithm to adjust air pressure instantly to match the patient's intraocular pressure, ensuring a soft pulse and minimal noise. The newly designed smart alignment and auto-shot function reduce patient stress by minimizing measurement time. It also features a reliability warning display, automatic IOP correction based on central corneal thickness, and triple safety functions including a 'Too Close' alarm and a physical safety stopper.",
+    features: [
+      "Newly-developed Smart Puffing Control System (S.P.C)",
+      "Smart alignment & Auto shot function for speedy measurement",
+      "Reliability Warning Display (alignment & eye opening alerts)",
+      "Automatic IOP correction based on central corneal thickness",
+      "Triple Safety Functions: Too Close alarm & Safety Stopper",
+      "Feather touch sensor buttons for easy operation",
+      "Unique 10.4-inch LCD Monitor with 30° Swivel and 40° Tilt",
+      "Improved ergonomic forehead and chin rests with side flaps",
+      "Redesigned joystick for precise and instinctive movement"
+    ],
+    specs: [
+      { label: "Technology", value: "Smart Puffing Control (S.P.C) Algorithm" },
+      { label: "Alignment", value: "Smart alignment & Auto shot" },
+      { label: "Safety", value: "Electronic Alarm & Physical Stopper" },
+      { label: "IOP Correction", value: "Automatic via Central Corneal Thickness" },
+      { label: "Monitor", value: "10.4 inch LCD (30° Swivel / 40° Tilt)" },
+      { label: "User Interface", value: "Feather Touch Sensor & New Joystick" }
+    ]
+  },
+  {
+    id: 919,
+    name: "REXXAM SPM-700 Specular Microscope",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/p66.png",
+    tag: null,
+    section: "shop",
+    pdfUrl: "https://1drv.ms/b/s!AhfqFC9cJSdyedshoRimumeVmG0",
+    fullDescription: "The REXXAM SPM-700 Specular Microscope is an all-in-one diagnostic system capable of capturing 16 independent images of the corneal endothelium in just 2 seconds. The system features a speedy analysis function that selects the best image automatically and finishes analysis in just 1 second. It measures a total of 17 points across the center, paracenter, and periphery. It can also measure corneal thickness simultaneously. The device offers extensive editing functions for contrast and brightness, manual analysis options (center and frame methods), and four distinct display modes. The 10.4-inch swivel/tilt screen and electric chinrest ensure ease of use for both operator and patient.",
+    features: [
+      "Continuous Capturing: 16 images in 2 seconds",
+      "Speedy Analysis: Best image selection & analysis in 1 sec",
+      "Multiple Measurement Points: center, 6 paracenter, 10 periphery",
+      "Simultaneous Corneal Thickness Measurement",
+      "Advanced Edit Function: Contrast, brightness, and cell results",
+      "Dual Manual Analysis: Center method and Frame method",
+      "4 Display Modes: Endothelial image, Trace, Area, and Pleomorphism",
+      "10.4 inch wide color swivel/tilt screen",
+      "Electric Chinrest with easy eye mark alignment"
+    ],
+    specs: [
+      { label: "Capture Speed", value: "16 images in 2 sec" },
+      { label: "Analysis Speed", value: "Automatic selection in 1 sec" },
+      { label: "Measurement Range", value: "0.25mm x 0.55mm" },
+      { label: "Measurement Points", value: "17 (Center, Paracenter, Periphery)" },
+      { label: "Display", value: "10.4 inch wide color screen (Swivel/Tilt)" },
+      { label: "Chinrest", value: "Electric" }
+    ]
+  },
+  {
+    id: 920,
+    name: "Sonoptek A/B Scan",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/sonoptek-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/sonoptek-img1.png",
+      "/assets/Products/sonoptek-img2.png",
+      "/assets/Products/sonoptek-img3.png",
+      "/assets/Products/sonoptek-img4.png",
+      "/assets/Products/sonoptek-img5.png",
+      "/assets/Products/sonoptek-img6.png",
+    ],
+    fullDescription: "The Sonoptek SP-2000 is a compact and lightweight A/B scanning system featuring a one-station working platform. It provides integrated image capture, comprehensive patient management, and professional report editing within a single device. Its portable design makes it ideal for versatile clinical environments while maintaining high-quality diagnostic imaging.",
+    features: [
+      "Compact Body and Lightweight design",
+      "One Station Working Platform",
+      "Integrated High-Quality Image Capture",
+      "Integrated Patient Management System",
+      "Integrated Professional Report Editing",
+      "Versatile A/B Scan capabilities"
+    ],
+    specs: [
+      { label: "Model", value: "Sonoptek SP-2000" },
+      { label: "Type", value: "A/B Scan System" },
+      { label: "Weight", value: "Compact & Lightweight" },
+      { label: "Platform", value: "One Station Comprehensive Platform" }
+    ]
+  },
+  {
+    id: 921,
+    name: "SP-1000AP - A-Scan/Pachymeter",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/sp-1000AP-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/sp-1000AP-img1.png",
+      "/assets/Products/sp-1000AP-img2.png",
+      "/assets/Products/sp-1000AP-img3.png",
+      "/assets/Products/sp-1000AP-img4.png"
+    ],
+    fullDescription: "The SP-1000AP is a high-precision combined A-Scan and Pachymeter unit designed for comprehensive ocular biometric measurements. It features a compact and lightweight body with a user-friendly LCD touch screen for intuitive operation. The device supports both contact and immersion modes for A-Scanning and provides multiple IOL power calculation formulas. With a built-in thermal printer and PC connectivity options, it streamlines diagnostic workflows and documentation in ophthalmic practices.",
+    features: [
+      "Compact Body and Lightweight design",
+      "User-Friendly LCD Touch Screen interface",
+      "Supports Contact and Immersion measurement modes",
+      "Multiple IOL Power Calculation formulas",
+      "Built-in Thermal Printer for instant reports",
+      "Capable of Connecting to PC for data management",
+      "Optional Professional Workstation on PC"
+    ],
+    specs: [
+      { label: "A-Scan Probe", value: "10MHz Frequency" },
+      { label: "Axial Length Range", value: "14.0 - 46.0mm" },
+      { label: "A-Scan Accuracy", value: "±0.1mm" },
+      { label: "IOL Formulas", value: "6 Available Formulas" },
+      { label: "Pachymeter Probe", value: "20MHz Frequency" },
+      { label: "Pachymeter Range", value: "125 - 1000 microns" },
+      { label: "Pachymeter Accuracy", value: "±10 microns" }
+    ]
+  },
+  {
+    id: 922,
+    name: "Spectral Domain OCT",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/spectral-domain-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/spectral-domain-img1.png",
+      "/assets/Products/spectral-domain-img2.png",
+      "/assets/Products/spectral-domain-img3.png",
+    ],
+    youtubeUrl: "https://www.youtube.com/embed/zpSxhO030_w?si=Dzx8CgEPVhN1yMVC",
+    fullDescription: "The SPECTRALIS® from Heidelberg Engineering is an ophthalmic imaging platform optimized for the posterior segment. Featuring an upgradable, modular design, this platform allows clinicians to configure the SPECTRALIS to their specific diagnostic workflow, whether in a private practice or large hospital clinic. It offers multimodal imaging capabilities that provide a comprehensive view of ocular health.",
+    features: [
+      "Upgradable, modular platform design",
+      "Multimodal imaging options including OCT",
+      "Scanning laser fundus imaging modalities",
+      "Widefield and ultra-widefield imaging",
+      "Scanning laser angiography and OCT angiography",
+      "Highly customizable diagnostic workflow integration"
+    ],
+    specs: [
+      { label: "Manufacturer", value: "Heidelberg Engineering" },
+      { label: "Model", value: "Spectralis" },
+      { label: "Imaging Type", value: "Multimodal Imaging Platform" },
+      { label: "Modularity", value: "Fully Upgradable & Modular" },
+      { label: "Applications", value: "Posterior Segment / Retina Diagnostics" }
+    ]
+  },
+  {
+    id: 923,
+    name: "TAKAGI OPERATING MICROSCOPES",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/takagi-operating-img1.png",
+    tag: null,
+    section: "shop",
+    images: [
+      "/assets/Products/takagi-operating-img1.png",
+      "/assets/Products/takagi-operating-img2.png",
+      "/assets/Products/takagi-operating-img3.png",
+      "/assets/Products/takagi-operating-img4.png",
+
+    ],
+    fullDescription: "Takagi offers a range of high-performance operating microscopes designed for various ophthalmic surgical needs. From entry-level models to advanced systems, Takagi microscopes are known for their optical clarity, ergonomic design, and innovative features. For pricing details, contact via WhatsApp at +91-8754517944 or +91-9176054051.\n\nModels include the OM-6 (Entry-level), OM-9 (Outstanding clarity), and the advanced OM-19 (Independent light adjustment).",
+    features: [
+      "OM-6: Entry-level, LED light source, compact size with high optical performance",
+      "OM-9: LED optimized system for outstanding clarity, multi-specification configurations",
+      "OM-19: World's first with independent coaxial and red-reflex light adjustment",
+      "OM-19: Includes X-Y coupling, zoom magnification, and tiltable eyepieces",
+      "OM-19: Rotating coaxial stereoscopic assistant microscope",
+      "Suitable for both anterior and posterior surgical procedures (OM-9 & OM-19)",
+      "Long-lasting LED illumination systems across models"
+    ],
+    specs: [
+      { label: "Manufacturer", value: "Takagi (Japan)" },
+      { label: "Available Models", value: "OM-6, OM-9, OM-19" },
+      { label: "Illumination type", value: "LED (Optimized)" },
+      { label: "OM-19 Features", value: "Zoom, X-Y Coupling, Red-Reflex Adjustment" },
+      { label: "Support", value: "WhatsApp +91-8754517944 / +91-9176054051" }
+    ]
+  },
+  {
+    id: 924,
+    name: "XENOTRON XENON LIGHT SOURCE",
+    category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
+    price: "Enquire",
+    rating: 4,
+    image: "/assets/Products/xenotron-xenon-img1.png",
+    tag: null,
+    section: "shop",
+    images:[
+      "/assets/Products/xenotron-xenon-img1.png",
+      "/assets/Products/xenotron-xenon-img2.png",
+      "/assets/Products/xenotron-xenon-img3.png",
+      "/assets/Products/xenotron-xenon-img4.png",
+      "/assets/Products/xenotron-xenon-img5.png",
+      "/assets/Products/xenotron-xenon-img6.png",
+      "/assets/Products/xenotron-xenon-img7.png",
+
+    ],
+    fullDescription: "The XENOTRON III is a next-generation xenon light source designed for pars plana vitrectomy. It features a flexible, compact design that minimizes space in the operating room. The system includes the unique PHOTOTOXGUARD safety mechanism to improve clinical routine and ensure maximum light output for fundus illumination. For more details, contact +91-9176702051.",
+    features: [
+      "Mobile stand-alone solution compatible with any vitrectomy device",
+      "PHOTOTOXGUARD: Safety system for monitoring phototoxicity limits (ISO 15004-2)",
+      "Maximum light output with up to 80 lumens",
+      "Intuitive color touch screen with user profile memory for up to six surgeons",
+      "Dynamic adaptation of phototoxicity limits during setting changes",
+      "Wide range of fiber optics compatibility",
+      "Preconfigured settings for 20 to 25 gauge vitrectomy"
+    ],
+    specs: [
+      { label: "Light Source", value: "High-power Xenon System" },
+      { label: "Max Lumens", value: "80 lumens" },
+      { label: "Safety System", value: "PHOTOTOXGUARD (ISO 15004-2)" },
+      { label: "Compatibility", value: "Any vitrectomy device, complementing megaTRON S4HPS" },
+      { label: "User Profiles", value: "Up to 6 Surgeons" },
+      { label: "Operation", value: "Intuitive Color Touch Screen" }
+    ]
+  },
   // PRE-OWNED
   {
     id: 426,
