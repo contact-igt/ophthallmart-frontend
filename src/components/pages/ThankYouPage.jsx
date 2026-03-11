@@ -112,7 +112,7 @@ const ThankYouPage = ({ type = 'enquiry', handleNav }) => {
                             <p className="text-slate-400 text-sm italic">Need immediate help?</p>
                             <a href="tel:+919840324333" className="text-[#0B2C4D] font-bold flex items-center gap-2 hover:text-[#EA580C] transition-colors">
                                 <Phone size={18} />
-                                +91 98403 24333
+                                1800-572-1051 (Toll Free)
                             </a>
                         </div>
                     </div>
