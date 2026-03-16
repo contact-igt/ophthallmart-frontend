@@ -1,27 +1,42 @@
 export const CATEGORIES = [
-  { id: 1, name: "DIAGNOSTIC/SURGICAL EQUIPMENTS", icon: "Activity", image: "/assets/Home/cat1.png" },
-  { id: 2, name: "DISPOSABLES", icon: "Stethoscope", image: "/assets/Home/cat2.png" },
-  { id: 3, name: "SURGICAL INSTRUMENTS", icon: "Settings", image: "/assets/Home/cat3.png" },
-  { id: 4, name: "OPTICAL PRODUCTS", icon: "Eye", image: "/assets/Home/cat4.png" },
-  { id: 5, name: "EYE HOSPITAL/CLINIC ESTABLISHMENT", icon: "Briefcase", image: "/assets/Home/cat5.png" },
-  { id: 6, name: "GENERAL PRODUCTS", icon: "CheckCircle", image: "/assets/Home/cat6.png" },
-  { id: 7, name: "STERILIZATION/DISINFECTION", icon: "Shield", image: "/assets/Home/cat6.png" },
-  { id: 8, name: "PRE-OWNED", icon: "Package", image: "/assets/Home/Collection/collection3.png" }
+  { id: 1,
+ name: "DIAGNOSTIC/SURGICAL EQUIPMENTS", icon: "Activity", image: "/assets/Home/cat1.png" },
+  { id: 2,
+ name: "DISPOSABLES", icon: "Stethoscope", image: "/assets/Home/cat2.png" },
+  { id: 3,
+ name: "SURGICAL INSTRUMENTS", icon: "Settings", image: "/assets/Home/cat3.png" },
+  { id: 4,
+ name: "OPTICAL PRODUCTS", icon: "Eye", image: "/assets/Home/cat4.png" },
+  { id: 5,
+ name: "EYE HOSPITAL/CLINIC ESTABLISHMENT", icon: "Briefcase", image: "/assets/Home/cat5.png" },
+  { id: 6,
+ name: "GENERAL PRODUCTS", icon: "CheckCircle", image: "/assets/Home/cat6.png" },
+  { id: 7,
+ name: "STERILIZATION/DISINFECTION", icon: "Shield", image: "/assets/Home/cat6.png" },
+  { id: 8,
+ name: "PRE-OWNED", icon: "Package", image: "/assets/Home/Collection/collection3.png" }
 ];
 
 export const HOME_CATEGORIES = [
-  { id: 1, name: "Diagnostic / Surgical Equipments / Instruments", image: "/assets/Home/Collection/collection1.png" },
-  { id: 2, name: "Consumables/ Disposables", image: "/assets/Home/Collection/collection2.png" },
-  { id: 3, name: "PRE-OWNED", image: "/assets/Home/Collection/collection3.png" },
-  { id: 4, name: "Optical Products", image: "/assets/Home/Collection/collection4.png" },
-  { id: 5, name: "Eye Hospital/ Clinic Establishment", image: "/assets/Home/Collection/collection5.png" },
-  { id: 6, name: "General Products", image: "/assets/Home/Collection/collection6.png" }
+  { id: 1,
+ name: "Diagnostic / Surgical Equipments / Instruments", image: "/assets/Home/Collection/collection1.png" },
+  { id: 2,
+ name: "Consumables/ Disposables", image: "/assets/Home/Collection/collection2.png" },
+  { id: 3,
+ name: "PRE-OWNED", image: "/assets/Home/Collection/collection3.png" },
+  { id: 4,
+ name: "Optical Products", image: "/assets/Home/Collection/collection4.png" },
+  { id: 5,
+ name: "Eye Hospital/ Clinic Establishment", image: "/assets/Home/Collection/collection5.png" },
+  { id: 6,
+ name: "General Products", image: "/assets/Home/Collection/collection6.png" }
 ];
 
 export const PRODUCTS = [
   // DIAGNOSTIC/SURGICAL EQUIPMENTS
   {
     id: 401,
+    isSoldOut: false,
     name: "3Nethra aberro Hand-held Autorefractometer",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -70,6 +85,8 @@ export const PRODUCTS = [
   },
   {
     id: 402,
+    isSoldOut: false,
+
     name: "3Nethra Classic Digital Non-mydriatic Fundus Camera",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -101,6 +118,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr Devdutta Nayak",
         initials: "DN",
         date: "April 7, 2022",
@@ -111,6 +129,8 @@ export const PRODUCTS = [
   },
   {
     id: 403,
+    isSoldOut: false,
+
     name: "3Nethra Classic HD Digital Fundus camera",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -149,6 +169,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr Senthil",
         initials: "DS",
         date: "March 8, 2022",
@@ -159,6 +180,8 @@ export const PRODUCTS = [
   },
   {
     id: 404,
+    isSoldOut: false,
+
     name: "Anterion- Multimodal Anterior Segment Imaging System",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -179,6 +202,8 @@ export const PRODUCTS = [
   },
   {
     id: 501,
+    isSoldOut: false,
+
     name: "Ansell Encore Latex Micro Powder Free Surgical Gloves",
     category: "DISPOSABLES",
     price: "Enquire",
@@ -202,6 +227,8 @@ export const PRODUCTS = [
   },
   {
     id: 502,
+    isSoldOut: false,
+
     name: "Ansell Gammex Latex Powder Free Surgical Gloves",
     category: "DISPOSABLES",
     price: "Enquire",
@@ -227,6 +254,8 @@ export const PRODUCTS = [
   },
   {
     id: 405,
+    isSoldOut: false,
+
     name: "Applanation Tonometer T170 R Type",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -260,6 +289,8 @@ export const PRODUCTS = [
   },
   {
     id: 406,
+    isSoldOut: false,
+
     name: "Autophoropter YPA-2100 (Digital Refractor)",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -298,6 +329,8 @@ export const PRODUCTS = [
   },
   {
     id: 998,
+    isSoldOut: false,
+
     name: "AVA – Elisar",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -327,6 +360,8 @@ export const PRODUCTS = [
   },
   {
     id: 407,
+    isSoldOut: false,
+
     name: "Bosch- Portable Handheld Fundus Camera",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -368,6 +403,8 @@ export const PRODUCTS = [
   },
   {
     id: 408,
+    isSoldOut: false,
+
     name: "Catarhex 3 Easy Phaco Machine",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -399,6 +436,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr.K.Jayasri",
         initials: "KJ",
         date: "March 3, 2022",
@@ -407,6 +445,7 @@ export const PRODUCTS = [
       },
       {
         id: 2,
+
         author: "Dr Kshijit Shukul",
         initials: "KS",
         date: "March 8, 2022",
@@ -417,6 +456,8 @@ export const PRODUCTS = [
   },
   {
     id: 409,
+    isSoldOut: false,
+
     name: "Ellex – UltraQ – Yag Laser",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -448,6 +489,8 @@ export const PRODUCTS = [
   },
   {
     id: 410,
+    isSoldOut: false,
+
     name: "Eye Light Espansione Dry Eye Treatment System",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -469,6 +512,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Verified Customer",
         initials: "VC",
         date: "March 9, 2024",
@@ -485,10 +529,16 @@ export const PRODUCTS = [
       { label: "Gel Requirement", value: "None Required" }
     ]
   },
-  { id: 411, name: "eyevis Motorized Table", category: "GENERAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p18.png", tag: null, section: "shop" },
-  { id: 412, name: "I Optik CV 7800 – Wireles Auto Phoropter", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p20.png", tag: null, section: "shop" },
+  { id: 411,
+    isSoldOut: false,
+ name: "eyevis Motorized Table", category: "GENERAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p18.png", tag: null, section: "shop" },
+  { id: 412,
+    isSoldOut: false,
+ name: "I Optik CV 7800 – Wireles Auto Phoropter", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p20.png", tag: null, section: "shop" },
   {
     id: 413,
+    isSoldOut: false,
+
     name: "Me Check MGD- Screening System",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -513,6 +563,8 @@ export const PRODUCTS = [
   },
   {
     id: 414,
+    isSoldOut: false,
+
     name: "MEDIWORKS ANTERIOR SEGMENT ANALYZER SCANSYS TA 517",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -547,6 +599,8 @@ export const PRODUCTS = [
   },
   {
     id: 415,
+    isSoldOut: false,
+
     name: "MEDIWORKS DIGITAL SLITLAMP WITH DRY EYE DIAGNOSTIC SYSTEM",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -580,6 +634,8 @@ export const PRODUCTS = [
   },
   {
     id: 416,
+    isSoldOut: false,
+
     name: "MEDIWORKS S390L (FIREFLY WDR) SLIT LAMP MICROSCOPE",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -611,6 +667,8 @@ export const PRODUCTS = [
   },
   {
     id: 417,
+    isSoldOut: false,
+
     name: "Ophthall Clear View Slitlamp Imaging System",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -642,6 +700,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr Lalit Kumar",
         initials: "LK",
         date: "March 9, 2024",
@@ -658,6 +717,8 @@ export const PRODUCTS = [
   // SURGICAL INSTRUMENTS
   {
     id: 511,
+    isSoldOut: false,
+
     name: "Oertli CR3 with SPEEP Phaco Machine",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -697,6 +758,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr. Kshijit Shukul",
         initials: "KS",
         date: "December 21, 2024",
@@ -706,6 +768,7 @@ export const PRODUCTS = [
       },
       {
         id: 2,
+
         author: "Dr Rashmeet Arora Nakra",
         initials: "RA",
         date: "December 26, 2024",
@@ -717,6 +780,8 @@ export const PRODUCTS = [
   },
   {
     id: 517,
+    isSoldOut: false,
+
     name: "OPHTHALL-SURGICAL MICROSCOPE",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -755,6 +820,8 @@ export const PRODUCTS = [
   },
   {
     id: 550,
+    isSoldOut: false,
+
     name: "EXTRA CAPSULAR CATARACT SET",
     category: "SURGICAL INSTRUMENTS",
     price: "Enquire",
@@ -777,6 +844,8 @@ export const PRODUCTS = [
   },
   {
     id: 551,
+    isSoldOut: false,
+
     name: "MICRO SURGERY CATARACT SET (SICS)",
     category: "SURGICAL INSTRUMENTS",
     price: "Enquire",
@@ -798,6 +867,8 @@ export const PRODUCTS = [
   },
   {
     id: 552,
+    isSoldOut: false,
+
     name: "MICRO SURGERY CATRACT & IOL SET",
     category: "SURGICAL INSTRUMENTS",
     price: "Enquire",
@@ -820,6 +891,8 @@ export const PRODUCTS = [
   },
   {
     id: 553,
+    isSoldOut: false,
+
     name: "OPHTHALL PHACO TROLLEY",
     category: "SURGICAL INSTRUMENTS",
     price: "Enquire",
@@ -853,6 +926,8 @@ export const PRODUCTS = [
   },
   {
     id: 554,
+    isSoldOut: false,
+
     name: "SMALL INCISION PHACO SET",
     category: "SURGICAL INSTRUMENTS",
     price: "Enquire",
@@ -876,6 +951,8 @@ export const PRODUCTS = [
   // OPTICAL PRODUCTS
   {
     id: 601,
+    isSoldOut: false,
+
     name: "MEDIWORKS SLIT LAMP S260/S260S",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -896,6 +973,8 @@ export const PRODUCTS = [
   },
   {
     id: 602,
+    isSoldOut: false,
+
     name: "Ophthall ILLUMINATED TRIAL LENS SET",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -923,6 +1002,8 @@ export const PRODUCTS = [
   },
   {
     id: 603,
+    isSoldOut: false,
+
     name: "OPHTHALL LENSIT AR-9 AUTO REF",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -944,6 +1025,8 @@ export const PRODUCTS = [
   },
   {
     id: 604,
+    isSoldOut: false,
+
     name: "OPHTHALL LENSIT KR-9 AUTO REF-KERATOMETER",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -965,6 +1048,8 @@ export const PRODUCTS = [
   },
   {
     id: 605,
+    isSoldOut: false,
+
     name: "OPHTHALL LENSIT KR-9600 AUTO REF-KERATOMETER",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -989,6 +1074,8 @@ export const PRODUCTS = [
   },
   {
     id: 606,
+    isSoldOut: false,
+
     name: "OPHTHALL LENSIT RM-9600 AUTO REF",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -1013,6 +1100,8 @@ export const PRODUCTS = [
   },
    {
     id: 425,
+    isSoldOut: false,
+
     name: "OPHTHALL VID RECORDING SYSTEM",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -1070,6 +1159,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr Harikrishnan Vannadil",
         initials: "HV",
         date: "March 7, 2022",
@@ -1079,6 +1169,7 @@ export const PRODUCTS = [
       },
       {
         id: 2,
+
         author: "Dr ASWINI KUMAR BEHERA",
         initials: "AB",
         date: "June 7, 2023",
@@ -1088,6 +1179,7 @@ export const PRODUCTS = [
       },
       {
         id: 3,
+
         author: "Dr Tejaswi Prasad",
         initials: "TP",
         date: "June 21, 2024",
@@ -1097,6 +1189,7 @@ export const PRODUCTS = [
       },
       {
         id: 4,
+
         author: "Dr N R Rangaraj",
         initials: "NR",
         date: "September 4, 2022",
@@ -1106,6 +1199,7 @@ export const PRODUCTS = [
       },
       {
         id: 5,
+
         author: "Dr. P. Raja Sekhar",
         initials: "PR",
         date: "September 4, 2022",
@@ -1118,6 +1212,8 @@ export const PRODUCTS = [
 
   {
     id: 607,
+    isSoldOut: false,
+
     name: "OPHTHALL LENSIT TL6500-B/C",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -1148,6 +1244,8 @@ export const PRODUCTS = [
   },
   {
     id: 608,
+    isSoldOut: false,
+
     name: "Ophthall Max Vision Chart",
     category: "OPTICAL PRODUCTS",
     price: "₹25,000",
@@ -1177,6 +1275,8 @@ export const PRODUCTS = [
   },
   {
     id: 609,
+    isSoldOut: false,
+
     name: "Orthoptek (A New Approach to Amblyopia)",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -1204,6 +1304,8 @@ export const PRODUCTS = [
   },
   {
     id: 610,
+    isSoldOut: false,
+
     name: "REXXAM RET-700 Toporef Keratometer",
     category: "OPTICAL PRODUCTS",
     price: "Enquire",
@@ -1233,6 +1335,8 @@ export const PRODUCTS = [
   },
   {
     id: 611,
+    isSoldOut: false,
+
     name: "Streak Retinoscope",
     category: "OPTICAL PRODUCTS",
     price: "₹9,500",
@@ -1266,6 +1370,8 @@ export const PRODUCTS = [
   // EYE HOSPITAL/CLINIC ESTABLISHMENT
   {
     id: 701,
+    isSoldOut: false,
+
     name: "BCC-Branding and Digital Marketing",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1289,6 +1395,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr Vipul Arora",
         initials: "VA",
         date: "March 8, 2022",
@@ -1297,6 +1404,7 @@ export const PRODUCTS = [
       },
       {
         id: 2,
+
         author: "Dr Lalit Kumar",
         initials: "LK",
         date: "March 8, 2022",
@@ -1305,6 +1413,7 @@ export const PRODUCTS = [
       },
       {
         id: 3,
+
         author: "Dr Ramesh Durairajan",
         initials: "RD",
         date: "March 8, 2022",
@@ -1313,6 +1422,7 @@ export const PRODUCTS = [
       },
       {
         id: 4,
+
         author: "Dr Shreyans Kothari",
         initials: "SK",
         date: "March 8, 2022",
@@ -1323,6 +1433,8 @@ export const PRODUCTS = [
   },
   {
     id: 702,
+    isSoldOut: false,
+
     name: "DOCBOX EMR",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1345,6 +1457,8 @@ export const PRODUCTS = [
   },
   {
     id: 703,
+    isSoldOut: false,
+
     name: "EH NOTE OPHTHALMOLOGY EMR",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1366,6 +1480,8 @@ export const PRODUCTS = [
   },
   {
     id: 704,
+    isSoldOut: false,
+
     name: "HEALTHGRAPH EMR",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1391,6 +1507,8 @@ export const PRODUCTS = [
   },
   {
     id: 705,
+    isSoldOut: false,
+
     name: "Infection Control Consultancy for Eye Hospital OT",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1410,6 +1528,8 @@ export const PRODUCTS = [
   },
   {
     id: 706,
+    isSoldOut: false,
+
     name: "Management Consultancy for Eye Hospitals",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1433,6 +1553,8 @@ export const PRODUCTS = [
   },
   {
     id: 707,
+    isSoldOut: false,
+
     name: "OPERATION THEATRE DESIGNING",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1468,6 +1590,8 @@ export const PRODUCTS = [
   },
   {
     id: 708,
+    isSoldOut: false,
+
     name: "Ophthall 2022 Practice Development Conference",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1493,6 +1617,8 @@ export const PRODUCTS = [
   },
   {
     id: 709,
+    isSoldOut: false,
+
     name: "Ophthalmic Equipment Purchase Consultancy",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1512,6 +1638,8 @@ export const PRODUCTS = [
   },
   {
     id: 710,
+    isSoldOut: false,
+
     name: "OPTICAL STORE DESIGNING / CONSULTANCY SERVICE",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1532,6 +1660,8 @@ export const PRODUCTS = [
   },
   {
     id: 711,
+    isSoldOut: false,
+
     name: "PALM POWER MEDICUS OPHTHALMOLOGY EMR",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1563,6 +1693,8 @@ export const PRODUCTS = [
   },
   {
     id: 712,
+    isSoldOut: false,
+
     name: "Yarrago- Ophthalmology EMR",
     category: "EYE HOSPITAL/CLINIC ESTABLISHMENT",
     price: "Enquire",
@@ -1592,6 +1724,8 @@ export const PRODUCTS = [
   // GENERAL PRODUCTS
   {
     id: 801,
+    isSoldOut: false,
+
     name: "Ophthall LED External Light Source For Surgical Microscopes",
     category: "GENERAL PRODUCTS",
     price: "Enquire",
@@ -1623,6 +1757,8 @@ export const PRODUCTS = [
   },
   {
     id: 802,
+    isSoldOut: false,
+
     name: "SPANDAN PRO – POCKET ECG",
     category: "GENERAL PRODUCTS",
     price: "₹17,000",
@@ -1651,6 +1787,8 @@ export const PRODUCTS = [
   // STERILIZATION/DISINFECTION
   {
     id: 901,
+    isSoldOut: false,
+
     name: "Ophthall Medister Auto Fogger",
     category: "STERILIZATION/DISINFECTION",
     price: "Enquire",
@@ -1669,6 +1807,8 @@ export const PRODUCTS = [
   },
   {
     id: 902,
+    isSoldOut: false,
+
     name: "Ophthall-ETO Steriliser",
     category: "STERILIZATION/DISINFECTION",
     price: "Enquire",
@@ -1689,6 +1829,8 @@ export const PRODUCTS = [
   },
   {
     id: 903,
+    isSoldOut: false,
+
     name: "Ophthall Medister Dehumidifier",
     category: "STERILIZATION/DISINFECTION",
     price: "Enquire",
@@ -1717,6 +1859,8 @@ export const PRODUCTS = [
   },
   {
     id: 904,
+    isSoldOut: false,
+
     name: "Ophthall Medister Fully Automatic ETO",
     category: "STERILIZATION/DISINFECTION",
     price: "Enquire",
@@ -1741,6 +1885,8 @@ export const PRODUCTS = [
   },
   {
     id: 905,
+    isSoldOut: false,
+
     name: "Ophthall Medister Plasma Sterilizer",
     category: "STERILIZATION/DISINFECTION",
     price: "Enquire",
@@ -1770,6 +1916,8 @@ export const PRODUCTS = [
   },
  {
     id: 906,
+    isSoldOut: false,
+
     name: "MEGATRON S4 HPS – GEUDER",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -1809,6 +1957,8 @@ export const PRODUCTS = [
   },
   {
     id: 907,
+    isSoldOut: false,
+
     name: "Meridian 532 nm Green laser",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -1858,6 +2008,8 @@ export const PRODUCTS = [
   },
   {
     id: 908,
+    isSoldOut: false,
+
     name: "Meridian Nd:YAG Laser",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -1899,6 +2051,8 @@ export const PRODUCTS = [
   },
   {
     id: 909,
+    isSoldOut: false,
+
     name: "Ophthall Delight Zoom Microscope",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -1940,6 +2094,8 @@ export const PRODUCTS = [
   },
   {
     id: 910,
+    isSoldOut: false,
+
     name: "Ophthall Digital Led Near Vision Chart",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -1975,6 +2131,8 @@ export const PRODUCTS = [
   },
   {
     id: 911,
+    isSoldOut: false,
+
     name: "Ophthall GloMaster - RedGlow Enhancement Device for Surgical Microscopes",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2015,6 +2173,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr Raj Ganesh",
         initials: "RG",
         date: "April 5, 2022",
@@ -2024,6 +2183,7 @@ export const PRODUCTS = [
       },
       {
         id: 2,
+
         author: "Dr Arul Mozhi Varman",
         initials: "AV",
         date: "April 9, 2022",
@@ -2033,6 +2193,7 @@ export const PRODUCTS = [
       },
       {
         id: 3,
+
         author: "Dr. Arun Kumar",
         initials: "AK",
         date: "April 9, 2022",
@@ -2042,6 +2203,7 @@ export const PRODUCTS = [
       },
       {
         id: 4,
+
         author: "Dr Venkatesh Reddy",
         initials: "VR",
         date: "April 27, 2022",
@@ -2051,6 +2213,7 @@ export const PRODUCTS = [
       },
       {
         id: 5,
+
         author: "Dr. Rajesh Chells",
         initials: "RC",
         date: "June 28, 2022",
@@ -2060,6 +2223,7 @@ export const PRODUCTS = [
       },
       {
         id: 6,
+
         author: "Dr. Sushil",
         initials: "DS",
         date: "June 28, 2022",
@@ -2069,6 +2233,7 @@ export const PRODUCTS = [
       },
       {
         id: 7,
+
         author: "Dr Adithya Phadnis",
         initials: "AP",
         date: "August 2, 2022",
@@ -2077,6 +2242,7 @@ export const PRODUCTS = [
       },
       {
         id: 8,
+
         author: "Dr Rushabh Shah",
         initials: "RS",
         date: "September 21, 2022",
@@ -2085,10 +2251,16 @@ export const PRODUCTS = [
       }
     ]
   },
-  { id: 912, name: "OPHTHALL LENSIT RM-9600 AUTO REF", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p46.png", tag: null, section: "shop" },
-  { id: 913, name: "Ophthall Manual Phoropter", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p48.png", tag: null, section: "shop" },
+  { id: 912,
+    isSoldOut: false,
+ name: "OPHTHALL LENSIT RM-9600 AUTO REF", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p46.png", tag: null, section: "shop" },
+  { id: 913,
+    isSoldOut: false,
+ name: "Ophthall Manual Phoropter", category: "OPTICAL PRODUCTS", price: "Enquire", rating: 4, image: "/assets/Products/p48.png", tag: null, section: "shop" },
   {
     id: 914,
+    isSoldOut: false,
+
     name: "OPHTHALL MEDISTER CLASS B BENCHTOP AUTOCLAVE 22 Liters",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2134,6 +2306,8 @@ export const PRODUCTS = [
   },
   {
     id: 915,
+    isSoldOut: false,
+
     name: "Ophthall Portable Microscope - Table Top",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2162,6 +2336,8 @@ export const PRODUCTS = [
   },
   {
     id: 916,
+    isSoldOut: false,
+
     name: "Ophthall Pro Vision Chart",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "₹22,000",
@@ -2197,6 +2373,7 @@ export const PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr. S. Karthik",
         initials: "SK",
         date: "January 14, 2024",
@@ -2206,6 +2383,7 @@ export const PRODUCTS = [
       },
       {
         id: 2,
+
         author: "Verified User",
         initials: "VU",
         date: "February 2, 2024",
@@ -2215,6 +2393,7 @@ export const PRODUCTS = [
       },
       {
         id: 3,
+
         author: "Eye Clinic Admin",
         initials: "EC",
         date: "March 10, 2024",
@@ -2224,6 +2403,7 @@ export const PRODUCTS = [
       },
       {
         id: 4,
+
         author: "Senior Optometrist",
         initials: "SO",
         date: "March 15, 2024",
@@ -2235,6 +2415,8 @@ export const PRODUCTS = [
   },
   {
     id: 917,
+    isSoldOut: false,
+
     name: "Ophthall Wireless LED Indirect Ophthalmoscope",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2273,6 +2455,8 @@ export const PRODUCTS = [
   },
   {
     id: 918,
+    isSoldOut: false,
+
     name: "REXXAM ( Shin Nippon) NCT-200",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2304,6 +2488,8 @@ export const PRODUCTS = [
   },
   {
     id: 919,
+    isSoldOut: false,
+
     name: "REXXAM SPM-700 Specular Microscope",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2335,6 +2521,8 @@ export const PRODUCTS = [
   },
   {
     id: 920,
+    isSoldOut: false,
+
     name: "Sonoptek A/B Scan",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2368,6 +2556,8 @@ export const PRODUCTS = [
   },
   {
     id: 921,
+    isSoldOut: false,
+
     name: "SP-1000AP - A-Scan/Pachymeter",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2403,6 +2593,8 @@ export const PRODUCTS = [
   },
   {
     id: 922,
+    isSoldOut: false,
+
     name: "Spectral Domain OCT",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2435,6 +2627,8 @@ export const PRODUCTS = [
   },
   {
     id: 923,
+    isSoldOut: false,
+
     name: "TAKAGI OPERATING MICROSCOPES",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2469,6 +2663,8 @@ export const PRODUCTS = [
   },
   {
     id: 924,
+    isSoldOut: false,
+
     name: "XENOTRON XENON LIGHT SOURCE",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2508,6 +2704,8 @@ export const PRODUCTS = [
   // PRE-OWNED
   {
     id: 426,
+    isSoldOut: false,
+
     name: "Compact Intuitive Phaco Machine",
     category: "PRE-OWNED",
     price: "₹9 Lakhs",
@@ -2524,6 +2722,8 @@ export const PRODUCTS = [
   },
   {
     id: 427,
+    isSoldOut: false,
+
     name: "Sovereign Compact Phaco Machine",
     category: "PRE-OWNED",
     price: "₹6.5 Lakhs",
@@ -2539,6 +2739,8 @@ export const PRODUCTS = [
   },
   {
     id: 428,
+    isSoldOut: false,
+
     name: "Laureate Phaco Machine",
     category: "PRE-OWNED",
     price: "₹7 Lakhs",
@@ -2553,6 +2755,8 @@ export const PRODUCTS = [
   },
   {
     id: 429,
+    isSoldOut: false,
+
     name: "J&J Lasik & Femto Second Machine",
     category: "PRE-OWNED",
     price: "₹1.25 Crores",
@@ -2567,6 +2771,8 @@ export const PRODUCTS = [
   },
   {
     id: 430,
+    isSoldOut: false,
+
     name: "Appa Legend Tru Glow FS1 Microscope",
     category: "PRE-OWNED",
     price: "₹9.5 Lakhs",
@@ -2586,6 +2792,8 @@ export const PRODUCTS = [
   },
   {
     id: 431,
+    isSoldOut: false,
+
     name: "Stellaris Anterior Phaco Machine",
     category: "PRE-OWNED",
     price: "₹6 Lakhs",
@@ -2601,6 +2809,8 @@ export const PRODUCTS = [
   },
   {
     id: 432,
+    isSoldOut: false,
+
     name: "Appaswamy Phaco",
     category: "PRE-OWNED",
     price: "₹9 Lakhs",
@@ -2620,6 +2830,8 @@ export const PRODUCTS = [
   },
   {
     id: 433,
+    isSoldOut: false,
+
     name: "Appa Galaxy Pro Orbit Phaco",
     category: "PRE-OWNED",
     price: "₹11 Lakhs",
@@ -2639,6 +2851,8 @@ export const PRODUCTS = [
   },
   {
     id: 434,
+    isSoldOut: false,
+
     name: "Oertli Speep Phaco",
     category: "PRE-OWNED",
     price: "Enquire",
@@ -2662,6 +2876,7 @@ export const PRODUCTS = [
   },
   {
     id: 435,
+    isSoldOut: true,
     name: "Appa Green Laser Slit Lamp Mount",
     category: "PRE-OWNED",
     price: "₹7.3 Lakhs",
@@ -2681,6 +2896,8 @@ export const PRODUCTS = [
   },
   {
     id: 436,
+    isSoldOut: false,
+
     name: "J&J Intuitive Phaco",
     category: "PRE-OWNED",
     price: "₹11.20 Lakhs",
@@ -2703,6 +2920,7 @@ export const PRODUCTS = [
 export const HERO_SLIDES = [
   {
     id: 1,
+
     title: "",
     subtitle: "OPHTHALL IMAGING SOLUTIONS",
     desc: "Transform Your Slit Lamp or Microscope into a High-Resolution Ophthalmic Imaging & Recording Powerhouse",
@@ -2713,7 +2931,8 @@ export const HERO_SLIDES = [
     linkType: "external"
   },
   {
-    id: 2, // New Slider 2
+    id: 2,
+ // New Slider 2
     title: "",
     subtitle: "PREOWNED EQUIPMENT'S MARKETPLACE",
     desc: "A dedicated initiative to facilitate doctor-to-doctor trading of high-quality pre-owned equipment",
@@ -2725,6 +2944,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 3,
+
     title: "",
     subtitle: "OPHTHALL CLEAR VIEW SLITLAMP IMAGING SYSTEM",
     desc: "Convert Any Slit lamp To An Advanced Imaging System At Most Economical Prices",
@@ -2736,6 +2956,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 4,
+
     title: "",
     subtitle: "OPHTHALL VID",
     desc: "CONVERT YOUR SURGICAL MICROSCOPE TO A VIDEO RECORDING SYSTEM WITH CUSTOMIZED C MOUNT, BEAM SPLITTER AND FULL HD SONY CMOS CAMERA VERY ECONOMICAL AND HIGH QUALITY PRODUCT. For Anterior Segment Surgeries",
@@ -2746,7 +2967,8 @@ export const HERO_SLIDES = [
     linkType: "product"
   },
   {
-    id: 5, // New Slider 5
+    id: 5,
+ // New Slider 5
     title: "",
     subtitle: "OPHTHALL VID PRO",
     desc: `<div class="text-left font-normal normal-case">Elevate Your Surgical Visualization by Converting your existing surgical microscope into a <b>high-definition video recording system</b> with precision-engineered <b>custom C-Mount and beam splitter integration.</b> Powered by a <b>large Sony sensor</b>, the system delivers:<ul class="list-disc pl-5 mt-2"><li>Wide field surgical view</li><li>Exceptional image sharpness</li><li>High dynamic range with HDR10+</li><li>Brilliant color accuracy and depth</li></ul></div>`,
@@ -2756,6 +2978,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 6,
+
     title: "",
     subtitle: "OERTLI PHACO MACHINE",
     desc: `SWISS PHACO TECHNOLOGY MAKE THE DIFFERENCE IN YOUR OPHTHALMIC PRACTICE <span class="normal-case">Buy through Ophthall Buying Group to get Guaranteed Lowest price on the market</span>`,
@@ -2767,6 +2990,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 7,
+
     title: "",
     subtitle: "OPHTHALL SURGICAL MICROSCOPES",
     desc: `India's Best and Value for Money Surgical Microscope for Ophthalmologists.<br/>"Now everyone Can Own One"`,
@@ -2778,6 +3002,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 8,
+
     title: "",
     subtitle: "OPHTHALL ETO",
     desc: `OPHTHALL MEDISTER FULLY AUTOMATIC ETO<br/><span class="normal-case">Precision Sterilization for Sensitive Ophthalmic Instruments</span>`,
@@ -2789,6 +3014,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 9,
+
     title: "REDGLOW ENHANCEMENT DEVICE FOR SURGICAL MICROSCOPES",
     subtitle: "OPHTHALL GLOMASTER",
     desc: `<span class="normal-case">Experience superior clinical performance with the Ophthall GloMaster. Designed for ophthalmologists who demand precision and reliability.</span>`,
@@ -2800,6 +3026,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 10,
+
     title: "",
     subtitle: "OPHTHALL LENSIT",
     desc: `<span class="normal-case">Engineered for Optical Excellence.<br/>High-Performance Diagnostics You Can Trust.</span>`,
@@ -2811,6 +3038,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 11,
+
     title: "",
     subtitle: "OPHTHALL LED VISION CHART",
     desc: "INDIA'S ONLY CUSTOMIZABLE VISION CHART WITH YOUR HOSPITAL NAME/ IMAGE ADDED IN FIRST SCREEN OF THE VISION CHART.",
@@ -2822,6 +3050,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 12,
+
     title: "",
     subtitle: "OPHTHALLMART EQUIPMENT VALUATION",
     desc: "FILL THE SIMPLE FORM KNOW YOUR EQUIPMENT VALUE",
@@ -2833,6 +3062,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 13,
+
     title: "",
     subtitle: "FOR TRADE PARTNERSHIPS ADVERTISEMENT",
     desc: "TO LIST YOUR PRODUCTS/(NEW & PREOWNED) SERVICES IN OPHTHALLMART WHATSAPP +919176702051 / CALL TOLLFREE - 1800 572 1051",
@@ -2847,6 +3077,8 @@ export const HERO_SLIDES = [
 export const BEST_SELLING_PRODUCTS = [
     {
     id: 511,
+    isSoldOut: false,
+
     name: "Oertli CR3 with SPEEP Phaco Machine",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2886,6 +3118,7 @@ export const BEST_SELLING_PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr. Kshijit Shukul",
         initials: "KS",
         date: "December 21, 2024",
@@ -2895,6 +3128,7 @@ export const BEST_SELLING_PRODUCTS = [
       },
       {
         id: 2,
+
         author: "Dr Rashmeet Arora Nakra",
         initials: "RA",
         date: "December 26, 2024",
@@ -2906,6 +3140,8 @@ export const BEST_SELLING_PRODUCTS = [
   },
     {
     id: 417,
+    isSoldOut: false,
+
     name: "Ophthall Clear View Slitlamp Imaging System",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -2937,6 +3173,7 @@ export const BEST_SELLING_PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr Lalit Kumar",
         initials: "LK",
         date: "March 9, 2024",
@@ -2948,6 +3185,8 @@ export const BEST_SELLING_PRODUCTS = [
   },
      {
     id: 425,
+    isSoldOut: false,
+
     name: "OPHTHALL VID RECORDING SYSTEM",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -3005,6 +3244,7 @@ export const BEST_SELLING_PRODUCTS = [
     reviews: [
       {
         id: 1,
+
         author: "Dr Harikrishnan Vannadil",
         initials: "HV",
         date: "March 7, 2022",
@@ -3014,6 +3254,7 @@ export const BEST_SELLING_PRODUCTS = [
       },
       {
         id: 2,
+
         author: "Dr ASWINI KUMAR BEHERA",
         initials: "AB",
         date: "June 7, 2023",
@@ -3023,6 +3264,7 @@ export const BEST_SELLING_PRODUCTS = [
       },
       {
         id: 3,
+
         author: "Dr Tejaswi Prasad",
         initials: "TP",
         date: "June 21, 2024",
@@ -3032,6 +3274,7 @@ export const BEST_SELLING_PRODUCTS = [
       },
       {
         id: 4,
+
         author: "Dr N R Rangaraj",
         initials: "NR",
         date: "September 4, 2022",
@@ -3041,6 +3284,7 @@ export const BEST_SELLING_PRODUCTS = [
       },
       {
         id: 5,
+
         author: "Dr. P. Raja Sekhar",
         initials: "PR",
         date: "September 4, 2022",
@@ -3052,6 +3296,8 @@ export const BEST_SELLING_PRODUCTS = [
   },
     {
     id: 517,
+    isSoldOut: false,
+
     name: "OPHTHALL-SURGICAL MICROSCOPE",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
     price: "Enquire",
@@ -3093,6 +3339,8 @@ export const BEST_SELLING_PRODUCTS = [
 export const TRENDING_PRODUCTS = [
   {
     id: 517,
+    isSoldOut: false,
+
     name: "Ophthall Surgical Microscope",
     subtitle: "Ophthall Pro, Ophthall Max, Ophthall Zen",
     category: "SURGICAL INSTRUMENTS",
@@ -3103,6 +3351,8 @@ export const TRENDING_PRODUCTS = [
   },
   {
     id: 417,
+    isSoldOut: false,
+
     name: "OPHTHALL- SLITLAMP IMAGING SYSTEM",
     subtitle: "Ophthall Clear view Imaging System",
     category: "DIAGNOSTIC/SURGICAL EQUIPMENTS",
@@ -3113,6 +3363,8 @@ export const TRENDING_PRODUCTS = [
   },
   {
     id: 511,
+    isSoldOut: false,
+
     name: "Oertli Phaco",
     subtitle: "Catarhex 3",
     category: "SURGICAL INSTRUMENTS",
@@ -3126,6 +3378,8 @@ export const TRENDING_PRODUCTS = [
 export const FEATURED_PRODUCTS = [
   {
     id: 426,
+    isSoldOut: false,
+
     name: "Compact Intuitive Phaco Machine",
     category: "PRE-OWNED",
     price: "₹9 Lakhs",
@@ -3142,6 +3396,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 427,
+    isSoldOut: false,
+
     name: "Sovereign Compact Phaco Machine",
     category: "PRE-OWNED",
     price: "₹6.5 Lakhs",
@@ -3157,6 +3413,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 428,
+    isSoldOut: false,
+
     name: "Laureate Phaco Machine",
     category: "PRE-OWNED",
     price: "₹7 Lakhs",
@@ -3171,6 +3429,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 429,
+    isSoldOut: false,
+
     name: "J&J Lasik & Femto Second Machine",
     category: "PRE-OWNED",
     price: "₹1.25 Crores",
@@ -3185,6 +3445,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 430,
+    isSoldOut: false,
+
     name: "Appa Legend Tru Glow FS1 Microscope",
     category: "PRE-OWNED",
     price: "₹9.5 Lakhs",
@@ -3204,6 +3466,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 431,
+    isSoldOut: false,
+
     name: "Stellaris Anterior Phaco Machine",
     category: "PRE-OWNED",
     price: "₹6 Lakhs",
@@ -3219,6 +3483,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 432,
+    isSoldOut: false,
+
     name: "Appaswamy Phaco",
     category: "PRE-OWNED",
     price: "₹9 Lakhs",
@@ -3238,6 +3504,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 433,
+    isSoldOut: false,
+
     name: "Appa Galaxy Pro Orbit Phaco",
     category: "PRE-OWNED",
     price: "₹11 Lakhs",
@@ -3257,6 +3525,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 434,
+    isSoldOut: false,
+
     name: "Oertli Speep Phaco",
     category: "PRE-OWNED",
     price: "Enquire",
@@ -3280,6 +3550,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 435,
+    isSoldOut: false,
+
     name: "Appa Green Laser Slit Lamp Mount",
     category: "PRE-OWNED",
     price: "₹7.3 Lakhs",
@@ -3299,6 +3571,8 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 436,
+    isSoldOut: false,
+
     name: "J&J Intuitive Phaco",
     category: "PRE-OWNED",
     price: "₹11.20 Lakhs",
@@ -3321,6 +3595,7 @@ export const FEATURED_PRODUCTS = [
 export const TESTIMONIALS = [
   {
     id: 1,
+
     quote: "Extremely happy with the recording, Still thé image quality is good .<br/>Thank you Dr. Senthil Sir<br/>And good shout out to supporting staff..<br/>Thank you Ophthal group",
     name: "Dr. ASWINI KUMAR BEHERA",
     title: "MD & EX- SR RPC, AIIMS, New Delhi<br/>Founder and Director Naitrika super specialty eye care",
@@ -3328,6 +3603,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 2,
+
     quote: "I have been using the OPHTHALL VIDEO Recording System For Our Operating Microscope for approximately a month, and I am very impressed with its performance. The camera quality is excellent, capturing surgical details with great precision. Mr. Suren Sathya, the service engineer, was highly knowledgeable and provided a thorough demonstration of the camera's usability. I am very satisfied with this product and highly recommend it.",
     name: "Dr Tejaswi Prasad",
     title: "Aravind Eye Hospital Madurai",
@@ -3335,6 +3611,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 3,
+
     quote: "My experience with ophthall red glo enhancer fitted on Zeiss lumera 300. The image & red glo quality enhanced so well that my surgical confidence increased. surgical...",
     name: "Dr. Rajesh Chells",
     title: "Focus Eye hospital Kaloor, Eranakulam Kerala",
@@ -3342,6 +3619,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 4,
+
     quote: "Ophthall is the best microscope what you can afford at the best price. It's optics and depth perception are at par to a branded microscope making it a superb value for...",
     name: "Dr Anurag Shandil",
     title: "Narayana Nethradhama Superspeciality Eye...",

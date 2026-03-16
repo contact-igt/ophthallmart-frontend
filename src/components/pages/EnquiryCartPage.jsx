@@ -8,6 +8,7 @@ import {
 import Button from '../shared/Button';
 import { TextInput, TextArea, Select } from '../shared/Input';
 import { postToSheet } from '../../utils/postToSheet';
+import { PRODUCTS } from '../../data/mockData';
 
 const CUSTOMER_TYPES = [
     'Doctor',

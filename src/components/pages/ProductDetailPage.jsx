@@ -185,8 +185,17 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                     <Star size={14} className="md:w-4 md:h-4" fill="currentColor" />
                                 </div>
                                 {product.reviews && product.reviews.length > 0 && <span>({product.reviews.length} Reviews)</span>}
-                                <span className="text-green-600 font-medium">In Stock</span>
                             </div>
+                            {product.isSoldOut ? (
+                                <div className="mt-4">
+                                    <span className="text-[#B12704] font-bold text-lg md:text-xl block">Currently unavailable.</span>
+                                    <span className="text-slate-600 text-sm mt-1 block">We don't know when or if this item will be back in stock.</span>
+                                </div>
+                            ) : (
+                                <div className="mt-4">
+                                    <span className="text-[#007600] font-bold text-lg md:text-xl block">In Stock</span>
+                                </div>
+                            )}
                         </div>
 
                         <div className="prose text-slate-600 leading-relaxed">
@@ -239,16 +248,21 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
                             <button
-                                onClick={() => onAdd(product)}
-                                className={`flex-1 py-3 px-4 md:px-6 rounded-lg font-bold text-sm md:text-base transition-all duration-200 flex items-center justify-center gap-2 group
-                                    ${isAdded
-                                        ? 'bg-green-600 hover:bg-red-500 text-white'
-                                        : 'bg-[#EA580C] hover:bg-[#d94e25] text-white'
+                                onClick={() => { if (!product.isSoldOut) onAdd(product); }}
+                                disabled={product.isSoldOut}
+                                className={`flex-1 py-3 px-4 md:px-6 rounded-lg font-bold text-sm md:text-base border transition-all duration-200 flex items-center justify-center gap-2 group
+                                    ${product.isSoldOut
+                                        ? 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed shadow-none'
+                                        : isAdded
+                                            ? 'bg-green-600 border-green-700 hover:bg-green-700 hover:border-green-800 text-white shadow-sm'
+                                            : 'bg-[#FFD814] hover:bg-[#F7CA00] border-[#FCD200] hover:border-[#F2C200] text-slate-900 shadow-sm'
                                     }`}
                             >
-                                {isAdded ? (
+                                {product.isSoldOut ? (
+                                    'Currently Unavailable'
+                                ) : isAdded ? (
                                     <>
-                                        <CheckCircle size={18} className="md:w-5 md:h-5" />
+                                        <CheckCircle size={18} className="md:w-5 md:h-5 text-current" />
                                         <span className="group-hover:hidden">Added to Cart</span>
                                         <span className="hidden group-hover:inline">Remove from Cart</span>
                                     </>

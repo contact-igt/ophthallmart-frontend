@@ -9,6 +9,13 @@ const ProductCard = ({ product, onView, onAdd, isAdded = false }) => (
                     {product.tag}
                 </span>
             )}
+            {product.isSoldOut && (
+                <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px] z-10 flex flex-col items-center justify-center">
+                    <span className="bg-red-600/90 text-white text-sm font-black px-6 py-2 uppercase tracking-widest rounded shadow-lg transform -rotate-12 border-2 border-white">
+                        Sold Out
+                    </span>
+                </div>
+            )}
             {(() => {
                 const mediaUrl = product.videoUrl || product.image;
                 const isVideo = mediaUrl?.toLowerCase().endsWith('.mp4');
@@ -63,14 +70,22 @@ const ProductCard = ({ product, onView, onAdd, isAdded = false }) => (
                 </button>
                 <button
                     className={`w-full font-bold text-xs py-2.5 rounded transition-all duration-200 flex items-center justify-center gap-1.5
-                        ${isAdded
-                            ? 'bg-green-600 hover:bg-red-500 text-white group/addbtn'
-                            : 'bg-[#EA580C] hover:bg-[#d94e25] text-white'
+                        ${product.isSoldOut
+                            ? 'bg-slate-100 text-slate-400 border border-slate-200 cursor-not-allowed'
+                            : isAdded
+                                ? 'bg-green-600 hover:bg-red-500 text-white group/addbtn'
+                                : 'bg-[#EA580C] hover:bg-[#d94e25] text-white'
                         }`}
-                    onClick={() => onAdd(product)}
-                    title={isAdded ? 'Click to remove from enquiry' : 'Add to enquiry'}
+                    onClick={(e) => {
+                        if (product.isSoldOut) { e.stopPropagation(); return; }
+                        onAdd(product);
+                    }}
+                    disabled={product.isSoldOut}
+                    title={product.isSoldOut ? 'Currently Out of Stock' : (isAdded ? 'Click to remove from enquiry' : 'Add to enquiry')}
                 >
-                    {isAdded ? (
+                    {product.isSoldOut ? (
+                        'Out of Stock'
+                    ) : isAdded ? (
                         <>
                             <CheckCircle size={13} />
                             <span className="group-hover/addbtn:hidden">Added</span>

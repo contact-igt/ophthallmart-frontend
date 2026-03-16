@@ -25,7 +25,18 @@ export default function App() {
     // Persistent Cart State
     const [enquiryCart, setEnquiryCart] = useState(() => {
         const saved = localStorage.getItem('enquiryCart');
-        return saved ? JSON.parse(saved) : [];
+        if (!saved) return [];
+        
+        try {
+            const parsed = JSON.parse(saved);
+            // Filter out products that have been marked as sold out
+            return parsed.filter(cartItem => {
+                const product = PRODUCTS.find(p => p.id === cartItem.id);
+                return product ? !product.isSoldOut : true;
+            });
+        } catch (e) {
+            return [];
+        }
     });
 
     // Helper to generate a URL-friendly slug
@@ -61,6 +72,12 @@ export default function App() {
     useEffect(() => {
         localStorage.setItem('enquiryCart', JSON.stringify(enquiryCart));
     }, [enquiryCart]);
+
+    // Derived state: filter out products that might have been marked as sold out since being added
+    const activeEnquiryCart = enquiryCart.filter(item => {
+        const product = PRODUCTS.find(p => p.id === item.id);
+        return product ? !product.isSoldOut : true;
+    });
 
     // Load Poppins Font
     useEffect(() => {
@@ -153,7 +170,7 @@ export default function App() {
         >
             <Header
                 currentPage={currentPage}
-                enquiryCart={enquiryCart}
+                enquiryCart={activeEnquiryCart}
                 handleNav={handleNav}
                 handleSearch={handleSearch}
                 isMobileMenuOpen={isMobileMenuOpen}
@@ -168,7 +185,7 @@ export default function App() {
                         handleNav={handleNav}
                         handleProductView={handleProductView}
                         addToEnquiry={addToEnquiry}
-                        enquiryCart={enquiryCart}
+                        enquiryCart={activeEnquiryCart}
                         handleSearch={handleSearch}
                     />
                 )}
@@ -179,7 +196,7 @@ export default function App() {
                         initialCategory={selectedCategory}
                         handleProductView={handleProductView}
                         addToEnquiry={addToEnquiry}
-                        enquiryCart={enquiryCart}
+                        enquiryCart={activeEnquiryCart}
                     />
                 )}
 
@@ -189,7 +206,7 @@ export default function App() {
                         handleProductView={handleProductView}
                         addToEnquiry={addToEnquiry}
                         searchQuery={searchQuery}
-                        enquiryCart={enquiryCart}
+                        enquiryCart={activeEnquiryCart}
                         initialCategory={selectedCategory}
                         onCategoryChange={setSelectedCategory}
                     />
@@ -201,14 +218,14 @@ export default function App() {
                         onBack={() => handleNav(previousPage)}
                         backLabel={previousPage === 'home' ? 'Back to Home' : 'Back to Products'}
                         onAdd={addToEnquiry}
-                        enquiryCart={enquiryCart}
+                        enquiryCart={activeEnquiryCart}
                         onViewDetail={handleProductView}
                     />
                 )}
 
                 {currentPage === 'enquiry' && (
                     <EnquiryCartPage
-                        cart={enquiryCart}
+                        cart={activeEnquiryCart}
                         setEnquiryCart={setEnquiryCart}
                         onRemove={removeFromEnquiry}
                         onNav={handleNav}
@@ -221,7 +238,7 @@ export default function App() {
                         onSuccess={() => handleSuccess('valuation')}
                         handleProductView={handleProductView}
                         addToEnquiry={addToEnquiry}
-                        enquiryCart={enquiryCart}
+                        enquiryCart={activeEnquiryCart}
                     />
                 )}
 
