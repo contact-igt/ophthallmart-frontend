@@ -3550,8 +3550,7 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 435,
-    isSoldOut: false,
-
+    isSoldOut: true,
     name: "Appa Green Laser Slit Lamp Mount",
     category: "PRE-OWNED",
     price: "₹7.3 Lakhs",
