@@ -2896,8 +2896,7 @@ export const PRODUCTS = [
   },
   {
     id: 436,
-    isSoldOut: false,
-
+    isSoldOut: true,
     name: "J&J Intuitive Phaco",
     category: "PRE-OWNED",
     price: "₹11.20 Lakhs",
@@ -2920,7 +2919,6 @@ export const PRODUCTS = [
 export const HERO_SLIDES = [
   {
     id: 1,
-
     title: "",
     subtitle: "OPHTHALL IMAGING SOLUTIONS",
     desc: "Transform Your Slit Lamp or Microscope into a High-Resolution Ophthalmic Imaging & Recording Powerhouse",
@@ -3570,8 +3568,7 @@ export const FEATURED_PRODUCTS = [
   },
   {
     id: 436,
-    isSoldOut: false,
-
+    isSoldOut: true,
     name: "J&J Intuitive Phaco",
     category: "PRE-OWNED",
     price: "₹11.20 Lakhs",
