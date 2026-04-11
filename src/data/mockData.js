@@ -2703,6 +2703,49 @@ export const PRODUCTS = [
   },
   // PRE-OWNED
   {
+    id: 433,
+    isSoldOut: false,
+    name: "Appasamy Galaxy Pro Orbit Phaco Machine",
+    category: "PRE-OWNED",
+    price: "₹11 Lakhs (Negotiable)",
+    rating: 4.8,
+    year: "2023",
+    condition: "Excellent / Sparingly Used",
+    location: "N/A",
+    fullDescription: "Latest-generation Appasamy Galaxy Pro Orbit Phaco Machine (2023 model). Sparingly used in good condition and well maintained. Designed for smooth emulsification, stable fluidics, and efficient cataract surgery performance. This unit comes with a comprehensive set of accessories and original documentation.",
+    image: "/assets/Pre-owned/Appasamy Galaxy Pro Orbit Phaco Machine/11A.jpeg",
+    images: [
+      "/assets/Pre-owned/Appasamy Galaxy Pro Orbit Phaco Machine/11A.jpeg"
+    ],
+    features: [
+      "Machine base, trolley with motorised extendable IV pole and additionally saline hook",
+      "Mounted mini compressor for anterior vitrectomy",
+      "Phaco tip 30° straight 2.8 & 2.2",
+      "Phaco tip 30° kelmen",
+      "Tip sleeve (6) & Silicon chamber (2)",
+      "Vitrectomy cutter 20 G",
+      "4 way (3), 3 way (3) & Straight (4) connectors",
+      "6 A fuse 3",
+      "* Wrench 2",
+      "Phaco surgery settings laminated chart",
+      "Drainage pouch",
+      "Superflo reusable iv set",
+      "Diathermy probe with cable",
+      "Coaxial & Bimanual I/A handpiece sets",
+      "Handpiece (2 total, 1 new)",
+      "Tubing sets (2)",
+      "Phaco surgery Phaco surgery settings laminated chartsettings laminated chart",
+      "User manual & Dust cover"
+    ],
+    specs: [
+      { label: "Year of Purchase", value: "2023" },
+      { label: "Usage", value: "Sparingly used, well maintained" },
+      { label: "Selling Price", value: "11 Lakhs (Negotiable)" }
+    ],
+    tag: "High-Performance",
+    section: "shop"
+  },
+  {
     id: 426,
     isSoldOut: false,
 
@@ -2828,27 +2871,7 @@ export const PRODUCTS = [
     tag: "Reliable",
     section: "shop"
   },
-  {
-    id: 433,
-    isSoldOut: false,
 
-    name: "Appa Galaxy Pro Orbit Phaco",
-    category: "PRE-OWNED",
-    price: "₹11 Lakhs",
-    rating: 4.8,
-    year: "2023",
-    condition: "Excellent",
-    location: "Vijayawada",
-    fullDescription: "Latest-generation Appa Galaxy Pro Orbit Phaco Machine (2023 model) available for sale in excellent condition. Designed for smooth emulsification, stable fluidics, and efficient cataract surgery performance. A great opportunity for an advanced phaco system.",
-    image: "/assets/Pre-owned/Appa Galaxy Pro Orbit Phaco/8A.jpeg",
-    images: [
-      "/assets/Pre-owned/Appa Galaxy Pro Orbit Phaco/8A.jpeg",
-      "/assets/Pre-owned/Appa Galaxy Pro Orbit Phaco/8B.jpeg",
-      "/assets/Pre-owned/Appa Galaxy Pro Orbit Phaco/8C.jpeg"
-    ],
-    tag: "High-Performance",
-    section: "shop"
-  },
   {
     id: 434,
     isSoldOut: false,
@@ -3374,6 +3397,49 @@ export const TRENDING_PRODUCTS = [
 ];
 
 export const FEATURED_PRODUCTS = [
+    {
+    id: 433,
+    isSoldOut: false,
+    name: "Appasamy Galaxy Pro Orbit Phaco Machine",
+    category: "PRE-OWNED",
+    price: "₹11 Lakhs (Negotiable)",
+    rating: 4.8,
+    year: "2023",
+    condition: "Excellent / Sparingly Used",
+    location: "N/A",
+    fullDescription: "Latest-generation Appasamy Galaxy Pro Orbit Phaco Machine (2023 model). Sparingly used in good condition and well maintained. Designed for smooth emulsification, stable fluidics, and efficient cataract surgery performance. This unit comes with a comprehensive set of accessories and original documentation.",
+    image: "/assets/Pre-owned/Appasamy Galaxy Pro Orbit Phaco Machine/11A.jpeg",
+    images: [
+      "/assets/Pre-owned/Appasamy Galaxy Pro Orbit Phaco Machine/11A.jpeg"
+    ],
+    features: [
+      "Machine base, trolley with motorised extendable IV pole and additionally saline hook",
+      "Mounted mini compressor for anterior vitrectomy",
+      "Phaco tip 30° straight 2.8 & 2.2",
+      "Phaco tip 30° kelmen",
+      "Tip sleeve (6) & Silicon chamber (2)",
+      "Vitrectomy cutter 20 G",
+      "4 way (3), 3 way (3) & Straight (4) connectors",
+      "6 A fuse 3",
+      "* Wrench 2",
+      "Phaco surgery settings laminated chart",
+      "Drainage pouch",
+      "Superflo reusable iv set",
+      "Diathermy probe with cable",
+      "Coaxial & Bimanual I/A handpiece sets",
+      "Handpiece (2 total, 1 new)",
+      "Tubing sets (2)",
+      "Phaco surgery Phaco surgery settings laminated chartsettings laminated chart",
+      "User manual & Dust cover"
+    ],
+    specs: [
+      { label: "Year of Purchase", value: "2023" },
+      { label: "Usage", value: "Sparingly used, well maintained" },
+      { label: "Selling Price", value: "11 Lakhs (Negotiable)" }
+    ],
+    tag: "High-Performance",
+    section: "shop"
+  },
   {
     id: 426,
     isSoldOut: false,
@@ -3500,27 +3566,7 @@ export const FEATURED_PRODUCTS = [
     tag: "Reliable",
     section: "featured"
   },
-  {
-    id: 433,
-    isSoldOut: false,
 
-    name: "Appa Galaxy Pro Orbit Phaco",
-    category: "PRE-OWNED",
-    price: "₹11 Lakhs",
-    rating: 4.8,
-    year: "2023",
-    condition: "Excellent",
-    location: "Vijayawada",
-    fullDescription: "Latest-generation Appa Galaxy Pro Orbit Phaco Machine (2023 model) available for sale in excellent condition. Designed for smooth emulsification, stable fluidics, and efficient cataract surgery performance. A great opportunity for an advanced phaco system.",
-    image: "/assets/Pre-owned/Appa Galaxy Pro Orbit Phaco/8A.jpeg",
-    images: [
-      "/assets/Pre-owned/Appa Galaxy Pro Orbit Phaco/8A.jpeg",
-      "/assets/Pre-owned/Appa Galaxy Pro Orbit Phaco/8B.jpeg",
-      "/assets/Pre-owned/Appa Galaxy Pro Orbit Phaco/8C.jpeg"
-    ],
-    tag: "High-Performance",
-    section: "featured"
-  },
   {
     id: 434,
     isSoldOut: false,
