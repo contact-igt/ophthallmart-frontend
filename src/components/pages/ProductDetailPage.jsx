@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useEffect, useRef } from 'react';
-import { ChevronRight, ChevronLeft, Star, Heart, CheckCircle, Play, ArrowLeft } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Star, Heart, CheckCircle, Play, ArrowLeft, ExternalLink } from 'lucide-react';
 import Button from '../shared/Button';
 import ProductCard from '../shared/ProductCard';
 import { PRODUCTS } from '../../data/mockData';
@@ -203,6 +203,20 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                 {product.fullDescription}
                             </p>
 
+                            {product.detailUrl && (
+                                <div className="mt-4">
+                                    <a
+                                        href={product.detailUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-orange-50 text-[#EA580C] hover:bg-[#EA580C] hover:text-white rounded-lg font-bold text-xs transition-all duration-300 border border-[#EA580C]/20 hover:border-[#EA580C] shadow-sm group"
+                                    >
+                                        <ExternalLink size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                                        Visit Ophthall Imaging Page
+                                    </a>
+                                </div>
+                            )}
+
                             {product.features && product.features.length > 0 && (
                                 <ul className="mt-4 space-y-2">
                                     {product.features.map((feature, idx) => (
@@ -283,6 +297,18 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                 </a>
                             )}
 
+                            {product.detailUrl && (
+                                <a
+                                    href={product.detailUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex-1 py-3 px-4 md:px-6 rounded-lg font-bold text-sm md:text-base transition-all duration-200 flex items-center justify-center gap-2 bg-gradient-to-r from-[#EA580C] to-[#f97316] hover:from-[#c2410c] hover:to-[#EA580C] text-white shadow-sm shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-0.5 active:translate-y-0"
+                                >
+                                    <ExternalLink size={18} />
+                                    Detailed Info
+                                </a>
+                            )}
+
                             <Button variant="outline" className="px-4 py-3 sm:w-auto h-auto">
                                 <Heart />
                             </Button>
@@ -350,9 +376,28 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                         {activeTab === 'description' && (
                             <div className="animate-in fade-in slide-in-from-bottom-2 prose text-slate-600 max-w-none">
                                 <h3 className="text-xl font-bold text-[#0B2C4D] mb-4">Product Details</h3>
-                                <p className="whitespace-pre-wrap leading-relaxed">
+                                <p className="whitespace-pre-wrap leading-relaxed mb-6">
                                     {product.fullDescription || `Detailed description for ${product.name} is coming soon. Please contact us for more information.`}
                                 </p>
+                                {product.detailUrl && (
+                                    <div className="mt-8 p-6 bg-white rounded-xl border border-slate-200 shadow-sm">
+                                        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                                            <div>
+                                                <h4 className="text-lg font-bold text-[#0B2C4D] mb-1">Looking for more details?</h4>
+                                                <p className="text-sm text-slate-500">Visit our dedicated imaging systems page for comprehensive technical information.</p>
+                                            </div>
+                                            <a
+                                                href={product.detailUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-3 px-8 py-4 bg-[#EA580C] hover:bg-[#c2410c] text-white rounded-xl font-bold text-base transition-all duration-300 shadow-sm shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-1 active:translate-y-0 group"
+                                            >
+                                                <ExternalLink size={20} className="transition-transform group-hover:rotate-12" />
+                                                Explore Detailed Page
+                                            </a>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         )}
 

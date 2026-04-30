@@ -686,7 +686,8 @@ export const PRODUCTS = [
       "/assets/Products/clearview-slitlamp-img7.png",
     ],
     youtubeUrl: "https://www.youtube.com/embed/ZWznXHhEnyg?si=4PQxdhkcLYhhItrw",
-    fullDescription: "Ophthall Clear View Slit Lamp Imaging system is an innovative product to help improve your diagnostics and patient satisfaction. Imaging system is a good tool to demonstrate to the patients and their attenders the actual pathology and this helps in improved conversions and patient Care.\n\nOphthall Clear View Imaging system is customizable for any brand of 3 or 5 step slit lamp and is a very simple do it yourself self-installation product.\n\nVISIT OPHTHALL IMAGING PAGE FOR DETAILED INFORMATION: https://imagingsystems.ophthallmart.com/",
+    fullDescription: "Ophthall Clear View Slit Lamp Imaging system is an innovative product to help improve your diagnostics and patient satisfaction. Imaging system is a good tool to demonstrate to the patients and their attenders the actual pathology and this helps in improved conversions and patient Care.\n\nOphthall Clear View Imaging system is customizable for any brand of 3 or 5 step slit lamp and is a very simple do it yourself self-installation product.",
+    detailUrl: "https://imagingsystems.ophthallmart.com/",
     features: [
       "Customizable for any brand of 3 or 5 step slit lamp",
       "Simple do it yourself (DIY) self-installation",
@@ -1122,7 +1123,8 @@ export const PRODUCTS = [
       "/assets/Products/vid-recording-img10.png",
     ],
     youtubeUrl: "https://www.youtube.com/embed/s8bbWNPZtrM?si=oirH67tnaRZ3396U",
-    fullDescription: "Ophthall Vid Surgical Recording system is the best in class recording system available for any kind of surgical microscopes in the market. With more than 700+ installations all over India, it is the trusted choice for ophthalmologists for high-quality surgical documentation.\n\nDesigned for documentation, conference presentations, and patient counseling, the system provides exceptional clarity and ease of use. It features a custom-made beam splitter with an 80:20 ratio, ensuring optimal field illumination while capturing high-definition video. Compatible with all major brands including Zeiss, Appasamy, Leica, and more.\n\nVISIT OPHTHALL IMAGING PAGE: https://imagingsystems.ophthallmart.com/",
+    fullDescription: "Ophthall Vid Surgical Recording system is the best in class recording system available for any kind of surgical microscopes in the market. With more than 700+ installations all over India, it is the trusted choice for ophthalmologists for high-quality surgical documentation.\n\nDesigned for documentation, conference presentations, and patient counseling, the system provides exceptional clarity and ease of use. It features a custom-made beam splitter with an 80:20 ratio, ensuring optimal field illumination while capturing high-definition video. Compatible with all major brands including Zeiss, Appasamy, Leica, and more.",
+    detailUrl: "https://imagingsystems.ophthallmart.com/",
     features: [
       "Custom Made Ophthall Beam Splitter (80:20 Split Ratio)",
       "Universal Compatibility (Zeiss, Appasamy, Leica, etc.)",
@@ -3180,7 +3182,8 @@ export const BEST_SELLING_PRODUCTS = [
       "/assets/Products/clearview-slitlamp-img7.png",
     ],
     youtubeUrl: "https://www.youtube.com/embed/ZWznXHhEnyg?si=4PQxdhkcLYhhItrw",
-    fullDescription: "Ophthall Clear View Slit Lamp Imaging system is an innovative product to help improve your diagnostics and patient satisfaction. Imaging system is a good tool to demonstrate to the patients and their attenders the actual pathology and this helps in improved conversions and patient Care.\n\nOphthall Clear View Imaging system is customizable for any brand of 3 or 5 step slit lamp and is a very simple do it yourself self-installation product.\n\nVISIT OPHTHALL IMAGING PAGE FOR DETAILED INFORMATION: https://imagingsystems.ophthallmart.com/",
+    fullDescription: "Ophthall Clear View Slit Lamp Imaging system is an innovative product to help improve your diagnostics and patient satisfaction. Imaging system is a good tool to demonstrate to the patients and their attenders the actual pathology and this helps in improved conversions and patient Care.\n\nOphthall Clear View Imaging system is customizable for any brand of 3 or 5 step slit lamp and is a very simple do it yourself self-installation product.",
+    detailUrl: "https://imagingsystems.ophthallmart.com/",
     features: [
       "Customizable for any brand of 3 or 5 step slit lamp",
       "Simple do it yourself (DIY) self-installation",
@@ -3228,7 +3231,8 @@ export const BEST_SELLING_PRODUCTS = [
       "/assets/Products/vid-recording-img10.png",
     ],
     youtubeUrl: "https://www.youtube.com/embed/s8bbWNPZtrM?si=oirH67tnaRZ3396U",
-    fullDescription: "Ophthall Vid Surgical Recording system is the best in class recording system available for any kind of surgical microscopes in the market. With more than 700+ installations all over India, it is the trusted choice for ophthalmologists for high-quality surgical documentation.\n\nDesigned for documentation, conference presentations, and patient counseling, the system provides exceptional clarity and ease of use. It features a custom-made beam splitter with an 80:20 ratio, ensuring optimal field illumination while capturing high-definition video. Compatible with all major brands including Zeiss, Appasamy, Leica, and more.\n\nVISIT OPHTHALL IMAGING PAGE: https://imagingsystems.ophthallmart.com/",
+    fullDescription: "Ophthall Vid Surgical Recording system is the best in class recording system available for any kind of surgical microscopes in the market. With more than 700+ installations all over India, it is the trusted choice for ophthalmologists for high-quality surgical documentation.\n\nDesigned for documentation, conference presentations, and patient counseling, the system provides exceptional clarity and ease of use. It features a custom-made beam splitter with an 80:20 ratio, ensuring optimal field illumination while capturing high-definition video. Compatible with all major brands including Zeiss, Appasamy, Leica, and more.",
+    detailUrl: "https://imagingsystems.ophthallmart.com/",
     features: [
       "Custom Made Ophthall Beam Splitter (80:20 Split Ratio)",
       "Universal Compatibility (Zeiss, Appasamy, Leica, etc.)",
