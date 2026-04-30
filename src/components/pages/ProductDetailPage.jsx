@@ -302,7 +302,7 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                     href={product.detailUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 py-3 px-4 md:px-6 rounded-lg font-bold text-sm md:text-base transition-all duration-200 flex items-center justify-center gap-2 bg-gradient-to-r from-[#EA580C] to-[#f97316] hover:from-[#c2410c] hover:to-[#EA580C] text-white shadow-sm shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-0.5 active:translate-y-0"
+                                    className="flex-1 py-3 px-4 md:px-6 rounded-lg font-bold text-sm md:text-base transition-all duration-200 flex items-center justify-center gap-2 bg-gradient-to-r from-[#EA580C] to-[#f97316] hover:from-[#c2410c] hover:to-[#EA580C] text-white shadow-sm shadow-orange-500/20 hover:shadow-orange-500/40"
                                 >
                                     <ExternalLink size={18} />
                                     Detailed Info
@@ -390,7 +390,7 @@ const ProductDetailPage = ({ product, onBack, onAdd, enquiryCart = [], onViewDet
                                                 href={product.detailUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-3 px-8 py-4 bg-[#EA580C] hover:bg-[#c2410c] text-white rounded-xl font-bold text-base transition-all duration-300 shadow-sm shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-1 active:translate-y-0 group"
+                                                className="inline-flex items-center gap-3 px-8 py-4 bg-[#EA580C] hover:bg-[#c2410c] text-white rounded-xl font-bold text-base transition-all duration-300 shadow-sm shadow-orange-500/20 hover:shadow-orange-500/40 group"
                                             >
                                                 <ExternalLink size={20} className="transition-transform group-hover:rotate-12" />
                                                 Explore Detailed Page
