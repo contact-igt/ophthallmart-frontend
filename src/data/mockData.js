@@ -2938,6 +2938,64 @@ export const PRODUCTS = [
     ],
     tag: "High-End",
     section: "shop"
+  },
+  {
+    id: 437,
+    isSoldOut: false,
+    name: "Pre Owned APPASAMY Operating Microscope – Brilliant Model",
+    category: "PRE-OWNED",
+    price: "₹8 Lakhs",
+    rating: 4.7,
+    year: "2024",
+    condition: "Good Working Condition",
+    location: "Chhattisgarh",
+    fullDescription: "Pre-owned APPASAMY Operating Microscope – Brilliant Model available for sale. Comes with Camera, TV & Monitor Recording System. Purchased in October 2024 and well-maintained. Ideal for ophthalmic surgical procedures. Price negotiable. Interested buyers may contact for further details.",
+    image: "/assets/Pre-owned/appasant microscrope.jpeg",
+    images: [
+      "/assets/Pre-owned/appasant microscrope.jpeg"
+    ],
+    features: [
+      "Camera, TV & Monitor Recording System included",
+      "APPASAMY Brilliant Model – premium ophthalmic operating microscope",
+      "Well-maintained since purchase",
+      "Suitable for cataract, vitreoretinal, and other ophthalmic surgeries"
+    ],
+    specs: [
+      { label: "Purchase Date", value: "19 October 2024" },
+      { label: "Expected Price", value: "₹8 Lakhs" },
+      { label: "Location", value: "Chhattisgarh" }
+    ],
+    tag: "With Recording System",
+    section: "shop"
+  },
+  {
+    id: 438,
+    isSoldOut: false,
+    name: "Pre Owned CHAKSHU Phaco Machine – CX3 Model",
+    category: "PRE-OWNED",
+    price: "₹10 Lakhs",
+    rating: 4.8,
+    year: "2025",
+    condition: "Excellent / Sparingly Used",
+    location: "Chhattisgarh",
+    fullDescription: "Pre-owned CHAKSHU Phaco Machine – CX3 Model available for sale with all accessories. Purchased in May 2025 and sparingly used in excellent condition. A great opportunity for eye hospitals and surgeons seeking a high-performance phaco machine at a competitive price. Price negotiable.",
+    image: "/assets/Pre-owned/chaxu phaco.jpeg",
+    images: [
+      "/assets/Pre-owned/chaxu phaco.jpeg"
+    ],
+    features: [
+      "All accessories included",
+      "CHAKSHU CX3 Model – advanced phaco system for cataract surgery",
+      "Sparingly used, excellent working condition",
+      "Stable fluidics and efficient emulsification performance"
+    ],
+    specs: [
+      { label: "Purchase Date", value: "12 May 2025" },
+      { label: "Expected Price", value: "₹10 Lakhs" },
+      { label: "Location", value: "Chhattisgarh" }
+    ],
+    tag: "With All Accessories",
+    section: "shop"
   }
 ];
 
